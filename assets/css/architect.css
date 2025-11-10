@@ -1,0 +1,90 @@
+.architecture-page{
+    margin-top: 40px;
+    padding-bottom: 150px;
+}
+
+.architecture-title{
+    gap: 16px;
+}
+.back-home{
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    transition: 0.3s;
+
+}
+.back-home i{
+    filter: invert(1);
+    transition: 0.3s;
+}
+
+.architecture-min{
+    margin-top: 32px;
+    gap: 16px;
+}
+.architecture-rel{
+    position: relative;
+    max-width: 672px;
+    width: 100%;
+}
+
+.architecture-swiper{
+    width: 100%;
+}
+.architecture-photo{
+    position: relative;
+    display: flex;
+}
+.architecture-photo img{
+    border-radius: 32px;
+    width: 100%;
+}
+
+.archit-names{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FEFFFA;
+    border: 1px solid #0000001A;
+    width: max-content;
+    gap: 10px;
+    border-radius: 44px;
+    padding: 8px 24px;
+
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+
+.architecture-rel .swiper-button-next, .architecture-rel .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    transition: 0.3s;
+    background: #FFFFFF40;
+    backdrop-filter: blur(45px);
+}
+.architecture-rel .swiper-button-prev{
+    left: 16px;
+    right: auto;
+}
+.architecture-rel .swiper-button-next{
+    right: 16px;
+    left: auto;
+}
+.architecture-rel .swiper{
+    border-radius: 32px;
+
+}

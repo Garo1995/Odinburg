@@ -1,10 +1,18 @@
 @import "assets/font/font.css";
 @import "assets/css/swiper-bundle.min.css";
+@import "assets/css/jquery.formstyler.css";
+@import "assets/css/jquery.formstyler.theme.css";
 @import "assets/css/jquery.fancybox.css";
+@import "assets/css/nouislider.css";
+@import "assets/css/timer.css";
 @import "assets/css/normalize.css";
+@import "assets/css/icons.css";
 @import "assets/css/flex.css";
 @import "assets/css/header.css";
 @import "assets/css/home.css";
+@import "assets/css/selection.css";
 @import "assets/css/modal.css";
-@import "assets/css/timer.css";
+@import "assets/css/map.css";
+@import "assets/css/footer.css";
+@import "assets/css/architect.css";
 

@@ -1,36 +1,33 @@
 .timer-wrapper {
-    background: #262B31CC;
+    background: #000000;
 
-    padding: 40px 36px;
-    border-radius: 40px;
+    padding: 32px 16px;
+    border-radius: 24px;
     text-align: center;
     color: #fff;
-    max-width: 624px;
+    max-width: 410px;
     width: 100%;
-    margin-top: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .timer-wrapper h3 {
-    margin-bottom: 12px;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 38px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
     text-align: center;
+    color: #FFFFFF;
 }
 
 
 .timer-wrapper p {
-    margin-bottom: 31px;
-    font-weight: 300;
+    margin-bottom: 8px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
-    max-width: 450px;
-    width: 100%;
 }
 
 .timer {
@@ -41,12 +38,7 @@
 }
 
 .time-box {
-    color: #FFFFFF;
-    padding: 12px 12px;
-    border-radius: 12px;
-    width: 93px;
-    background: #C49D76;
-    height: 67px;
+    color: #BEDC1C;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -58,7 +50,7 @@
     font-size: 24px;
     line-height: 100%;
     text-align: center;
-    color: #FFFFFF;
+    color: #BEDC1C;
 }
 
 .time-label {
@@ -66,7 +58,7 @@
     font-size: 16px;
     line-height: 26px;
     text-align: center;
-    color: #FFFFFF;
+    color: #BEDC1C;
 }
 
 .colon {
@@ -78,32 +70,23 @@
     align-items: center;
 }
 
-
-@media (max-width: 1599px){
-
+@media (max-width: 1299px){
     .timer-wrapper h3 {
-        margin-bottom: 8px;
-        font-size: 24px;
-        line-height: 36px;
+        font-size: 22px;
     }
     .timer-wrapper {
-        padding: 30px 20px;
-        border-radius: 30px;
-        max-width: 450px;
+        padding: 24px 16px;
     }
-    .time-box span {
-        font-weight: 600;
-        font-size: 20px;
+
+    .timer-wrapper p {
+        font-size: 16px;
+        line-height: 24px;
     }
-    .time-label {
-        font-size: 14px;
-        line-height: 21px;
-    }
-    .time-box {
-        padding: 10px 9px;
-        width: 73px;
-        height: 63px;
-    }
+
+
+
+
+
 }
 @media (max-width: 1020px){
     .timer-wrapper {
@@ -133,18 +116,15 @@
     }
 
     .time-label {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 18px;
         font-weight: 400;
     }
-
     .time-box {
         padding: 9px 8px;
-        width: 66px;
         height: auto;
         border-radius: 9px;
     }
-
     .timer-wrapper p {
         margin-bottom: 12px;
         font-size: 16px;
@@ -155,9 +135,14 @@
         font-size: 18px;
         line-height: 30px;
     }
+
     .timer-wrapper {
-        padding: 20px 12px;
-        border-radius: 16px;
+        padding: 22px 14px;
+        border-radius: 24px;
+        height: 159px;
+    }
+    .time-box span {
+        font-size: 20px;
     }
 
 

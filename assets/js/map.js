@@ -1,9 +1,7 @@
-
 class YandexMapConstructor {
     constructor({
                     mapContainerId,
-                    defaultMarker,
-                    defaultCenter = [55.662836, 37.536472],
+                    defaultCenter = [55.817864, 37.750991],
                     zoom = 15,
                     isMultiSelect = false
                 }) {
@@ -15,7 +13,6 @@ class YandexMapConstructor {
         this.mainPlacemark = null;
         this.pointCollection = null;
         this.initialized = false;
-        this.defaultMarker = defaultMarker;
         this.isMultiSelect = isMultiSelect
 
         this.init();
@@ -35,58 +32,22 @@ class YandexMapConstructor {
             suppressMapOpenBlock: true, // запрет на переход в Яндекс.Карты
             yandexMapDisablePoiInteractivity: true // отключить клики по POI
         });
-        if (this.defaultMarker.length) {
-            this.defaultMarker.forEach(marker => {
-                const iconContent = ymaps.templateLayoutFactory.createClass(`
-        <div class="bs-point-custom main ${marker.className}" data-id="${marker.defaultCenter[0]}">
-       <img class="cover" src="${marker.icon}" alt="icons">
-          <p class="title">${marker.title}</p>
-        </div>`)
-
-                const defaultMarkers = new ymaps.Placemark(marker.defaultCenter, {}, {
-                    iconLayout: "default#imageWithContent",
-                    iconImageHref: '',
-                    iconImageSize: [48, 48],
-                    zIndex: 2,
-                    iconContentLayout: iconContent
-                });
-
-
-                this.myMap.geoObjects.add(defaultMarkers);
-            })
-            this.#generateDefaultMarker()
-        }
-
-
 
     }
 
-    #generateDefaultMarker() {
-        const iconContent = ymaps.templateLayoutFactory.createClass(`
-        <div class="bs-point-custom main ${defaultMarker[0].className}" data-id="${defaultMarker[0].defaultCenter[0]}">
-       <img class="cover" src="${defaultMarker[0].icon}" alt="icons">
-          <p class="title">${defaultMarker[0].title}</p>
-        </div>`)
 
-        this.mainPlacemark = new ymaps.Placemark(defaultMarker[0].defaultCenter, {}, {
-            iconLayout: "default#imageWithContent",
-            iconImageHref: '',
-            iconImageSize: [48, 48],
-            zIndex: 2,
-            iconContentLayout: iconContent
-        })
-    }
 
     #generateMarkersList() {
         this.pointCollection = new ymaps.GeoObjectCollection();
         this.selectedCategory.forEach((category) => {
             category.points.forEach(point => {
-
-                const  iconData = category.icon?category.icon: point.icon?point.icon:''
+                const icon  = point.icon ? point.icon : category.icon
 
                 const iconContent = ymaps.templateLayoutFactory.createClass(`
         <div class="bs-point-custom" data-id="${point.lat}">
-          <img class="${iconData??'active-icon'}" src="${iconData}" alt="icons">
+          <div class="bs-point-circle">
+                <img src="${icon}" alt="icons">
+            </div>
           <p class="title">${point.title}</p>
         </div>
       `);
@@ -119,38 +80,38 @@ class YandexMapConstructor {
             })
         });
         this.myMap.geoObjects.add(this.pointCollection);
-        this.myMap.geoObjects.add(this.mainPlacemark);
-
+        if(this.mainPlacemark){
+            this.myMap.geoObjects.add(this.mainPlacemark);
+        }
 
     }
 
-    changeCategory(category) {
-        if(category){
-            if (!this.myMap || !window.ymaps) return;
+    changeCategory(category, isClear) {
+        if (!this.myMap || !window.ymaps) return;
 
-            const isSame = this.selectedCategory.some(x => x.title === category.title);
-            this.myMap.geoObjects.removeAll();
+        const isSame = this.selectedCategory.some(x => x.title === category.title);
+        this.myMap.geoObjects.removeAll();
 
-            if (isSame) {
-                if (this.isMultiSelect) {
-                    this.selectedCategory = this.selectedCategory.filter(x => x.title !== category.title);
-                } else {
-                    this.selectedCategory = []
+        if (isSame) {
+            if (this.isMultiSelect) {
+                this.selectedCategory = this.selectedCategory.filter(x => x.title !== category.title);
+            } else {
+                this.selectedCategory = []
+            }
+        } else {
+            if (this.isMultiSelect) {
+                if(isClear|| category.isAll){
+                    this.selectedCategory = [category]
+                }else{
+                    this.selectedCategory.push(category)
                 }
             } else {
-                if (this.isMultiSelect) {
-                    this.selectedCategory.push(category)
-                } else {
-                    this.selectedCategory = [category]
-                }
+                this.selectedCategory = [category]
             }
-
-            this.#generateMarkersList()
-            return this.selectedCategory
-        }else{
-            this.selectedCategory = []
         }
-        return []
+
+        this.#generateMarkersList()
+        return this.selectedCategory
     }
 
     zoomIn() {
@@ -172,8 +133,6 @@ class YandexMapConstructor {
             });
         }
     }
-
-
 
 
 }

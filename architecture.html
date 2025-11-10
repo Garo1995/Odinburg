@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d130909a-f4b5-453d-85f2-98a45f38ba0c&lang=ru_RU"></script>
+
+    <title>Odinburg</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-main G-align-center G-justify-between">
+            <div class="header-logo G-align-center">
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#" class="logo G-flex">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header-cont-flex G-align-center">
+                <div class="header-contact G-flex-column G-align-end">
+                    <a href="tel:+ 7 (495) 489 01 39" class="phone-number">+ 7 (495) 489 01 39</a>
+                    <a href="#" class="request-call">Заказать звонок</a>
+                </div>
+                <div class="select-block G-align-center">
+                    <a href="#" class="favorite-box G-center">
+                        <img src="./assets/img/heart.svg" alt="heart">
+                    </a>
+                    <div class="select-property">
+                        <div class="select-name">Выбор недвижимости</div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>Квартиры <i class="icon-house"></i></li>
+                                <li>Машино-места <i class="icon-car"></i></li>
+                                <li>Кладовые <i class="icon-storerooms"></i></li>
+                                <li>Мото-места <i class="icon-moto"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-modal">
+        <div class="container">
+            <div class="menu-modal-fon G-justify-between">
+                <div class="menu-modal-min">
+                    <div class="menu-modal-js" data-catalog="benefits">
+                        <div class="menu-modal-block">
+                            <h2>Преимущества проекта</h2>
+                            <div class="project-wrap">
+                                <div class="project-box">
+                                    <img src="./assets/img/project-1.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Дома уровня бизнес</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-2.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Инфраструктура</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-box">
+                                    <img src="./assets/img/project-3.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Экологически чистый район</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-4.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Для детей</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-5.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Продуманные планировки</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-6.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Кладовые и паркинг</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="property">
+                        <div class="menu-modal-block">
+                            <h2>Выбор недвижимости</h2>
+                            <div class="select-menu-property">
+                                <div class="project-box">
+                                    <img src="./assets/img/property-1.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Квартиры</span>
+                                    </div>
+                                </div>
+                                <div class="menu-property-col G-flex-column">
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project">
+                                        <div class="project-name">
+                                            <span>Машино-места</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project">
+                                        <div class="project-name">
+                                            <span>Мото-места</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/property-3.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Кладовые</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="purchase">
+                        <div class="menu-modal-block">
+                            <h2>ипотека</h2>
+                            <div class="mortgage-flex">
+                                <div class="mortgage-selec G-flex-wrap">
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>Стандартная</h3>
+                                        <p>
+                                            Нужен доступный первый взнос или большая сумма кредита?
+                                        </p>
+                                        <strong>от 23,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>IT-ипотека</h3>
+                                        <p>
+                                            Доступное жилье без первоначального взноса
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>Военная</h3>
+                                        <p>
+                                            Вы военнослужащий с сертификатом НИС?
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>Семейная</h3>
+                                        <p>
+                                            Мечтаете выгодно купить квартиру с уютной детской?
+                                        </p>
+                                        <strong>от 6,5%</strong>
+                                    </div>
+                                </div>
+
+                                <div class="mortgage-calculator">
+                                    <div class="mortgage-calc-title">
+                                        <h3>Ипотечный калькулятор</h3>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 29 456 руб.</span>
+                                            <p>ежемесячный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 1,4 млн руб.</span>
+                                            <p>первоначальный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 3,9%</span>
+                                            <p>ставка</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn-line">Рассчитать ипотеку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="stock">
+                        <div class="menu-modal-block">
+                            <h2>Акции</h2>
+                            <div class="stock-crash-flex">
+                                <div class="stock-crash-pic">
+                                    <a href="#" class="more-info">Подробнее</a>
+                                </div>
+                                <div class="stock-crash-col">
+                                    <div class="stock-crash-box">
+                                        <strong>ОБВАЛ ЦЕН</strong>
+                                        <span>Успей до 30 октября!</span>
+                                        <button class="btn-line">Подробнее</button>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/stock-chip.png" alt="stock">
+                                        </div>
+                                    </div>
+                                    <div class="parking-space-box">
+                                        <div class="parking-space-price">
+                                            <strong>15 000 <small>₽/мес.</small></strong>
+                                            <span>Машино-место</span>
+                                        </div>
+                                        <div class="parking-discount G-align-start">
+                                            <div class="parking-discount-count">
+                                                <small>Скидка</small>
+                                                <strong>15%</strong>
+                                            </div>
+                                            <div class="parking-discount-count">
+                                                <small>Рассрочка</small>
+                                                <strong>на 3 года</strong>
+                                            </div>
+                                        </div>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/car-chat.png" alt="car-chat">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu-modal-cnt">
+                    <div class="menu-data-menu">
+                        <ul>
+                            <li class="menu-data-click menu-data-active" data-catalog="benefits">Преимущества проекта</li>
+                            <li class="menu-data-click" data-catalog="property">Выбор недвижимости</li>
+                            <li class="menu-data-click" data-catalog="purchase">Способы покупки</li>
+                            <li class="menu-data-click" data-catalog="stock">Акции</li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-link">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Ход строительства</a></li>
+                            <li><a href="#">Спец-пул</a></li>
+                            <li><a href="#">Генплан</a></li>
+                            <li><a href="#">Инфраструктура</a></li>
+                            <li><a href="#">Кабинет брокера</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn-line">
+                        <i class="icon-call"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header-nav">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Спец-пул</a></li>
+                <li><a href="#">Преимущества </a></li>
+                <li><a href="#">Подбор</a></li>
+                <li><a href="#">Генплан</a></li>
+                <li><a href="#">Ипотека</a></li>
+                <li><a href="#">Инфраструктура</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<section class="architecture-page">
+    <div class="container">
+        <div class="architecture-title G-align-center">
+            <a href="./index.html" class="back-home G-center">
+                <i class="icon-arrow-left"></i>
+            </a>
+            <h2>Архитектура</h2>
+        </div>
+
+        <div class="architecture-min G-align-start">
+
+            <div class="architecture-rel">
+                <div class="swiper architecture-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div data-val="modal-gallery" class="open_modal architecture-photo ">
+                                <span class="archit-names">Корпус ЛУЧ-4</span>
+                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div data-val="modal-gallery" class="open_modal architecture-photo ">
+                                <span class="archit-names">Корпус ЛУЧ-4</span>
+                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="archit-button-prev swiper-button-prev">
+                    <i class="icon-arrow-left"></i>
+                </div>
+                <div class="archit-button-next swiper-button-next">
+                    <i class="icon-arrow-right"></i>
+                </div>
+            </div>
+            <div class="architecture-rel">
+                <div class="swiper architecture-two-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div data-val="modal-gallery" class="open_modal architecture-photo">
+                                <span class="archit-names">Корпус 4А и 4Б</span>
+                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div data-val="modal-gallery" class="open_modal architecture-photo">
+                                <span class="archit-names">Корпус 4А и 4Б</span>
+                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="archit-two-button-prev swiper-button-prev">
+                    <i class="icon-arrow-left"></i>
+                </div>
+                <div class="archit-two-button-next swiper-button-next">
+                    <i class="icon-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="modal-gallery" class="modal">
+    <div class="modal-content">
+        <div class="close"></div>
+        <div class="gallery-modal">
+            <div class="gallery-fon">
+                <div class="swiper gallery-modal-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="gallery-modal-pic G-flex">
+                                <img src="./assets/img/odinburg-mod.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-modal-pic G-flex">
+                                <img src="./assets/img/odinburg-mod.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-modal-pic G-flex">
+                                <img src="./assets/img/odinburg-mod.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-modal-pic G-flex">
+                                <img src="./assets/img/odinburg-mod.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="gallery-modal-pic G-flex">
+                                <img src="./assets/img/odinburg-mod.jpg" alt="odinburg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-modal-btn G-center">
+                <div class="gallery-button-prev swiper-button-prev">
+                    <i class="icon-arrow-left"></i>
+                </div>
+                <div class="gallery-pagination swiper-pagination"></div>
+                <div class="gallery-button-next swiper-button-next">
+                    <i class="icon-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div id="modal-news" class="modal">
+    <div class="modal-content">
+        <div class="close"></div>
+        <div class="modal-news-box">
+            <div class="modal-news-scr">
+                <div class="modal-news-info">
+                    <img src="" alt="">
+                    <h3></h3>
+                    <span></span>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<script src="assets/js/jquery-3.6.4.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.formstyler.min.js"></script>
+<script src="assets/js/sliders.js"></script>
+<script src="assets/js/nouislider.min.js"></script>
+<script src="assets/js/data-catalog.js"></script>
+<script src="assets/js/time.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/map.js"></script>
+
+
+
+</body>
+</html>
+
+

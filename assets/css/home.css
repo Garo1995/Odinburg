@@ -1,0 +1,2362 @@
+h1{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: left;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    text-align: left;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 115%;
+    color: #000000;
+    text-align: left;
+}
+
+.section-margin{
+    margin-top: 80px;
+}
+
+
+
+
+
+.business-min{
+    margin-top: 16px;
+
+}
+
+.business-rel{
+    position: relative;
+}
+
+.business-slider{
+    width: 100%;
+    border-radius: 24px;
+}
+.business-rel .business-pagination{
+    display: none;
+}
+.business-photo{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 24px;
+    height: 560px;
+    padding: 56px 48px;
+    display: flex;
+    align-items: flex-end;
+}
+.business-photo:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 24px;
+}
+
+
+.business-apart{
+    max-width: 790px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.business-apart p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.business-apart-flex{
+    margin-top: 24px;
+    gap: 16px;
+}
+.business-apart-flex .select-dropdown {
+    top: auto;
+    bottom: 55px;
+    right: auto;
+}
+
+.sign-viewing{
+    background: #FFFFFF1A;
+    max-width: 272px;
+    width: 100%;
+    height: 48px;
+    gap: 8px;
+    border-radius: 48px;
+    border-width: 1px;
+    padding: 2px 2px 2px 24px;
+    transition: 0.3s;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+
+}
+.sign-viewing:hover{
+    background: #BEDC1C;
+
+}
+.sign-viewing span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.arrow-viewing{
+    max-width: 44px;
+    width: 100%;
+    height: 44px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #FFFFFF;
+}
+.arrow-viewing .icon-arrow-right{
+    filter: brightness(1) invert(1);
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+}
+
+
+.icon-arrow-left{
+    content: url("../img/arrow-left.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.icon-arrow-right{
+    content: url("../img/arrow-right.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.business-btn{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    width: 104px;
+    height: 52px;
+    gap: 8px;
+    border-radius: 48px;
+    padding: 4px;
+    background: #FFFFFF1A;
+    border: 1px solid #FFFFFF1A;
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: relative;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    background: #FFFFFF;
+}
+.swiper-button-next:hover i, .swiper-button-prev:hover i{
+    filter: brightness(1) invert(1);
+}
+.business-pagination{
+    display: none;
+}
+
+
+.mortgage-rel{
+    padding: 0 50px;
+    position: relative;
+}
+
+
+
+.family-mortgage{
+    margin-top: 16px;
+}
+.family-mortgage-box{
+    width: 100%;
+    background: #EFEFEF;
+    border-radius: 24px;
+    padding: 32px 40px;
+}
+.family-mortgage-box:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url("../img/green-building.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 147px;
+    height: 164px;
+    border-radius: 0 0 24px 0;
+}
+.family-mortgage-box strong{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.family-mortgage-box span{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    display: block;
+    margin-top: 8px;
+    z-index: 2;
+    position: relative;
+}
+
+
+.mortgage-first{
+    background: #BEDC1C;
+}
+
+.mortgage-first:after{
+    background-image: url("../img/abstract.png");
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.mortgage-button-prev, .mortgage-button-next{
+    position: absolute;
+    width: 34px;
+    height: 100%;
+    border-radius: 24px;
+    border: 2px solid #EFEFEF;
+}
+
+.mortgage-button-prev{
+    left: 0;
+}
+.mortgage-button-next{
+    right: 0;
+    left: auto;
+}
+
+.mortgage-button-prev:before{
+    transform: rotate(-135deg);
+    left: 11px;
+}
+.mortgage-button-next:before{
+    transform: rotate(45deg);
+    right: 11px;
+}
+.mortgage-button-prev:before, .mortgage-button-next:before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #EFEFEF;
+    border-right: 2px solid #EFEFEF;
+}
+
+.apartments-fon{
+    background: #000000;
+    border-radius: 24px;
+    padding: 32px;
+}
+
+.apartments-title{
+    gap: 20px;
+}
+.apartments-title h2{
+    color: #FFFFFF;
+}
+.apartments-btn{
+    position: relative;
+    gap: 16px;
+}
+
+
+.apartments-cnt {
+    position: relative;
+    margin-top: 24px;
+    margin-right: -32px;
+    overflow: hidden;
+}
+.apartments-slider {
+    width: 1372px;
+}
+.apartments-card{
+    background: #FEFFFA;
+    border-radius: 24px;
+    padding: 24px 16px;
+    transition: 0.3s;
+    position: relative;
+    border: 2px solid transparent;
+    max-width: 322px;
+    width: 100%;
+}
+.apartments-card:hover{
+    border: 2px solid #BEDC1C
+}
+.apartments-photo{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.favorite-key{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #C6D20233;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.favorite-heart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-key{
+    content: url("../img/key.svg");
+    width: 18px;
+    height: 18px;
+}
+
+.heard-card{
+    content: url("../img/heard-card.svg");
+    width: 24px;
+    height: 24px;
+}
+
+.discount-count{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: max-content;
+    border-radius: 50px;
+    padding: 4px 8px;
+    background: #BEDC1C;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.white-box{
+    background: #FEFFFA;
+    width: max-content;
+    border-radius: 31px;
+    gap: 4px;
+    padding: 4px 8px;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000026;
+    backdrop-filter: blur(4px);
+
+}
+
+.icon-white-box{
+    content: url("../img/white-box.svg");
+}
+
+
+.apartments-numb{
+    margin-top: 16px;
+    gap: 16px;
+}
+.apartments-price del{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #00000080;
+}
+.apartments-price strong{
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    display: block;
+}
+.apartments-numb span{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #000000;
+}
+
+.building-square{
+    justify-content: space-between;
+    margin-top: 16px;
+    gap: 16px 16px;
+}
+.building-info{
+    width: 80px;
+}
+.building-info span{
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+}
+.building-info p{
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #00000080;
+}
+
+
+
+.apartments-btn .swiper-button-prev{
+    background: unset;
+}
+.apartments-btn .swiper-button-next{
+    background: unset;
+}
+
+.apartments-btn .swiper-button-prev i{
+    filter: brightness(1) invert(1);
+}
+.apartments-btn .swiper-button-next i{
+    filter: brightness(1) invert(1);
+}
+
+
+.apartments-fon .swiper-button-prev{
+    background: #FFFFFF;
+}
+.apartments-fon .swiper-button-next{
+    background: #FFFFFF;
+}
+
+
+
+
+
+
+
+.project-title h2{
+    color: #000000;
+}
+
+.project-benefits{
+    margin-top: 32px;
+    padding-bottom: 55px;
+}
+
+.project-picture{
+    display: flex;
+    width: 100%;
+    border-radius: 24px;
+    position: relative;
+}
+.project-picture img{
+    width: 100%;
+    border-radius: 24px;
+}
+.project-picture:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF1A;
+
+}
+
+.project-buld-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 24px 24px;
+    backdrop-filter: blur(20px);
+    background: #FFFFFF1A;
+    width: 100%;
+    padding: 16px 24px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+}
+.project-buld-name h3{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.project-picture  .href-arrow{
+    display: none;
+}
+.project-picture:hover  .href-arrow{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.master-plan-main{
+    margin-top: 32px;
+}
+
+.master-plan-cnt{
+    margin-top: 32px;
+    background: #EFEFEF;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.master-plan-sel ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.master-plan-sel ul li{
+    cursor: pointer;
+    transition: 0.3s;
+    width: max-content;
+    height: 43px;
+    gap: 8px;
+    padding: 8px 24px;
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #0000001A;
+    background: #FEFFFA;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.master-plan-sel ul li.plan-active{
+    background: #BEDC1C;
+
+}
+
+
+
+
+
+
+
+
+
+.programs-min{
+    margin-top: 32px;
+}
+.programs-slider .mortgage-box{
+    width: 100%;
+    height: 100%;
+}
+.programs-slider .mortgage-box h3 {
+    margin-top: 16px;
+}
+.programs-slider .mortgage-box p {
+    margin-top: 16px;
+}
+.programs-slider .mortgage-box strong {
+    margin-top: 16px;
+}
+
+.programs-slider .swiper-slide{
+    height: auto;
+}
+
+
+
+
+
+.sort-calc{
+    width: max-content;
+    height: 48px;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    background: #FEFFFA;
+    border: 2px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    text-align: center;
+}
+
+.open-filter-calc, .open-estate-filter{
+    display: none;
+
+    width: max-content;
+    height: 48px;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    background: #FEFFFA;
+    border: 2px solid #000000;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+}
+.open-filter-calc small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    padding: 2px;
+    background: #BEDC1C;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+.mortgage-calc{
+    margin-top: 32px;
+    gap: 24px;
+    display: flex;
+}
+.calculator-program{
+    max-width: 437px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.calculator-program small{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #6F6F6F;
+}
+
+
+.calculator-program .filter-block {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.range-row {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    position: relative;
+
+}
+.range-value {
+    width: 100%;
+    background: #FEFFFA;
+    border: 1px solid #DCDCDC;
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+}
+.range-percent {
+    position: absolute;
+    right: 16px;
+    top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: right;
+    color: #00000080;
+}
+
+.range-wrap {
+    width: 100%;
+    margin-top: -28px;
+    padding: 0 16px;
+}
+input[type=range] {
+    -webkit-appearance:none;
+    appearance:none;
+    width:100%;
+    height:4px;
+    border-radius:10px;
+    background: #BEDC1C;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width:16px;
+    height:16px;
+    border-radius:50%;
+    background: #BEDC1C;
+
+    box-shadow: 0px 4px 10px 0px #8B930126;
+
+    border: 1px solid #B1CE19;
+    margin-top:-3px;
+    cursor:pointer;
+}
+input[type=range]::-moz-range-thumb {
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:#cfe600;
+    border:2px solid #fff;
+    cursor:pointer;
+}
+
+/* маленький индикатор процентов справа на первом (если нужен) */
+.deposit-right {
+    color:#9b9b9b;
+    font-size:13px;
+    margin-left:12px;
+    width:46px;
+    text-align:right;
+}
+
+
+.calc-percent ul {
+    display:flex;
+    gap:12px;
+    padding:0;
+    list-style:none;
+}
+.calc-percent li {
+    background: #FEFFFA;
+    border: 1px solid #DCDCDC;
+    width: max-content;
+    height: 43px;
+    padding: 8px 16px;
+    border-radius: 44px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc-percent .calc-percent-act {
+    background: #BEDC1C;
+    border: 1px solid #BEDC1C;
+    font-weight: 700;
+}
+
+/* кнопка оставить заявку */
+.calc-percent-btn {
+    margin-top:18px;
+    text-align:center;
+}
+
+
+.calc-percent ul{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calc-percent-btn{
+    margin-top: 24px;
+}
+.calc-percent-btn p{
+    margin-top: 16px;
+    color: #6F6F6F;
+    font-size: 14px;
+    line-height: 120%;
+}
+.calc-percent-btn .btn{
+    width: 100%;
+}
+.btn{
+    box-shadow: 4px 4px 10px 0px #C6D20240;
+    background: #BEDC1C;
+    width: max-content;
+    height: 50px;
+    border-radius: 100px;
+    padding: 16px 32px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: #000000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+
+}
+
+
+.mortgage-calc-cnt{
+    width: 100%;
+    max-width: 899px;
+}
+
+.mortgage-calc-scr{
+    background: #EFEFEF;
+    border-radius: 24px;
+    width: 100%;
+    padding: 16px 8px 16px 16px;
+    margin-bottom: 16px;
+}
+.mortgage-scr-height{
+    overflow-y: auto;
+    padding-right: 8px;
+}
+.mortgage-scr-height::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: #DCDCDC;
+
+}
+.mortgage-scr-height::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 4px;
+    background: #BEDC1C;
+
+}
+.mortgage-scr-max{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 604px;
+}
+
+.bank-card-box{
+    width: 100%;
+    box-shadow: 0px 4px 10px 0px #0000000D;
+    background: #FEFFFA;
+    border-radius: 12px;
+    padding: 26px 16px;
+}
+
+.bank-card-info{
+    width: 100%;
+    gap: 55px;
+    justify-content: space-between;
+}
+
+.bank-card-name{
+    gap: 16px;
+}
+.bank-card-name img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.bank-card-name strong{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: #000000;
+    white-space: nowrap;
+}
+.bank-card-sort{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0000000D;
+    border: 1px solid #00000026;
+    backdrop-filter: blur(4px);
+    width: max-content;
+    white-space: nowrap;
+    gap: 4px;
+    border-radius: 31px;
+    padding: 2px 8px;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+}
+.bank-card-prcnet{
+    gap: 32px;
+}
+.bank-card-count{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.bank-card-count p{
+    color: #6F6F6F;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    white-space: nowrap;
+}
+.bank-card-count span{
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    white-space: nowrap;
+}
+
+.bank-card-btn{
+    gap: 16px;
+    width: 191px;
+}
+.submit-request{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    white-space: nowrap;
+    width: max-content;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 12px 24px;
+    background: #EFEFEF80;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 110%;
+    text-align: center;
+    color: #00000066;
+}
+.open-bank-card{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+.subsidized{
+    margin-top: 16px;
+    border-top: 1px solid #0000001A;
+    padding-top: 9px;
+}
+
+.subsidized p{
+    color: #6F6F6F;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+
+
+.bank-card-drop{
+    display: none;
+    gap: 55px;
+    margin-top: 20px;
+}
+.bank-card-opened .bank-card-drop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.finish-options{
+    margin-top: 32px;
+}
+.finish-options-box{
+    width: 100%;
+    transition: 0.3s;
+}
+.options-gallery-pic{
+    width: 100%;
+    transition: 0.3s;
+    position: relative;
+}
+.options-gallery-pic img{
+    border-radius: 24px;
+    width: 100%;
+    height: 384px;
+    object-fit: cover;
+}
+.options-gallery-slide{
+    border-radius: 24px;
+}
+
+.finish-options-text{
+    padding: 24px 0;
+}
+.finish-options-text h3{
+    color: #000000;
+    text-transform: uppercase;
+}
+.finish-options-text p{
+    margin-top: 8px;
+}
+.finish-options-text span{
+    transition: 0.3s;
+    color: #000000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+    margin-top: 12px;
+    display: block;
+}
+
+
+.options-button-prev, .options-button-next{
+    backdrop-filter: blur(45.833335876464844px);
+    background: #FFFFFF40;
+    width: 44px;
+    height: 44px;
+    padding: 22px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.options-button-prev{
+    left: 16px;
+    right: auto;
+}
+.options-button-next{
+    right: 16px;
+    left: auto;
+}
+
+.editor-choice{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    transition: 0.3s;
+    border: 8px solid #BEDC1C;
+}
+.editor-choice-name{
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    background: #BEDC1C;
+    width: 165px;
+    padding: 8px 16px;
+    border-radius: 0 24px 0 24px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 110%;
+}
+.additional-option{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(45.833335876464844px);
+    background: #FFFFFF40;
+    width: max-content;
+    white-space: nowrap;
+    padding: 4px 16px;
+    border-radius: 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: #FFFFFF;
+
+
+}
+
+
+
+.gallery-main{
+    margin-top: 32px;
+}
+
+.gallery-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    transition: 0.3s;
+}
+.gallery-box img{
+    width: 100%;
+    border-radius: 32px;
+    height: 430px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.gallery-box-name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF1A;
+    backdrop-filter: blur(20px);
+    padding: 16px 24px;
+    transition: 0.3s;
+    border-radius: 0 0 32px 32px;
+    justify-content: space-between;
+}
+.gallery-box-name h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.gallery-box:hover .gallery-box-name{
+    background: #000000;
+    padding: 24px 24px;
+}
+
+.play-video{
+    transition: 0.3s;
+    border-radius: 50%;
+    background: #BEDC1C;
+    border: 1px solid #FFFFFF1A;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 96px;
+    height: 96px;
+}
+
+
+.href-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    border-radius: 50%;
+    background: #BEDC1C;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.gallery-box .href-arrow{
+    opacity: 0;
+}
+.gallery-box:hover .href-arrow{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+.reliable-developer{
+    gap: 24px;
+}
+.reliable-box{
+    width: 100%;
+    background: #EFEFEF;
+    max-width: 668px;
+    border-radius: 24px;
+    padding: 32px;
+}
+.reliable-info img{
+    width: 98px;
+}
+.reliable-title{
+    margin-top: 20px;
+}
+.reliable-title h3{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #1B1B1B;
+}
+
+
+.reliable-photo{
+    width: 100%;
+    margin-top: 24px;
+}
+.reliable-photo img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+
+.reliable-wrap{
+    max-width: 688px;
+    width: 100%;
+    gap: 24px;
+}
+.reliable-desc{
+    width: calc(50% - 12px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 24px;
+    border-radius: 24px;
+    background: #EFEFEF;
+    transition: 0.3s;
+}
+.reliable-desc:hover{
+    background: #000000;
+}
+.reliable-desc strong{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    color: #000000;
+    transition: 0.3s;
+}
+.reliable-desc p{
+    transition: 0.3s;
+}
+.reliable-desc:hover strong{
+    color: #BEDC1C;
+}
+.reliable-desc:hover p{
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+.construction-cnt{
+    margin-top: 32px;
+}
+.construction-photo {
+    width: 100%;
+    height: 100%;
+}
+.construction-photo img{
+    width: 100%;
+    border-radius: 24px;
+}
+.construct-flex{
+    margin-top: 32px;
+    background: #EFEFEF;
+    border-radius: 24px;
+    padding: 24px;
+}
+.construct-years ul{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.construct-years ul li{
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 8px 24px;
+    border-radius: 44px;
+    background: #FEFFFA;
+    border: 1px solid #0000001A;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
+.construct-years ul li.active-year{
+    background: #BEDC1C;
+}
+.construct-js{
+    display: none;
+}
+.weather-href ul {
+    display: flex;
+    align-items: center;
+
+}
+.weather-href ul li{
+    position: relative;
+    width: max-content;
+    padding: 8px 16px;
+    transition: 0.3s;
+    color: #00000080;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    cursor: pointer;
+}
+.weather-href ul li:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -2px;
+    background: #DCDCDC;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+}
+
+.weather-href ul li.active-weather{
+    color: #BEDC1C;
+}
+.weather-href ul li.active-weather:after{
+    background: #BEDC1C;
+}
+
+.construction-slider .swiper-slide{
+    height: auto;
+}
+
+
+
+
+
+
+.news-sec-cnt{
+    margin-top: 32px;
+}
+
+
+.news-box{
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+    background: #EFEFEF;
+    border-radius: 24px;
+    padding: 32px;
+}
+.news-box:hover{
+    background: #000000;
+}
+.news-box:hover h3{
+    color: #FFFFFF;
+}
+.news-box:hover span{
+    color: #FFFFFF80;
+}
+.news-box:hover p{
+    color: #FFFFFF;
+}
+.news-box h3{
+    color: #000000;
+    font-weight: 700;
+    font-size: 24px;
+    transition: 0.3s;
+
+    line-height: 100%;
+}
+.news-box span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    color: #00000080;
+    display: block;
+    margin-top: 6px;
+    transition: 0.3s;
+
+}
+.news-box p {
+    margin-top: 16px;
+    transition: 0.3s;
+    max-width: 258px;
+    min-height: 62px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.news-photo{
+    width: 100%;
+    position: relative;
+    margin-top: 24px;
+}
+
+.news-photo img{
+    width: 100%;
+    border-radius: 12px;
+}
+.news-box .href-arrow{
+    opacity: 0;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    display: flex;
+}
+.news-box:hover .href-arrow{
+    opacity: 1;
+}
+
+
+
+.finish-pagination{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.cookie {
+    box-sizing: border-box;
+    margin: 0;
+
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    z-index: 111;
+    padding: 0 20px;
+
+}
+.cookie-flex{
+    gap: 20px;
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 24px;
+    max-width: 1158px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.cookie__text {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 120%;
+    color: #000000;
+    max-width: 966px;
+    width: 100%;
+}
+.cookie__text a{
+    font-weight: 700;
+}
+.cookie__link {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    color: #BEDC1C;
+
+}
+
+.cookie__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    width: max-content;
+    transition: 0.3s;
+    background: #BEDC1C;
+    border-radius: 24px;
+}
+
+
+
+
+
+
+.close-filt-map{
+    display: none;
+}
+
+
+
+
+@media (max-width: 1399px){
+    .family-mortgage-box strong {
+        font-size: 46px;
+        line-height: 50px;
+    }
+    .business-photo {
+        padding: 40px 30px;
+    }
+    .container {
+        padding: 0 16px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    .master-plan-sel ul {
+        gap: 10px;
+    }
+    .bank-card-prcnet {
+        gap: 18px;
+    }
+    .bank-card-info {
+        gap: 22px;
+    }
+    .calc-percent-btn {
+        margin-top: 0;
+    }
+    .reliable-desc strong {
+        font-size: 42px;
+    }
+    .weather-href ul li {
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+    .news-box {
+        padding: 22px;
+    }
+    .section-margin {
+        margin-top: 60px;
+    }
+    .reliable-title h3 {
+        font-size: 26px;
+    }
+    .play-video {
+        width: 75px;
+        height: 75px;
+    }
+    .bank-card-name img {
+        width: 36px;
+        height: 36px;
+    }
+    .news-box span {
+        font-size: 16px;
+    }
+    .reliable-desc strong {
+        font-size: 36px;
+    }
+
+
+}
+@media (max-width: 1299px){
+    .family-mortgage-box {
+        padding: 24px 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .news-box p {
+        min-height: 54px;
+    }
+    .news-sec-cnt {
+        margin-top: 24px;
+    }
+    .news-box {
+        padding: 16px;
+    }
+    .reliable-box {
+        padding: 24px;
+    }
+    .reliable-desc {
+        padding: 24px 24px;
+    }
+    .construct-flex {
+        padding: 16px;
+    }
+    .sort-calc {
+        height: 44px;
+        gap: 8px;
+        padding: 12px 24px;
+    }
+    .options-gallery-pic img {
+        height: 320px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .gallery-main {
+        overflow: hidden;
+        margin-right: -16px;
+    }
+    .gallery-slider{
+        width: 1340px;
+    }
+
+
+}
+@media (max-width: 1199px){
+    .master-plan-cnt {
+        margin-top: 24px;
+        padding: 16px;
+    }
+
+    .master-plan-sel ul li {
+        padding: 6px 14px;
+    }
+    .master-plan-main {
+        margin-top: 24px;
+    }
+    .real-estate-head {
+        margin-top: 24px;
+    }
+    .project-benefits {
+        margin-top: 24px;
+        padding-bottom: 25px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .business-photo {
+        padding: 24px 24px;
+    }
+    .business-apart p {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .project-name {
+        padding: 10px 16px;
+    }
+    .master-plan-sel ul li {
+        font-size: 15px;
+    }
+    .programs-min {
+        margin-top: 24px;
+    }
+
+
+
+
+    .mortgage-calc-cnt {
+        max-width: 100%;
+    }
+    .bank-card-drop {
+        gap: 127px;
+    }
+    .mortgage-calc-min{
+        background: #EFEFEF;
+        padding: 32px 0;
+        border-radius: 24px;
+    }
+    .btn-see-more {
+        margin: 18px auto 0;
+    }
+    .mortgage-scr-height {
+        overflow-y: unset;
+    }
+    .mortgage-scr-max {
+        height: auto;
+    }
+    .mortgage-calc-scr {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .bank-card-box {
+        padding: 24px 16px;
+    }
+    .finish-options {
+        margin-top: 24px;
+    }
+
+    .reliable-desc strong {
+        font-size: 24px;
+    }
+    .reliable-box {
+        padding: 24px 16px;
+    }
+    .reliable-title h3 {
+        font-size: 20px;
+    }
+    .reliable-title {
+        margin-top: 10px;
+    }
+    .reliable-photo {
+        margin-top: 16px;
+    }
+    .reliable-wrap {
+        gap: 16px;
+    }
+    .construction-cnt {
+        margin-top: 24px;
+    }
+    .weather-href{
+        width: 100%;
+        order: 2;
+        margin-top: 8px;
+        justify-content: center;
+        display: flex;
+    }
+    .construct-flex {
+        margin-top: 24px;
+    }
+    .weather-href ul li {
+        padding: 8px 17px;
+        font-size: 18px;
+    }
+    .news-sec-cnt {
+        margin-right: -16px;
+        overflow: hidden;
+    }
+    .news-slider{
+        width: 1270px;
+    }
+    .news-box h3 {
+        font-size: 20px;
+    }
+    .news-box {
+        padding: 24px 16px;
+    }
+    .news-photo {
+        margin-top: 16px;
+    }
+    .master-plan-sel ul li {
+        padding: 6px 14px;
+    }
+    .open-filter-calc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
+    }
+    .close-filt-map{
+        display: block;
+        margin: 6px auto 20px;
+        background: #00000026;
+        width: 28px;
+        height: 3px;
+        border-radius: 10px;
+    }
+    .body-fon{
+        overflow: hidden;
+    }
+    .body-fon:before{
+        content: "";
+        position: fixed;
+        background: #00000066;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9991;
+    }
+    .calculator-program {
+        position: fixed;
+        width: 100%;
+        padding: 8px 16px 24px;
+        height: auto;
+        bottom: 0;
+        top: auto;
+        left: 50%;
+        border-radius: 24px 24px 0 0;
+        transform: translateY(130%) translateX(-50%);
+        transition: transform 0.3s ease;
+        z-index: 9992;
+        background: #FEFFFA;
+        gap: 18px;
+    }
+
+    .touchstart-open{
+        transform: translateY(0%) translateX(-50%);
+    }
+    .finish-options{
+        position: relative;
+        padding-bottom: 16px;
+    }
+    .finish-options .swiper-pagination{
+        bottom: 0;
+    }
+    .swiper-pagination{
+        display: block;
+    }
+    .swiper-pagination-bullet {
+        background: #D9D9D9;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #BEDC1C;
+    }
+    .gallery-slider {
+        width: 1370px;
+    }
+
+
+
+    .gallery-main {
+        margin-top: 24px;
+    }
+    .construct-flex {
+        flex-wrap: wrap;
+    }
+    .reliable-desc {
+        width: calc(50% - 8px);
+    }
+    .reliable-developer {
+        gap: 16px;
+    }
+
+    .mortgage-scr-height {
+        padding-right: 0;
+    }
+    .timer-wrapper {
+        max-width: 100%;
+    }
+    .master-plan-sel ul li {
+        height: 40px;
+        gap: 6px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1020px){
+    h1 {
+        font-size: 36px;
+    }
+    .mortgage-button-prev, .mortgage-button-next{
+        display: none;
+    }
+    .mortgage-rel {
+        padding: 0;
+    }
+    .section-margin {
+        margin-top: 40px;
+    }
+    .apartments-fon {
+        padding: 32px 16px 16px;
+    }
+    .apartments-cnt {
+        margin-top: 16px;
+        margin-right: -16px;
+        overflow: hidden;
+    }
+    .apartments-slider {
+        width: 1002px;
+    }
+    .project-benefits {
+        margin-top: 16px;
+        padding-bottom: 0;
+    }
+
+    .programs-min {
+        margin-top: 16px;
+        margin-right: -16px;
+        overflow: hidden;
+    }
+    .programs-slider{
+        width: 1020px;
+    }
+    .mortgage-calc-title{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .calculator-program .frame-select {
+        max-width: 100%;
+    }
+    .mortgage-calc {
+        margin-top: 16px;
+        gap: 14px;
+    }
+    .bank-card-info {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .bank-card-name {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .bank-card-name strong {
+        margin-right: auto;
+    }
+    .bank-card-count span {
+        font-size: 16px;
+    }
+    .bank-card-count p {
+        font-size: 16px;
+    }
+    .bank-card-prcnet {
+        gap: 18px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .mortgage-scr-max {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .bank-card-box {
+        width: calc(50% - 8px);
+    }
+    .bank-card-opened .bank-card-drop {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .bank-card-btn {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .reliable-developer {
+        flex-direction: column;
+    }
+    .reliable-box {
+        max-width: 100%;
+    }
+
+    .reliable-wrap {
+        max-width: 100%;
+    }
+    .reliable-desc p {
+        margin-top: 8px;
+    }
+    .weather-href {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        justify-content: flex-start;
+        padding-bottom: 2px;
+    }
+    .weather-href::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .weather-href::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+    }
+    .construction-cnt {
+        margin-top: 16px;
+        margin-right: -16px;
+        overflow: hidden;
+    }
+    .construction-slider{
+        width: 1000px;
+    }
+    .close {
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .modal-news-box {
+        max-width: 520px;
+        padding: 32px 10px 0 20px;
+    }
+    .news-sec-cnt {
+        margin-top: 16px;
+    }
+    .reliable-desc {
+        min-height: 150px;
+    }
+    .mortgage-calc-title>div {
+        width: 100%;
+        max-width: 500px;
+    }
+    .mortgage-rel {
+        margin-right: -16px;
+        overflow: hidden;
+    }
+
+    .mortgage-slider{
+        width: 900px;
+    }
+    .submit-request {
+        width: 100%;
+    }
+    .bank-card-box:nth-child(5){
+        display: none;
+    }
+    .bank-card-count {
+        gap: 9px;
+    }
+
+
+}
+
+@media (max-width: 767px){
+    .business-rel .business-pagination{
+        display: block;
+        bottom: 0;
+    }
+    .business-rel {
+        position: relative;
+        padding-bottom: 30px;
+    }
+    .business-btn{
+        display: none;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 130%;
+    }
+    .family-mortgage {
+        margin-top: 7px;
+    }
+    .mortgage-slider {
+        width: 780px;
+    }
+    .apartments-btn{
+        display: none;
+    }
+    .section-margin {
+        margin-top: 32px;
+    }
+    .apartments-main{
+        background: #000000;
+        border-radius: 24px;
+    }
+    .apartments-fon {
+        padding: 32px 0 16px;
+    }
+    .project-benefits {
+        overflow: hidden;
+        margin-right: -16px;
+    }
+    .project-slider{
+        width: 1010px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .mortgage-calc-title>div {
+        max-width: 100%;
+    }
+    .bank-card-box {
+        width: 100%;
+    }
+    .open-bank-card{
+        display: none;
+    }
+    .finish-options-text span{
+        font-size: 16px;
+        margin-top: 8px;
+    }
+    .options-button-prev {
+        left: 8px;
+        right: auto;
+    }
+    .options-button-next {
+        right: 8px;
+    }
+    .gallery-box:hover .gallery-box-name {
+        padding: 18px 24px;
+    }
+    .cookie-flex {
+        padding: 16px 16px;
+        flex-direction: column;
+    }
+    .cookie__btn {
+        padding: 10px 16px;
+        font-size: 16px;
+        width: 100%;
+    }
+}
+@media (max-width: 570px){
+    .business-apart p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .business-apart-flex {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+        height: 48px;
+        padding: 12px 32px;
+    }
+    .sign-viewing {
+        max-width: 100%;
+    }
+    .mortgage-slider {
+        width: 640px;
+    }
+    .family-mortgage-box {
+        padding: 24px 24px;
+        height: 159px;
+    }
+    .family-mortgage-box strong {
+        font-size: 32px;
+        line-height: 33px;
+    }
+    .family-mortgage-box span {
+        max-width: 176px;
+        width: 100%;
+    }
+    .discount-count {
+        font-size: 16px;
+    }
+    .apartments-price strong {
+        font-size: 24px;
+    }
+    .apartments-price del {
+        font-size: 16px;
+    }
+    .apartments-numb span {
+        font-size: 16px;
+    }
+    .building-info span {
+        font-size: 16px;
+    }
+    .white-box {
+        font-size: 16px;
+
+    }
+    .number-rooms ul li {
+        padding: 16px 21px;
+    }
+    .sort-calc span{
+        display: none;
+    }
+    .sort-calc{
+        max-width: 48px;
+        height: 48px;
+    }
+    .open-filter-calc, .open-estate-filter {
+        width: 100%;
+    }
+    .finish-options {
+        margin-top: 16px;
+    }
+    .gallery-main {
+        margin-top: 16px;
+    }
+    .gallery-box-name h3 {
+        font-size: 16px;
+    }
+    .reliable-photo {
+        height: 343px;
+    }
+    .reliable-photo img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .reliable-desc {
+        min-height: 163px;
+        padding: 24px 16px;
+    }
+    .construction-slider {
+        width: 604px;
+    }
+    .weather-href ul li {
+        padding: 8px 10px;
+    }
+    .construct-flex {
+        margin-top: 16px;
+    }
+
+    .construct-years{
+        max-width: 240px;
+        width: 100%;
+    }
+    .construct-years ul li {
+        width: 100%;
+        padding: 12px 24px;
+    }
+
+    .construction-photo {
+        height: 246px;
+    }
+    .construction-photo img{
+        object-fit: cover;
+    }
+    .options-gallery-pic img {
+        height: 380px;
+    }
+    .bank-card-box {
+        border-radius: 24px;
+    }
+    .bank-card-name img {
+        width: 32px;
+        height: 32px;
+    }
+    .mortgage-box {
+        padding: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .mortgage-box strong {
+        font-size: 24px;
+    }
+    .bank-card-btn {
+        width: calc(100% - 32px);
+        justify-content: space-between;
+        position: absolute;
+        bottom: 24px;
+        left: 16px;
+    }
+    .bank-card-box {
+        position: relative;
+        padding-bottom: 80px;
+    }
+
+
+
+}
