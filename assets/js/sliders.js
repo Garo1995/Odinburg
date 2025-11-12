@@ -3,6 +3,7 @@ let businessSwiper = new Swiper(".business-slider", {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
+    speed: 800,
     pagination: {
         el: ".business-pagination",
         clickable: true,
@@ -20,7 +21,6 @@ let businessSwiper = new Swiper(".business-slider", {
 let mortgageSwiper = new Swiper(".mortgage-slider", {
     slidesPerView: 3,
     spaceBetween: 16,
-    loop: true,
     breakpoints: {
         1599: {
             slidesPerView: 3,
@@ -189,6 +189,7 @@ let optionsGallerySwiper = new Swiper(".options-gallery-slide", {
 });
 
 
+
 let constructionSwiper = new Swiper(".construction-slider", {
     slidesPerView: 2,
     spaceBetween: 24,
@@ -219,7 +220,19 @@ let constructionSwiper = new Swiper(".construction-slider", {
 let gallerySwiper = new Swiper(".gallery-slider", {
     slidesPerView: 4,
     spaceBetween: 16,
-
+    breakpoints: {
+        1299: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            slidesPerGroup: 1,
+        },
+        320: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            slidesPerGroup: 1,
+            loop: true,
+        },
+    },
 });
 
 
@@ -227,6 +240,19 @@ let gallerySwiper = new Swiper(".gallery-slider", {
 let newsSwiper = new Swiper(".news-slider", {
     slidesPerView: 4,
     spaceBetween: 24,
+    breakpoints: {
+        1299: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            slidesPerGroup: 1,
+        },
+        320: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            slidesPerGroup: 1,
+            loop: true,
+        },
+    },
 });
 
 
@@ -273,3 +299,12 @@ let galleryModSwiper = new Swiper(".gallery-modal-slider", {
         type: "fraction",
     },
 });
+
+
+
+
+
+
+
+
+

@@ -55,8 +55,12 @@ header{
     border-radius: 31px;
     background: #BEDC1C;
     cursor: pointer;
+    transition: 0.3s;
 }
+.favorite-box:hover{
+    background: rgba(177, 206, 25, 1);
 
+}
 
 
 
@@ -136,6 +140,14 @@ header{
     background: #0000000F;
 
 }
+.select-dropdown ul li i{
+    transition: 0.3s;
+    opacity: 0.3;
+
+}
+.select-dropdown ul li:hover i{
+    opacity: 1;
+}
 
 
 
@@ -206,7 +218,9 @@ header{
     display: flex;
     align-items: center;
 }
-
+.menu-data-link ul li a:hover{
+    color: rgba(190, 220, 28, 1);
+}
 .btn-line{
     display: flex;
     align-items: center;
@@ -225,8 +239,15 @@ header{
     text-align: right;
     vertical-align: middle;
     gap: 10px;
+    transition: 0.3s;
 }
-
+.btn-line:hover{
+    border: 2px solid rgba(190, 220, 28, 1);
+    color: rgba(190, 220, 28, 1);
+}
+.btn-line:hover i{
+    background-color: rgba(190, 220, 28, 1);
+}
 .menu-modal-cnt .btn{
     display: none;
 }
@@ -380,7 +401,9 @@ header{
 
 
 }
-
+.more-info:hover{
+    background: rgba(177, 206, 25, 1);
+}
 .stock-crash-col{
     max-width: 470px;
     width: 100%;
@@ -574,7 +597,9 @@ header{
 }
 
 
-
+.select-property-mobile{
+    display: none;
+}
 
 @media (max-width: 1399px){
     .menu-data-menu ul li {
@@ -799,8 +824,44 @@ header{
         color: #000000;
         transition: 0.36s;
     }
+    .select-property-mobile{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 24px 16px;
+        z-index: 91;
+    }
+    .select-dropdown {
+        background: #FEFFFA;
+        border: 1px solid #EFEFEF;
+        box-shadow: 0px 4px 10px 0px #0000000D;
+        width: 400px;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: auto;
+        left: 50%;
+        display: block;
+        border-radius: 24px 24px 0 0;
+        padding: 4px 0 24px;
+        z-index: 111;
+        transform: translateY(130%) translateX(-50%);
+        transition: transform 0.3s ease;
+    }
 
-
+    .touchstart-open{
+        transform: translateY(0%) translateX(-50%);
+    }
+    .select-property-open .select-dropdown {
+        transform: translateY(0%) translateX(-50%);
+    }
+    .select-property {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 @media (max-width: 767px){
     .header-main {

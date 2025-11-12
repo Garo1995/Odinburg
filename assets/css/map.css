@@ -155,6 +155,8 @@
 .map-icon img {
     width: 100%;
     height: 100%;
+    transition: 0.3s;
+    opacity: 0.3;
 }
 
 .map-cnt-info {
@@ -178,6 +180,10 @@
     border: 1px solid #0000001A;
     background: #BEDC1C;
 
+}
+
+.infrast-map-cnt .map-act .map-icon img {
+    opacity: 1;
 }
 
 #map {

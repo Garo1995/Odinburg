@@ -130,6 +130,10 @@ p{
     color: #FFFFFF;
 }
 
+.mortgage-slider .swiper-slide{
+    height: auto;
+}
+
 .arrow-viewing{
     max-width: 44px;
     width: 100%;
@@ -456,31 +460,44 @@ p{
 
 
 
-.apartments-btn .swiper-button-prev{
-    background: unset;
+.apartments-btn .swiper-button-prev, .apartments-btn .swiper-button-next{
+    background: #FEFFFA;
+
 }
-.apartments-btn .swiper-button-next{
-    background: unset;
+.apartments-btn .swiper-button-prev:hover, .apartments-btn .swiper-button-next:hover{
+    background: #BEDC1C;
+
+
 }
+
 
 .apartments-btn .swiper-button-prev i{
     filter: brightness(1) invert(1);
+    transition: 0.3s;
+
 }
 .apartments-btn .swiper-button-next i{
     filter: brightness(1) invert(1);
+    transition: 0.3s;
 }
 
 
-.apartments-fon .swiper-button-prev{
+.apartments-fon .swiper-button-prev, .apartments-fon .swiper-button-next{
     background: #FFFFFF;
 }
-.apartments-fon .swiper-button-next{
-    background: #FFFFFF;
+
+.apartments-fon .swiper-button-prev:hover, .apartments-fon .swiper-button-next:hover{
+    background: rgba(190, 220, 28, 1);
 }
 
 
+.apartments-btn .swiper-button-prev:hover i{
+    filter: unset;
+}
+.apartments-btn .swiper-button-next:hover i{
+    filter: unset;
 
-
+}
 
 
 
@@ -498,10 +515,14 @@ p{
     width: 100%;
     border-radius: 24px;
     position: relative;
+    height: 445px;
+    transition: 0.3s;
 }
 .project-picture img{
     width: 100%;
     border-radius: 24px;
+    height: 100%;
+    object-fit: cover;
 }
 .project-picture:before{
     content: "";
@@ -537,11 +558,11 @@ p{
     line-height: 32px;
 }
 
-.project-picture  .href-arrow{
-    display: none;
+.project-picture .href-arrow{
+    opacity: 0;
 }
 .project-picture:hover  .href-arrow{
-    display: flex;
+    opacity: 1;
 }
 
 
@@ -570,9 +591,18 @@ p{
 
 
 
+.construct-2024{
+    display: none;
+}
 
 
+.construct-2025{
+    display: none;
+}
 
+.construct-opened{
+    display: block;
+}
 
 
 
@@ -633,6 +663,7 @@ p{
 .programs-slider .mortgage-box{
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .programs-slider .mortgage-box h3 {
     margin-top: 16px;
@@ -669,8 +700,15 @@ p{
     font-size: 18px;
     line-height: 110%;
     text-align: center;
+    transition: 0.3s;
 }
-
+.sort-calc:hover{
+    border: 2px solid rgba(190, 220, 28, 1);
+    color: rgba(190, 220, 28, 1);
+}
+.sort-calc:hover i{
+    background-color: rgba(190, 220, 28, 1);
+}
 .open-filter-calc, .open-estate-filter{
     display: none;
 
@@ -712,9 +750,13 @@ p{
 .calculator-program{
     max-width: 437px;
     width: 100%;
+
+}
+.calculator-program-heig{
     display: flex;
     flex-direction: column;
     gap: 32px;
+    width: 100%;
 }
 .calculator-program small{
     font-weight: 400;
@@ -938,7 +980,10 @@ input[type=range]::-moz-range-thumb {
     text-align: center;
 
 }
+.btn:hover{
+    background: rgba(177, 206, 25, 1);
 
+}
 
 .mortgage-calc-cnt{
     width: 100%;
@@ -977,12 +1022,27 @@ input[type=range]::-moz-range-thumb {
 
 .bank-card-box{
     width: 100%;
+    position: relative;
+    max-width: 863px;
+}
+.bank-act-drop:after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 16px);
+    background: rgba(254, 255, 250, 0.7);
+    border-radius: 12px;
+    left: 8px;
+    height: 100px;
+    bottom: -8px;
+}
+.bank-card-fon{
     box-shadow: 0px 4px 10px 0px #0000000D;
     background: #FEFFFA;
     border-radius: 12px;
     padding: 26px 16px;
+    position: relative;
+    z-index: 2;
 }
-
 .bank-card-info{
     width: 100%;
     gap: 55px;
@@ -1065,6 +1125,10 @@ input[type=range]::-moz-range-thumb {
     text-align: center;
     color: #00000066;
 }
+.submit-request:hover{
+    background: rgba(190, 220, 28, 0.2);
+    color: rgba(177, 206, 25, 1);
+}
 .open-bank-card{
     width: 24px;
     height: 24px;
@@ -1086,23 +1150,30 @@ input[type=range]::-moz-range-thumb {
 }
 
 
-
 .bank-card-drop{
-    display: none;
-    gap: 55px;
-    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    position: relative;
+    top: 15px;
 }
-.bank-card-opened .bank-card-drop{
+
+.bank-card-skrit{
+    gap: 55px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-
-
-
-
-
+.bank-card-box.bank-card-opened .bank-card-drop{
+    max-height: 500px;
+}
+.open-bank-card i{
+    transition: 0.3s;
+}
+.bank-card-opened .open-bank-card i{
+    transform: rotate(-180deg);
+}
 
 
 
@@ -1245,6 +1316,7 @@ input[type=range]::-moz-range-thumb {
     width: 100%;
     display: flex;
     transition: 0.3s;
+    cursor: pointer;
 }
 .gallery-box img{
     width: 100%;
@@ -1392,7 +1464,9 @@ input[type=range]::-moz-range-thumb {
 
 
 
-
+.open-bank-mobile{
+    display: none;
+}
 
 .construction-cnt{
     margin-top: 32px;
@@ -1481,7 +1555,6 @@ input[type=range]::-moz-range-thumb {
 
 
 
-
 .news-sec-cnt{
     margin-top: 32px;
 }
@@ -1509,11 +1582,7 @@ input[type=range]::-moz-range-thumb {
 }
 .news-box h3{
     color: #000000;
-    font-weight: 700;
-    font-size: 24px;
     transition: 0.3s;
-
-    line-height: 100%;
 }
 .news-box span{
     font-weight: 400;
@@ -1643,6 +1712,137 @@ input[type=range]::-moz-range-thumb {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.floating-widget {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.widget-buttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.widget-btn {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #c6dc00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.widget-btn:hover {
+    background-color: #b6cc00;
+}
+
+.widget-btn i {
+    font-size: 20px;
+    color: #000;
+}
+
+.tooltip {
+    position: absolute;
+    right: 70px;
+    background: rgba(10, 13, 18, 1);
+
+    color: rgba(255, 255, 255, 1);
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    top: 50%;
+    transition: opacity 0.3s ease;
+}
+.tooltip:after{
+    content: url("../img/icons/tooltip.png");
+    position: absolute;
+    right: -6px;
+    top: 8px;
+}
+.widget-btn:hover .tooltip {
+    opacity: 1;
+}
+.toggle-widget {
+    margin-top: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(190, 220, 28, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+.toggle-widget:hover {
+    background-color: #b6cc00;
+}
+.toggle-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url('../img/icons/taxi.svg') center/contain no-repeat;
+    transition: transform 0.3s ease;
+}
+.floating-widget.open .toggle-icon {
+    background: url('../img/icons/close.svg') center/contain no-repeat;
+}
+
+.floating-widget:not(.open) .widget-buttons {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+}
+
+
+
+
+.subsidized-mobile{
+    display: none;
+}
+
+
+
+
+
+
 @media (max-width: 1399px){
     .family-mortgage-box strong {
         font-size: 46px;
@@ -1706,8 +1906,25 @@ input[type=range]::-moz-range-thumb {
 
 }
 @media (max-width: 1299px){
+    .calculator-program {
+        max-width: 340px;
+
+    }
+    .calculator-program-heig{
+        gap: 28px;
+    }
+    .master-plan-sel ul li {
+        padding: 8px 18px;
+        font-size: 16px;
+    }
     .family-mortgage-box {
-        padding: 24px 28px;
+        padding: 33px 28px;
+    }
+    .project-benefits {
+        padding-bottom: 20px;
+    }
+    .calculator-program .frame-select{
+        max-width: 100%;
     }
     p {
         font-size: 16px;
@@ -1719,7 +1936,7 @@ input[type=range]::-moz-range-thumb {
         margin-top: 24px;
     }
     .news-box {
-        padding: 16px;
+        padding: 24px 16px;
     }
     .reliable-box {
         padding: 24px;
@@ -1792,24 +2009,28 @@ input[type=range]::-moz-range-thumb {
     .programs-min {
         margin-top: 24px;
     }
-
-
-
-
+    .bank-act-drop:after {
+        height: 60px;
+    }
+    .bank-card-box {
+        max-width: 100%;
+    }
     .mortgage-calc-cnt {
         max-width: 100%;
     }
-    .bank-card-drop {
+
+    .bank-card-skrit{
         gap: 127px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
     .mortgage-calc-min{
         background: #EFEFEF;
         padding: 32px 0;
         border-radius: 24px;
     }
-    .btn-see-more {
-        margin: 18px auto 0;
-    }
+
     .mortgage-scr-height {
         overflow-y: unset;
     }
@@ -1820,7 +2041,7 @@ input[type=range]::-moz-range-thumb {
         padding: 0;
         margin-bottom: 20px;
     }
-    .bank-card-box {
+    .bank-card-fon {
         padding: 24px 16px;
     }
     .finish-options {
@@ -1911,7 +2132,7 @@ input[type=range]::-moz-range-thumb {
     .calculator-program {
         position: fixed;
         width: 100%;
-        padding: 8px 16px 24px;
+        padding: 8px 16px 34px;
         height: auto;
         bottom: 0;
         top: auto;
@@ -1922,10 +2143,25 @@ input[type=range]::-moz-range-thumb {
         z-index: 9992;
         background: #FEFFFA;
         gap: 18px;
+        max-width: 550px;
+        overflow-y: auto;
     }
-
+    .calculator-program::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .calculator-program::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+    }
+    .calculator-program-heig{
+        height: 430px;
+    }
     .touchstart-open{
         transform: translateY(0%) translateX(-50%);
+    }
+    .bank-card-fon {
+        height: 100%;
     }
     .finish-options{
         position: relative;
@@ -2051,13 +2287,6 @@ input[type=range]::-moz-range-thumb {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    .bank-card-box {
-        width: calc(50% - 8px);
-    }
-    .bank-card-opened .bank-card-drop {
-        flex-direction: column;
-        gap: 24px;
-    }
 
     .bank-card-btn {
         width: 100%;
@@ -2135,6 +2364,74 @@ input[type=range]::-moz-range-thumb {
     .bank-card-count {
         gap: 9px;
     }
+    .bank-card-skrit{
+        gap: 24px;
+        flex-direction: column;
+    }
+    .floating-widget{
+        display: none;
+    }
+    .bank-card-btn .open-bank-card{
+        display: none;
+    }
+    .bank-act-drop:after{
+        display: none;
+    }
+
+    .open-bank-mobile {
+        display: flex;
+        justify-content: center;
+        background: #BEDC1C33;
+        width: 100%;
+        height: 39px;
+        border-bottom-right-radius: 24px;
+        border-bottom-left-radius: 24px;
+        align-items: flex-end;
+        margin-top: -10px;
+    }
+    .bank-card-fon {
+        border-radius: 24px;
+    }
+    .open-bank-card {
+        width: 100%;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+    }
+    .open-bank-card span{
+        color: #B1CE19;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+    }
+    .more-offers-hide{
+        display: none;
+    }
+    .bank-card-opened .three-more-offers{
+        display: none;
+    }
+    .bank-card-opened .more-offers-hide{
+        display: block;
+    }
+    .bank-card-fon {
+        height: auto;
+    }
+    .subsidized{
+        display: none;
+    }
+    .subsidized-mobile{
+        border-top: 1px solid #00000026;
+        padding-top: 8px;
+        display: block;
+        width: 100%;
+    }
+    .subsidized-mobile p{
+        font-size: 14px;
+        line-height: 100%;
+        color: #6F6F6F;
+    }
+
 
 
 }
@@ -2188,11 +2485,9 @@ input[type=range]::-moz-range-thumb {
         max-width: 100%;
     }
     .bank-card-box {
-        width: 100%;
+        max-width: 100%;
     }
-    .open-bank-card{
-        display: none;
-    }
+
     .finish-options-text span{
         font-size: 16px;
         margin-top: 8px;
@@ -2215,6 +2510,9 @@ input[type=range]::-moz-range-thumb {
         padding: 10px 16px;
         font-size: 16px;
         width: 100%;
+    }
+    .business-sh {
+        padding: 40px 30px;
     }
 }
 @media (max-width: 570px){
@@ -2329,7 +2627,7 @@ input[type=range]::-moz-range-thumb {
     .options-gallery-pic img {
         height: 380px;
     }
-    .bank-card-box {
+    .bank-card-fon {
         border-radius: 24px;
     }
     .bank-card-name img {
@@ -2345,18 +2643,13 @@ input[type=range]::-moz-range-thumb {
     .mortgage-box strong {
         font-size: 24px;
     }
-    .bank-card-btn {
-        width: calc(100% - 32px);
-        justify-content: space-between;
-        position: absolute;
-        bottom: 24px;
-        left: 16px;
-    }
-    .bank-card-box {
-        position: relative;
-        padding-bottom: 80px;
-    }
 
 
+    .business-sh {
+        padding: 30px 20px;
+    }
+    .sort-calc {
+        padding: 10px 11px;
+    }
 
 }

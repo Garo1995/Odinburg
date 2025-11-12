@@ -2,11 +2,13 @@ $(document).ready(function () {
     $('select').styler();
 })
 
-
-
 $('.open-menu').on('click', function (e) {
     $(this).toggleClass('close-menu')
     $('.menu-modal').toggleClass('menu-modal-opened')
+})
+$('.menu-data-link ul li a').on('click', function (e) {
+    $('.open-menu').removeClass('close-menu')
+    $('.menu-modal').removeClass('menu-modal-opened')
 })
 
 window.addEventListener('scroll', function() {
@@ -17,6 +19,7 @@ window.addEventListener('scroll', function() {
         headerNav.classList.remove('show');
     }
 });
+
 
 
 
@@ -41,19 +44,55 @@ $(window).on('click', function (e) {
 
 
 
-
-
-
 $('.open-bank-card').on('click', function (e) {
-    $('.bank-card-box').toggleClass('bank-card-opened')
-})
+    e.preventDefault();
+
+    const parent = $(this).closest('.bank-card-box'); // родитель
+    const drop = parent.find('.bank-card-drop'); // скрытый блок
+
+    // переключаем класс родителя
+    parent.toggleClass('bank-card-opened');
+
+    // плавное открытие / закрытие через max-height
+    if (parent.hasClass('bank-card-opened')) {
+        drop.stop().slideDown(300);
+    } else {
+        drop.stop().slideUp(300);
+    }
+});
 
 
 
 
 
+$('.layout').on('click', function () {
+    $('.floor-plan').removeClass('layout-floor-act');
+    $(this).addClass('layout-floor-act');
+    $('.layout-pic').addClass('floor-pic-active');
+    $('.floor-plan-pic').removeClass('floor-pic-active');
+});
+
+$('.floor-plan').on('click', function () {
+    $(this).addClass('layout-floor-act');
+    $('.layout').removeClass('layout-floor-act');
+    $('.layout-pic').removeClass('floor-pic-active');
+    $('.floor-plan-pic').addClass('floor-pic-active');
+});
 
 
+$('.open-2025').on('click', function () {
+    $(this).addClass('active-year');
+    $('.open-2024').removeClass('active-year');
+    $('.construct-2024').removeClass('construct-opened');
+    $('.construct-2025').addClass('construct-opened');
+});
+
+$('.open-2024').on('click', function () {
+    $(this).addClass('active-year');
+    $('.open-2025').removeClass('active-year');
+    $('.construct-2024').addClass('construct-opened');
+    $('.construct-2025').removeClass('construct-opened');
+});
 
 
 
@@ -71,47 +110,6 @@ $('.filter-finishing-box ul li').on('click', function () {
 })
 
 
-
-
-$('.open_modal').on('click', function () {
-    let attr = $(this).attr('data-val');
-    let modal = $('#' + attr);
-    modal.removeClass('out');
-    modal.fadeIn();
-    $('body').addClass('body_fix');
-});
-
-$('.close').on('click', function () {
-
-    $('body').removeClass('body_fix');
-    let prt = $(this).parents('.modal');
-
-    prt.addClass('out')
-    setTimeout(function () {
-        prt.fadeOut();
-    }, 100);
-});
-
-$(window).on('click', function (event) {
-    $('.modal').each(function () {
-        let gtattr = $(this).attr('id');
-        let new_mod = $('#' + gtattr);
-        let md_cnt = $(new_mod).find('.modal-content');
-        if (event.target === $(md_cnt)[0]) {
-            setTimeout(function () {
-                $(new_mod).addClass('out');
-                $(new_mod).fadeOut()
-            }, 100)
-            $('body').removeClass('body_fix');
-        }
-        if (event.target === this) {
-            setTimeout(function () {
-                $(new_mod).addClass('out');
-                $(new_mod).fadeOut()
-            }, 100)
-        }
-    })
-});
 
 
 
@@ -196,21 +194,61 @@ for (let i = 0; i < sliders.length; i++) {
 
 
 
+function initPillStrips() {
+    document.querySelectorAll('.pill-strip').forEach(strip => {
+        const ul = strip.querySelector('ul');
+        const left = strip.querySelector('.pill-arrow.left');
+        const right = strip.querySelector('.pill-arrow.right');
+        const step = parseInt(strip.getAttribute('data-step') || 220, 10);
 
-document.querySelectorAll('.news-box').forEach(box => {
-    box.addEventListener('click', () => {
-        const title = box.querySelector('h3').textContent;
-        const date = box.querySelector('span').textContent;
-        const text = box.querySelector('p').textContent;
-        const imgSrc = box.querySelector('img').getAttribute('src');
+        const updateArrows = () => {
+            const maxScroll = ul.scrollWidth - ul.clientWidth - 1;
+            const hasOverflow = maxScroll > 0;
+            left.disabled  = !hasOverflow || ul.scrollLeft <= 0;
+            right.disabled = !hasOverflow || ul.scrollLeft >= maxScroll;
+        };
 
-        const modal = document.querySelector('.modal-news-info');
-        modal.querySelector('img').setAttribute('src', imgSrc);
-        modal.querySelector('h3').textContent = title;
-        modal.querySelector('span').textContent = date;
-        modal.querySelector('p').textContent = text;
+        left.addEventListener('click', () => ul.scrollBy({ left: -step, behavior: 'smooth' }));
+        right.addEventListener('click', () => ul.scrollBy({ left: step, behavior: 'smooth' }));
+
+        ul.addEventListener('scroll', updateArrows, { passive: true });
+        window.addEventListener('resize', updateArrows);
+        updateArrows();
+
+        // колесо мыши
+        ul.addEventListener('wheel', (e) => {
+            if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+                ul.scrollBy({ left: e.deltaY, behavior: 'auto' });
+                e.preventDefault();
+            }
+        }, { passive: false });
+
+        // функция для ручного обновления снаружи
+        strip.updatePills = updateArrows;
     });
+}
+
+// инициализируем сразу
+initPillStrips();
+
+// пересчитываем, когда открывается модалка
+document.querySelectorAll('.modal-overlay').forEach(modal => {
+    const observer = new MutationObserver(() => {
+        if (modal.classList.contains('active')) {
+            // пересчёт только для полосок внутри этого окна
+            modal.querySelectorAll('.pill-strip').forEach(strip => {
+                if (typeof strip.updatePills === 'function') strip.updatePills();
+            });
+        }
+    });
+    observer.observe(modal, { attributes: true, attributeFilter: ['class'] });
 });
+
+
+
+
+
+
 
 
 
@@ -240,10 +278,6 @@ $('.open-filter-calc').on('click', function () {
 
 
 
-
-
-
-
 $('.map-all-object').on('click', function () {
     $('.infrast-map-cnt').addClass('touchstart-open');
     $('body').addClass('body-fon');
@@ -268,6 +302,7 @@ $('.close-filt-map').on('click', function () {
     $('.infrast-map-cnt').removeClass('touchstart-open');
 
     $('.selection-parameters').removeClass('touchstart-open');
+    $('.modal-overlay').removeClass('active');
 
 })
 
@@ -285,14 +320,31 @@ $('.touchstart').on('touchmove', function (e) {
 $('.touchstart').on('touchend', function () {
     if (endY - startY > threshold) {
         $(this).removeClass('touchstart-open');
-        $('body').removeClass('body-fon');
+        $('body').removeClass('body-fon modal-open');
+        $('.modal-overlay').removeClass('active');
+        $('.select-property').removeClass('select-property-open');
     }
 });
 
 
 
+$('.close-catalog').on('click', function () {
+    $('.touchstart').removeClass('touchstart-open')
+    $('body').removeClass('body-fon ');
+
+})
 
 
 
 
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const widget = document.querySelector('.floating-widget');
+    const toggleBtn = document.getElementById('toggleWidget');
+
+    toggleBtn.addEventListener('click', function () {
+        widget.classList.toggle('open');
+    });
+});

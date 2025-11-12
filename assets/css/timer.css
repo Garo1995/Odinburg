@@ -23,9 +23,7 @@
 
 .timer-wrapper p {
     margin-bottom: 8px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+    margin-top: 7px;
     text-align: center;
     color: #FFFFFF;
 }

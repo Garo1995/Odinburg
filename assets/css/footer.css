@@ -206,11 +206,11 @@ footer{
     }
 }
 @media (max-width: 575px){
-    footer{
+    footer {
         background: #000000;
         border-radius: 24px;
         padding: 16px 0;
-
+        margin-bottom: 40px;
     }
     .footer-main {
         padding: 0;

@@ -8,7 +8,6 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=d130909a-f4b5-453d-85f2-98a45f38ba0c&lang=ru_RU"></script>
-
     <title>Odinburg</title>
 </head>
 <body>
@@ -267,7 +266,7 @@
                         </ul>
                     </div>
                     <button class="btn-line">
-                        <i class="icon-call"></i>
+                        <i class="icon icon-call"></i>
                         <span>Заказать звонок</span>
                     </button>
                     <button class="btn">Выбор недвижимости</button>
@@ -289,8 +288,25 @@
            </ul>
        </div>
     </div>
-</header>
 
+
+
+
+    <div class="select-property-mobile">
+        <div class="select-property">
+            <div class="select-name">Выбор недвижимости</div>
+            <div class="touchstart select-dropdown">
+                <span class="close-filt-map"></span>
+                <ul>
+                    <li>Квартиры <i class="icon-house"></i></li>
+                    <li>Машино-места <i class="icon-car"></i></li>
+                    <li>Кладовые <i class="icon-storerooms"></i></li>
+                    <li>Мото-места <i class="icon-moto"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 <section class="business-min">
     <div class="container">
         <div class="business-rel">
@@ -350,7 +366,6 @@
         </div>
     </div>
 </section>
-
 <section class="family-mortgage">
     <div class="container">
         <div class="mortgage-rel">
@@ -375,7 +390,7 @@
                             <div class="timer">
                                 <div class="time-box">
                                     <span id="days">00</span>
-                                 </div>
+                                </div>
                                 <div class="colon">:</div>
                                 <div class="time-box">
                                     <span id="hours">00</span>
@@ -391,7 +406,12 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="swiper-slide">
+                        <div class="family-mortgage-box mortgage-first">
+                            <strong>0,11%</strong>
+                            <span>Ипотека на первый год</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="mortgage-button-prev swiper-button-prev">
@@ -403,8 +423,6 @@
         </div>
     </div>
 </section>
-
-
 <section class="apartments-main section-margin">
     <div class="container">
         <div class="apartments-fon">
@@ -420,12 +438,12 @@
                 <div class="swiper apartments-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="apartments-card">
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
 
                                     <span class="favorite-key"><i class="icon-key"></i></span>
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -465,14 +483,14 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="apartments-card">
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
 
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -512,14 +530,14 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="apartments-card">
+                            <a  href="./parts-lot.html"  class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
 
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -559,14 +577,14 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="apartments-card">
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
 
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -606,14 +624,14 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="apartments-card">
+                            <a  href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
 
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -653,7 +671,7 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -662,8 +680,6 @@
         </div>
     </div>
 </section>
-
-
 <section class="section-margin">
     <div class="container">
         <div class="project-title G-align-center G-justify-between">
@@ -677,7 +693,7 @@
             <div class="swiper project-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="project-picture">
+                        <div data-modal="business-class" data-modal-target="#project-benefits" class="card project-picture">
                             <img src="./assets/img/benefits-1.jpg" alt="benefits">
                             <div class="project-buld-name">
                                 <h3>Дома уровня бизнес</h3>
@@ -688,7 +704,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="project-picture">
+                        <div data-modal="infrastructure" data-modal-target="#project-benefits" class="card project-picture">
                             <img src="./assets/img/benefits-2.jpg" alt="benefits">
                             <div class="project-buld-name">
                                 <h3>Инфраструктура</h3>
@@ -700,7 +716,7 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <div class="project-picture">
+                        <div data-modal="ecologically-area" data-modal-target="#project-benefits" class="card project-picture">
                             <img src="./assets/img/benefits-3.jpg" alt="benefits">
                             <div class="project-buld-name">
                                 <h3>Для детей</h3>
@@ -711,8 +727,30 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="project-picture">
+                        <div data-modal="for-children" data-modal-target="#project-benefits" class="card project-picture">
                             <img src="./assets/img/benefits-4.jpg" alt="benefits">
+                            <div class="project-buld-name">
+                                <h3>Кладовые и паркинг</h3>
+                                <span class="href-arrow">
+                                    <i class="arrow-top-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-modal="thoughtful" data-modal-target="#project-benefits" class="card project-picture">
+                            <img src="./assets/img/benefits-5.jpg" alt="benefits">
+                            <div class="project-buld-name">
+                                <h3>Кладовые и паркинг</h3>
+                                <span class="href-arrow">
+                                    <i class="arrow-top-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div data-modal="storage" data-modal-target="#project-benefits" class="card project-picture">
+                            <img src="./assets/img/benefits-6.jpg" alt="benefits">
                             <div class="project-buld-name">
                                 <h3>Кладовые и паркинг</h3>
                                 <span class="href-arrow">
@@ -725,63 +763,289 @@
             </div>
         </div>
     </div>
+
+
+
+
+    <div class="modal-overlay" id="project-benefits">
+        <div class="modal-window">
+            <div class="modal-close"></div>
+            <div class="touchstart modal-options">
+                <span class="close-filt-map"></span>
+
+                <div class="modal-options-href pill-strip" data-step="220">
+                    <ul>
+                        <li class="modal-options-click" data-modal="business-class">Дома уровня бизнес</li>
+                        <li class="modal-options-click" data-modal="infrastructure">Инфраструктура</li>
+                        <li class="modal-options-click" data-modal="ecologically-area">Экологически чистый район</li>
+                        <li class="modal-options-click" data-modal="for-children">Для детей</li>
+                        <li class="modal-options-click" data-modal="thoughtful">Продуманные планировки</li>
+                        <li class="modal-options-click" data-modal="storage">Кладовые и паркинг</li>
+                    </ul>
+                    <div class="pill-arrow-btn G-align-center">
+                        <button class="pill-arrow left" aria-label="Лево"><i class="icon-arrow-left"></i></button>
+                        <button class="pill-arrow right" aria-label="Право"><i class="icon-arrow-right"></i> </button>
+                    </div>
+                </div>
+                <div class="modal-options-min">
+                    <div class="modal-options-js" data-modal="business-class">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/benefits-1.jpg" alt="options">
+                            </div>
+                           <div class="project-benefits-info">
+                                <p>
+                                    Монолитные дома с вентилируемым фасадом и облицовкой из декоративного камня. Огороженный двор без машин для безопасного отдыха и прогулок с детьми разных возрастов
+                                </p>
+                               <div class="decorative-text">
+                                  <div class="decorative-name G-align-center">
+                                      <i class="icon-concierge-1"></i><span> Отделка</span>
+                                  </div>
+                                   <p>
+                                       Дизайнерская отделка мест общего пользования с мебелью и архитектурная подсветка фасадов
+                                   </p>
+                               </div>
+                               <div class="decorative-text">
+                                   <div class="decorative-name G-align-center">
+                                       <i class="icon-concierge-2"></i><span> Консьерж</span>
+                                   </div>
+                                   <p>
+                                       На первых этажах предусмотрено помещение консьержа 24/7 и колясочная
+                                   </p>
+                               </div>
+                               <div class="decorative-text">
+                                   <div class="decorative-name G-align-center">
+                                       <i class="icon-concierge-3"></i><span> Подземный паркинг</span>
+                                   </div>
+                                   <p>
+                                       Машиноместа в отапливаемом паркинге с доступом из лифта, в многоуровневом наземном паркинге и гостевые парковочные места
+                                   </p>
+                               </div>
+
+                           </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="infrastructure">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/benefits-2.jpg" alt="options">
+                            </div>
+                            <div class="project-benefits-info">
+                                <p>
+                                    Почувствуйте настоящий комфорт от собственной квартиры, где каждая деталь продумана до мелочей
+                                </p>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-4"></i><span> Безопасность</span>
+                                    </div>
+                                    <p>
+                                        Наличие системы видеонаблюдения обеспечивает спокойствие
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-5"></i><span> Соседи</span>
+                                    </div>
+                                    <p>
+                                        Комьюнити соседей со схожим образом жизни
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-6"></i><span> Доступность</span>
+                                    </div>
+                                    <p>
+                                        7 минут до МЦД Одинцово, 10 минут до МКАД, 17 минут до центра Москвы по трассе М-1
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-7"></i><span> Спортивные объекты</span>
+                                    </div>
+                                    <p>
+                                        Ледовый дворец, волейбольный центр, центр горнолыжного спорта и школы Олимпийского резерва РФ и целый спортивный парк им. Героя России Ларисы Лазутиной
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="ecologically-area">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/benefits-3.jpg" alt="options">
+                            </div>
+                            <div class="project-benefits-info">
+                                <p>
+                                    Район прошел экспертную оценку и по итогам конкурса получил медаль и сертификат. В соответствии со строгими стандартами включен в реестр экологически чистых территорий
+                                </p>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-8"></i><span> Природа рядом</span>
+                                    </div>
+                                    <p>
+                                        Комплекс граничит с Подушкинским и Дубковским лесами что позволяет наслаждаться свежим воздухом
+                                    </p>
+                                </div>
+
+                                <div class="golden-trophy">
+                                    <h3>одинцовский район – победитель конкурса Экологически чистый район</h3>
+                                    <img src="./assets/img/golden-trophy.png" alt="golden">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="for-children">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/benefits-4.jpg" alt="options">
+                            </div>
+                            <div class="project-benefits-info">
+
+                                <p>
+                                    На территории квартала уже работает современный детский сад с огороженной территорией, собственной кухней, бассейном, кабинетом психолога и логопеда. Также там есть настоящий экогород, где под присмотром воспитателей можно выращивать овощи и ягоды
+                                </p>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-9"></i><span> Муниципальная школа</span>
+                                    </div>
+                                    <p>
+                                        1 сентября 2025 года планируется открытие школы в нашем районе
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-10"></i><span> Современный детский сад</span>
+                                    </div>
+                                    <p>
+                                        С огороженной территорией, собственной кухней, бассейном, кабинетом психолога и логопеда
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-11"></i><span> Для маленьких жителе</span>
+                                    </div>
+                                    <p>
+                                        Мы предлагаем безопасные и уютные площадки с мягким покрытием, детские качели и горки
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="thoughtful">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/benefits-5.jpg" alt="options">
+                            </div>
+                            <div class="project-benefits-info">
+
+                                <p>
+                                    Возможность выбора между квартирами без отделки и с базовой отделкой (white box)
+                                </p>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-12"></i><span> Высокие потолки</span>
+                                    </div>
+                                    <p>
+                                        Высота потолков в квартирах составляет 2,8м (в чистоте)
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-13"></i><span> Хранение вещей</span>
+                                    </div>
+                                    <p>
+                                        Ниши для хранения вещей в прихожей и отдельные гардеробные
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-14"></i><span> Для большой семьи</span>
+                                    </div>
+                                    <p>
+                                        Несколько санузлов для больших семей
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-15"></i><span> Просторные кухни-гостиные</span>
+                                    </div>
+                                    <p>
+                                        В наших квартирах кухни-гостиные размером 27м2
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-16"></i><span> Балконы и лоджии</span>
+                                    </div>
+                                    <p>
+                                        Балкон или лоджия в каждой квартире с панорамным остеклением
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="storage">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/benefits-6.jpg" alt="options">
+                            </div>
+                            <div class="project-benefits-info">
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-17"></i><span> Паркинг</span>
+                                    </div>
+                                    <p>
+                                        У каждого корпуса предусмотрен свой наземный или подземный паркинг, который оснащён современными системами видеонаблюдения. Заезд осуществляться с придомовой территории жилых корпусов.
+                                    </p>
+                                </div>
+                                <div class="decorative-text">
+                                    <div class="decorative-name G-align-center">
+                                        <i class="icon-concierge-18"></i><span> Кладовые помещения</span>
+                                    </div>
+                                    <p>
+                                        Где хранить лыжи, велосипед, новогодние украшения или зимнюю резину для автомобиля? Освободите полезную площадь квартиры и храните вещи с комфортом в собственной кладовой.
+                                    </p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="section-margin real-estate">
     <div class="container">
         <h2>Подбор недвижимости</h2>
         <div class="real-estate-head G-align-center G-justify-between">
             <div class="real-estate-menu">
                 <ul>
-                    <li data-catalog="apartments" class="real-estate-click real-estate-active">Квартиры</li>
-                    <li data-catalog="parking-spaces" class="real-estate-click">Машино-места </li>
-                    <li data-catalog="motorcycle" class="real-estate-click">Мото-места <span></span></li>
-                    <li data-catalog="storerooms" class="real-estate-click">Кладовые</li>
+                    <li data-search="apartments" class="real-estate-click real-estate-active">Квартиры</li>
+                    <li data-search="parking-spaces" class="real-estate-click">Машино-места </li>
+                    <li data-search="motorcycle" class="real-estate-click">Мото-места <span></span></li>
+                    <li data-search="storerooms" class="real-estate-click">Кладовые</li>
                 </ul>
             </div>
+            <div class="real-estate-filter G-align-center">
+                <ul>
+                    <li data-type="card" class="select-params "><i class="icon-vandak"></i></li>
+                    <li data-type="list" class="select-params "><i class="icon-vandal-line"></i></li>
+                </ul>
+            </div>
+
         </div>
         <div class="open-estate-filter">
             <span>Фильтр</span>
             <i class="icon-filter"></i>
         </div>
-
-
-
-
-
-
-
        <div class="real-estate-min">
-           <div class="real-estate-js" data-catalog="apartments">
-               <div class="real-estate-filter G-align-center">
-                   <ul>
-                       <li data-catalog="apart-vertical" class="select-params params-active"><i class="icon-vandak"></i></li>
-                       <li data-catalog="apart-horizontal" class="select-params "><i class="icon-vandal-line"></i></li>
-                   </ul>
-               </div>
+           <div class="real-estate-js" data-search="apartments">
 
                <div class="touchstart selection-parameters">
                    <span class="close-filt-map"></span>
@@ -821,7 +1085,7 @@
                            </div>
                        </div>
                        <div class="filter-block">
-                           <small>Площадь</small>
+                           <small>Площадь, м2</small>
                            <div class="change-range-items">
                                <div class="change-range-inp">
                                    <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
@@ -903,18 +1167,18 @@
                    </div>
                </div>
                 <div class="estate-filter-min">
-                    <div class="apartments-boxes-first" data-catalog="apart-vertical">
+                    <div class="apartments-boxes" data-type="card">
                         <div class="family-filters-wrap G-flex-wrap">
                             <div class="family-filters-box">
                                 <h3>Семейная ипотека 3,5%</h3>
                                 <img src="./assets/img/young-family.png" alt="family">
                             </div>
-                            <div class="apartments-card">
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
 
                                     <span class="favorite-key"><i class="icon-key"></i></span>
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -954,13 +1218,13 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="apartments-card">
+                            </a>
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
 
                                     <span class="favorite-key"><i class="icon-key"></i></span>
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -1000,12 +1264,12 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="apartments-card card-lock">
+                            </a>
+                            <a href="./parts-lot.html" class="apartments-card card-lock">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
                                     <span class="lock-box"><i class="icon-lock"></i></span>
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -1045,11 +1309,11 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="apartments-card">
+                            </a>
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -1089,11 +1353,11 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="apartments-card">
+                            </a>
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -1133,11 +1397,11 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="apartments-card">
+                            </a>
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -1177,11 +1441,11 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="apartments-card">
+                            </a>
+                            <a href="./parts-lot.html" class="apartments-card">
                                 <div class="apartments-photo G-flex">
                                     <img src="./assets/img/apartment.svg" alt="apartment">
-                                    <a href="#" class="favorite-heart"><i class="heard-card"></i></a>
+                                    <div class="favorite-heart"><i class="heard-card"></i></div>
                                     <span class="discount-count">−20%</span>
                                     <div class="white-box ">
                                         <i class="icon-white-box"></i>
@@ -1221,14 +1485,13 @@
                                         <p>Комнат</p>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="G-center">
                             <button class="btn-see-more">Показать еще</button>
                         </div>
                     </div>
-
-                    <div class="apartments-boxes" data-catalog="apart-horizontal">
+                    <div class="apartments-boxes" data-type="list">
                         <div class="apart-filter-col">
                             <div class="apart-filter-box">
                                 <div class="apart-filter-pic">
@@ -1485,21 +1748,89 @@
                     </div>
                 </div>
            </div>
-           <div class="real-estate-js" data-catalog="parking-spaces">
-               <div class="real-estate-filter G-align-center">
-                   <ul>
-                       <li data-catalog="parking-vertical" class="select-params params-active"><i class="icon-vandak"></i></li>
-                       <li data-catalog="parking-horizontal" class="select-params "><i class="icon-vandal-line"></i></li>
-                   </ul>
-               </div>
+           <div class="real-estate-js" data-search="parking-spaces">
 
                <div class="touchstart selection-parameters">
                    <div class="G-align-center G-justify-between">
                        <h4>Параметры подбора </h4>
-                       <button class="btn-see-more">Посмотреть на плане</button>
+                       <a href="#" class="btn-see-more">Посмотреть на плане</a>
                    </div>
                    <div class="select-parameter">
 
+                       <div class="frame-select search-spaces-wid">
+                           <small>Корпус</small>
+                           <label>
+                               <select name="frame-car" id="frame-car">
+                                   <option value="">Все</option>
+                                   <option value="">Корпус ЛУЧ-4</option>
+                                   <option value="">Корпус 4А</option>
+                                   <option value="">Корпус 4Б</option>
+                               </select>
+                           </label>
+                       </div>
+                       <div class="filter-search search-spaces-wid">
+                           <small>Поиск по лоту</small>
+                           <label>
+                               <input type="text" placeholder="Номер лота">
+                               <button class="btn-search"><i class="icon-search"></i></button>
+                           </label>
+                       </div>
+
+                       <div class="filter-block">
+                           <small>Стоимость, млн ₽</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="4-lower-value" type="number"
+                                          min="0" value="10"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="4-upper-value" type="number"
+                                          min="0" value="1000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="1000" data-min="10" data-id="4"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="filter-block">
+                           <small>Площадь, м2</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="5-lower-value" type="number"
+                                          min="0" value="100"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="5-upper-value" type="number"
+                                          min="0" value="100000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="100000" data-min="100" data-id="5"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="filter-block">
+                           <small>Этаж</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="6-lower-value" type="number"
+                                          min="0" value="100"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="6-upper-value" type="number"
+                                          min="0" value="1000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="1000" data-min="100" data-id="6"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
 
 
                    </div>
@@ -1519,7 +1850,7 @@
                    </div>
                </div>
                <div class="estate-filter-min">
-                   <div class="apartments-boxes-first" data-catalog="parking-vertical">
+                   <div class="apartments-boxes" data-type="card">
                         <div class="parking-spaces-wrap">
                             <div class="parking-spaces-box">
                                 <div class="parking-spaces-price">
@@ -1897,7 +2228,7 @@
 
                    </div>
 
-                   <div class="apartments-boxes" data-catalog="parking-horizontal">
+                   <div class="apartments-boxes" data-type="list">
                        <div class="apart-filter-col">
                            <div class="apart-filter-box">
                                 <div class="parking-spaces-name">
@@ -2123,21 +2454,87 @@
                    </div>
                </div>
            </div>
-           <div class="real-estate-js" data-catalog="motorcycle">
-               <div class="real-estate-filter G-align-center">
-                   <ul>
-                       <li data-catalog="places-vertical" class="select-params params-active"><i class="icon-vandak"></i></li>
-                       <li data-catalog="places-horizontal" class="select-params "><i class="icon-vandal-line"></i></li>
-                   </ul>
-               </div>
+           <div class="real-estate-js" data-search="motorcycle">
 
                <div class="touchstart selection-parameters">
                    <div class="G-align-center G-justify-between">
                        <h4>Параметры подбора </h4>
-                       <button class="btn-see-more">Посмотреть на плане</button>
                    </div>
                    <div class="select-parameter">
+                       <div class="frame-select search-spaces-wid">
+                           <small>Корпус</small>
+                           <label>
+                               <select name="frame-car" id="frame-moto">
+                                   <option value="">Все</option>
+                                   <option value="">Корпус ЛУЧ-4</option>
+                                   <option value="">Корпус 4А</option>
+                                   <option value="">Корпус 4Б</option>
+                               </select>
+                           </label>
+                       </div>
+                       <div class="filter-search search-spaces-wid">
+                           <small>Поиск по лоту</small>
+                           <label>
+                               <input type="text" placeholder="Номер лота">
+                               <button class="btn-search"><i class="icon-search"></i></button>
+                           </label>
+                       </div>
 
+                       <div class="filter-block">
+                           <small>Стоимость, млн ₽</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="7-lower-value" type="number"
+                                          min="0" value="10"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="7-upper-value" type="number"
+                                          min="0" value="1000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="1000" data-min="10" data-id="7"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="filter-block">
+                           <small>Площадь, м2</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="8-lower-value" type="number"
+                                          min="0" value="100"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="8-upper-value" type="number"
+                                          min="0" value="100000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="100000" data-min="100" data-id="8"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="filter-block">
+                           <small>Этаж</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="9-lower-value" type="number"
+                                          min="0" value="100"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="9-upper-value" type="number"
+                                          min="0" value="1000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="1000" data-min="100" data-id="9"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
 
 
                    </div>
@@ -2157,7 +2554,7 @@
                    </div>
                </div>
                <div class="estate-filter-min">
-                   <div class="apartments-boxes-first" data-catalog="places-vertical">
+                   <div class="apartments-boxes" data-type="card">
                        <div class="parking-spaces-wrap">
                            <div class="parking-spaces-box">
                                <div class="parking-spaces-price">
@@ -2445,7 +2842,7 @@
 
                    </div>
 
-                   <div class="apartments-boxes" data-catalog="places-horizontal">
+                   <div class="apartments-boxes" data-type="list">
                        <div class="apart-filter-col">
                            <div class="apart-filter-box">
                                <div class="parking-spaces-name">
@@ -2672,13 +3069,7 @@
                    </div>
                </div>
            </div>
-           <div class="real-estate-js" data-catalog="storerooms">
-               <div class="real-estate-filter G-align-center">
-                   <ul>
-                       <li data-catalog="storerooms-vertical" class="select-params params-active"><i class="icon-vandak"></i></li>
-                       <li data-catalog="storerooms-horizontal" class="select-params "><i class="icon-vandal-line"></i></li>
-                   </ul>
-               </div>
+           <div class="real-estate-js" data-search="storerooms">
 
                <div class="touchstart selection-parameters">
                    <div class="G-align-center G-justify-between">
@@ -2686,7 +3077,80 @@
                        <button class="btn-see-more">Посмотреть на плане</button>
                    </div>
                    <div class="select-parameter">
+                       <div class="frame-select search-spaces-wid">
+                           <small>Корпус</small>
+                           <label>
+                               <select name="frame-car" id="frame-klad">
+                                   <option value="">Все</option>
+                                   <option value="">Корпус ЛУЧ-4</option>
+                                   <option value="">Корпус 4А</option>
+                                   <option value="">Корпус 4Б</option>
+                               </select>
+                           </label>
+                       </div>
+                       <div class="filter-search search-spaces-wid">
+                           <small>Поиск по лоту</small>
+                           <label>
+                               <input type="text" placeholder="Номер лота">
+                               <button class="btn-search"><i class="icon-search"></i></button>
+                           </label>
+                       </div>
 
+                       <div class="filter-block">
+                           <small>Стоимость, млн ₽</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="10-lower-value" type="number"
+                                          min="0" value="10"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="10-upper-value" type="number"
+                                          min="0" value="1000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="1000" data-min="10" data-id="10"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="filter-block">
+                           <small>Площадь, м2</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="11-lower-value" type="number"
+                                          min="0" value="100"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="11-upper-value" type="number"
+                                          min="0" value="100000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="100000" data-min="100" data-id="11"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+
+                       <div class="filter-block">
+                           <small>Этаж</small>
+                           <div class="change-range-items">
+                               <div class="change-range-inp">
+                                   <input name="price_min" class="range-number-one" placeholder="0" data-index="0"
+                                          id="12-lower-value" type="number"
+                                          min="0" value="100"/>
+                                   <input name="price_max" class="range-number-two" placeholder="0" data-index="0"
+                                          id="12-upper-value" type="number"
+                                          min="0" value="1000"/>
+                               </div>
+                               <div class="change-range-padd">
+                                   <div data-index="0" data-max="1000" data-min="100" data-id="12"
+                                        class="nonlinear">
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
 
 
                    </div>
@@ -2706,7 +3170,7 @@
                    </div>
                </div>
                <div class="estate-filter-min">
-                   <div class="apartments-boxes-first" data-catalog="storerooms-vertical">
+                   <div class="apartments-boxes" data-type="card">
                        <div class="parking-spaces-wrap">
                            <div class="parking-spaces-box">
                                <div class="parking-spaces-price">
@@ -2992,7 +3456,7 @@
 
                    </div>
 
-                   <div class="apartments-boxes" data-catalog="storerooms-horizontal">
+                   <div class="apartments-boxes" data-type="list">
                        <div class="apart-filter-col">
                            <div class="apart-filter-box">
                                <div class="parking-spaces-name">
@@ -3219,47 +3683,13 @@
                </div>
            </div>
        </div>
-
     </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <section class="section-margin master-plan">
     <div class="container">
          <h2>генплан</h2>
         <div class="master-plan-main G-flex">
-            <img src="./assets/img/master.svg" alt="">
+            <img src="./assets/img/master.svg" alt="master">
         </div>
         <div class="master-plan-cnt">
             <div class="master-plan-sel">
@@ -3298,8 +3728,6 @@
         </div>
     </div>
 </section>
-
-
 <section class="section-margin">
     <div class="container">
         <h2>виды ипотечных программ</h2>
@@ -3307,7 +3735,7 @@
             <div class="swiper programs-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="mortgage-box">
+                        <div data-modal-target="#modal-programs" data-modal="standard" class="card mortgage-box">
                             <img src="./assets/img/alfa.png" alt="alfa">
                             <h3>Стандартная</h3>
                             <p>
@@ -3317,7 +3745,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="mortgage-box">
+                        <div data-modal-target="#modal-programs"  data-modal="it-mortgage" class="card mortgage-box">
                             <img src="./assets/img/alfa.png" alt="alfa">
                             <h3>IT-ипотека</h3>
                             <p>
@@ -3327,7 +3755,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="mortgage-box">
+                        <div data-modal-target="#modal-programs" data-modal="family" class="card mortgage-box">
                             <img src="./assets/img/alfa.png" alt="alfa">
                             <h3>Военная</h3>
                             <p>
@@ -3337,7 +3765,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="mortgage-box">
+                        <div data-modal-target="#modal-programs" data-modal="military" class="card mortgage-box">
                             <img src="./assets/img/alfa.png" alt="alfa">
                             <h3>Семейная</h3>
                             <p>
@@ -3350,6 +3778,174 @@
             </div>
         </div>
     </div>
+
+
+    <div class="modal-overlay" id="modal-programs">
+        <div class="modal-window">
+            <div class="modal-close"></div>
+            <div class="touchstart modal-options">
+                <span class="close-filt-map"></span>
+
+                <div class="modal-options-href">
+                    <ul>
+                        <li class="modal-options-click" data-modal="standard">Стандартная</li>
+                        <li class="modal-options-click" data-modal="it-mortgage">IT-ипотека</li>
+                        <li class="modal-options-click" data-modal="family">Семейная</li>
+                        <li class="modal-options-click" data-modal="military">Военная</li>
+                    </ul>
+                </div>
+                <div class="modal-options-min">
+                    <div class="modal-options-js" data-modal="standard">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/options-1.jpg" alt="options">
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h4>Кто может оформить стандартную ипотеку:</h4>
+                                    <ul>
+                                        <li>Гражданство — любое;</li>
+                                        <li>Возраст заемщика – от 18 до 75 лет;</li>
+                                        <li>Стаж на последнем месте работы — от 1 месяца;</li>
+                                        <li>Рассмотрение ипотеки без подтверждения доходов — только для граждан РФ.</li>
+                                    </ul>
+
+                                    <div class="can-apply-flex G-justify-between">
+                                        <div class="can-apply-prcent">
+                                            <strong>от 13,99%</strong>
+                                            <p>Ставка</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>от 15%</strong>
+                                            <p>Первый взнос</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>до 200 млн ₽</strong>
+                                            <p>Сумма кредита</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="it-mortgage">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/options-1.jpg" alt="options">
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h4>Кто может оформить IT-ипотеку:</h4>
+                                    <ul>
+                                        <li>
+                                            Гражданство — Россия;
+                                        </li>
+                                        <li>
+                                            Возраст заёмщика — от 18 до 50 лет включительно;
+                                        </li>
+                                        <li>
+                                            Доход: от 150 000 руб./мес. до вычета НДФЛ, если место работы находится в Московской и Ленинградской областях, городе миллионнике (кроме Москвы и Санкт-Петербурга); от 90 000 руб./ мес. до вычета НДФЛ, если место работы находится в других городах (кроме Москвы и Санкт‑Петербурга);
+                                        </li>
+                                        <li>
+                                            Стаж — не менее 3-х месяцев в компании, которая работает в сфере информационных технологий, аккредитована Минцифрой России, получает налоговые льготы и зарегистрирована на территории России.
+                                        </li>
+
+                                    </ul>
+                                    <div class="can-apply-flex G-justify-between">
+                                        <div class="can-apply-prcent">
+                                            <strong>от 3,99%</strong>
+                                            <p>Ставка</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>от 20%</strong>
+                                            <p>Первый взнос</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>до 18 млн ₽</strong>
+                                            <p>Сумма кредита</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="family">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/options-1.jpg" alt="options">
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h4>Кто может оформить семейную ипотеку:</h4>
+                                    <ul>
+                                        <li>
+                                            Семьи с детьми, где есть хотя бы один ребенок в возрасте до семи лет;
+                                        </li>
+                                        <li>
+                                            Семьи, в которых воспитывается ребёнок с инвалидностью.
+
+                                        </li>
+
+                                    </ul>
+                                    <div class="can-apply-flex G-justify-between">
+                                        <div class="can-apply-prcent">
+                                            <strong>от 3,99%</strong>
+                                            <p>Ставка</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>от 20,1%</strong>
+                                            <p>Первый взнос</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>до 30 млн ₽</strong>
+                                            <p>Сумма кредита</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="military">
+                        <div class="modal-options-flex G-flex">
+                            <div class="types-mortgage-pik G-flex">
+                                <img src="./assets/img/options-1.jpg" alt="options">
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h4>Кто может оформить военную ипотеку:</h4>
+                                    <ul>
+                                        <li>Гражданство — РФ;</li>
+                                        <li>Возраст заёмщика — от 21 до 45 лет;</li>
+                                        <li>Военнослужащие со стажем службы от 3 лет.</li>
+                                    </ul>
+                                    <div class="can-apply-flex G-justify-between">
+                                        <div class="can-apply-prcent">
+                                            <strong>от 6%</strong>
+                                            <p>Ставка</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>от 20%</strong>
+                                            <p>Первый взнос</p>
+                                        </div>
+                                        <div class="can-apply-prcent">
+                                            <strong>до 4 470 000 ₽</strong>
+                                            <p>Сумма кредита</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 <section class="mortgage-calc-min section-margin">
     <div class="container">
@@ -3363,69 +3959,71 @@
                 </div>
                 <div class="sort-calc">
                     <span>Сортировать</span>
-                    <i class="icon-sort"></i>
+                    <i class="icon icon-sort"></i>
                 </div>
             </div>
         </div>
         <div class="mortgage-calc">
             <div class="touchstart calculator-program">
                 <span class="close-filt-map"></span>
-                <div class="frame-select">
-                    <small>Ипотечная программа</small>
-                    <label>
-                        <select name="frame-select" id="frame-select-two">
-                            <option value="">Все</option>
-                            <option value="">Корпус ЛУЧ-4</option>
-                            <option value="">Корпус 4А</option>
-                            <option value="">Корпус 4Б</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="filter-block" data-field="price">
-                    <small>Стоимость квартиры, ₽</small>
+                <div class="calculator-program-heig">
+                    <div class="frame-select">
+                        <small>Ипотечная программа</small>
+                        <label>
+                            <select name="frame-select" id="frame-select-two">
+                                <option value="">Все</option>
+                                <option value="">Корпус ЛУЧ-4</option>
+                                <option value="">Корпус 4А</option>
+                                <option value="">Корпус 4Б</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="filter-block" data-field="price">
+                        <small>Стоимость квартиры, ₽</small>
 
-                    <div class="range-row">
-                        <div class="range-value" id="price-display">1 200 000 ₽</div>
-                        <div class="range-wrap">
-                            <input type="range" id="price-range" min="1000000" max="100000000" step="10000" value="1200000" />
+                        <div class="range-row">
+                            <div class="range-value" id="price-display">1 200 000 ₽</div>
+                            <div class="range-wrap">
+                                <input type="range" id="price-range" min="1000000" max="100000000" step="10000" value="1200000" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="filter-block" data-field="term">
-                    <small>Срок ипотеки, лет</small>
-                    <div class="range-row">
-                        <div class="range-value" id="term-display">10 лет</div>
-                        <div class="range-wrap">
-                            <input type="range" id="term-range" min="1" max="30" step="1" value="10" />
+                    <div class="filter-block" data-field="term">
+                        <small>Срок ипотеки, лет</small>
+                        <div class="range-row">
+                            <div class="range-value" id="term-display">10 лет</div>
+                            <div class="range-wrap">
+                                <input type="range" id="term-range" min="1" max="30" step="1" value="10" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="filter-block" data-field="deposit">
-                    <small>Первоначальный взнос, ₽</small>
+                    <div class="filter-block" data-field="deposit">
+                        <small>Первоначальный взнос, ₽</small>
 
-                    <div class="range-row">
-                        <div class="range-value" id="deposit-display">1 200 000 ₽</div>
-                        <div class="range-wrap">
-                            <!-- Слайдер делаем в процентах (0-100). Отображаем и сумму и процент -->
-                            <input type="range" id="deposit-range" min="0" max="100" step="1" value="20" />
+                        <div class="range-row">
+                            <div class="range-value" id="deposit-display">1 200 000 ₽</div>
+                            <div class="range-wrap">
+                                <!-- Слайдер делаем в процентах (0-100). Отображаем и сумму и процент -->
+                                <input type="range" id="deposit-range" min="0" max="100" step="1" value="20" />
+                            </div>
+                            <div class="range-percent" id="deposit-percent">20%</div>
                         </div>
-                        <div class="range-percent" id="deposit-percent">20%</div>
                     </div>
-                </div>
-                <div class="calc-percent">
-                    <ul id="preset-percent">
-                        <li class="calc-percent-act" data-percent="20">20%</li>
-                        <li data-percent="30">30%</li>
-                        <li data-percent="40">40%</li>
-                        <li data-percent="50">50%</li>
-                    </ul>
-                </div>
-                <div class="calc-percent-btn">
-                    <button class="btn" id="apply-btn">Оставить заявку</button>
+                    <div class="calc-percent">
+                        <ul id="preset-percent">
+                            <li class="calc-percent-act" data-percent="20">20%</li>
+                            <li data-percent="30">30%</li>
+                            <li data-percent="40">40%</li>
+                            <li data-percent="50">50%</li>
+                        </ul>
+                    </div>
+                    <div class="calc-percent-btn">
+                        <button class="btn" id="apply-btn">Оставить заявку</button>
 
-                    <p>
-                        Расчетная сумма может иметь незначительную погрешность, вызванную особенностями расчетов в каждом конкретном банке или финансовой организации.
-                    </p>
+                        <p>
+                            Расчетная сумма может иметь незначительную погрешность, вызванную особенностями расчетов в каждом конкретном банке или финансовой организации.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -3434,197 +4032,205 @@
                 <div class="mortgage-calc-scr">
                    <div class="mortgage-scr-height">
                        <div class="mortgage-scr-max">
-                           <div class="bank-card-box">
-                               <div class="bank-card-info G-align-center">
-                                   <div class="bank-card-name G-align-center">
-                                       <img src="./assets/img/alfa-bank.png" alt="alfa">
-                                       <strong>Альфа-Банк</strong>
-                                       <span class="bank-card-sort">Стандартная</span>
-                                   </div>
-                                   <div class="bank-card-prcnet G-align-center">
-                                       <div class="bank-card-count">
-                                           <p>Ставка</p>
-                                           <span>Взнос</span>
+                           <div class="bank-card-box bank-act-drop">
+                               <div class="bank-card-fon">
+                                   <div class="bank-card-info G-align-center">
+                                       <div class="bank-card-name G-align-center">
+                                           <img src="./assets/img/alfa-bank.png" alt="alfa">
+                                           <strong>Альфа-Банк</strong>
+                                           <span class="bank-card-sort">Стандартная</span>
                                        </div>
-                                       <div class="bank-card-count">
-                                           <p>Срок</p>
-                                           <span>Платеж</span>
+                                       <div class="bank-card-prcnet G-align-center">
+                                           <div class="bank-card-count">
+                                               <p>Ставка</p>
+                                               <span>Взнос</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>Срок</p>
+                                               <span>Платеж</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>3,5% *</p>
+                                               <span>20%</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>15 лет</p>
+                                               <span>45 567₽</span>
+                                           </div>
                                        </div>
-                                       <div class="bank-card-count">
-                                           <p>3,5%</p>
-                                           <span>20%</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>15 лет</p>
-                                           <span>45 567₽</span>
-                                       </div>
-                                   </div>
-                                   <div class="bank-card-btn G-align-center">
-                                       <button class="submit-request">Оставить заявку</button>
-                                       <span class="open-bank-card"><i class="arrow-down"></i></span>
-                                   </div>
-                               </div>
-                               <div class="subsidized">
-                                   <p>*- субсидированная ставка</p>
-                               </div>
-                               <div class="bank-card-drop">
-                                   <div class="bank-card-prcnet G-align-center">
-                                       <div class="bank-card-count">
-                                           <p>Ставка</p>
-                                           <span>Взнос</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>Срок</p>
-                                           <span>Платеж</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>3,5%</p>
-                                           <span>20%</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>15 лет</p>
-                                           <span>45 567₽</span>
+                                       <div class="bank-card-btn G-align-center">
+                                           <button class="submit-request">Оставить заявку</button>
+                                           <span class="open-bank-card"><i class="arrow-down"></i></span>
                                        </div>
                                    </div>
-                                   <div class="bank-card-btn G-align-center">
-                                       <button class="submit-request">Оставить заявку</button>
-                                   </div>
-                               </div>
-
-                           </div>
-                           <div class="bank-card-box">
-                               <div class="bank-card-info G-align-center">
-                                   <div class="bank-card-name G-align-center">
-                                       <img src="./assets/img/alfa-bank.png" alt="alfa">
-                                       <strong>Альфа-Банк</strong>
-                                       <span class="bank-card-sort">Семейная</span>
-                                   </div>
-                                   <div class="bank-card-prcnet G-align-center">
-                                       <div class="bank-card-count">
-                                           <p>Ставка</p>
-                                           <span>Взнос</span>
+                                   <div class="bank-card-drop">
+                                       <div class="bank-card-skrit">
+                                           <div class="bank-card-prcnet G-align-center">
+                                               <div class="bank-card-count">
+                                                   <p>Ставка</p>
+                                                   <span>Взнос</span>
+                                               </div>
+                                               <div class="bank-card-count">
+                                                   <p>Срок</p>
+                                                   <span>Платеж</span>
+                                               </div>
+                                               <div class="bank-card-count">
+                                                   <p>3,5% *</p>
+                                                   <span>20%</span>
+                                               </div>
+                                               <div class="bank-card-count">
+                                                   <p>15 лет</p>
+                                                   <span>45 567₽</span>
+                                               </div>
+                                           </div>
+                                           <div class="bank-card-btn G-align-center">
+                                               <button class="submit-request">Оставить заявку</button>
+                                           </div>
                                        </div>
-                                       <div class="bank-card-count">
-                                           <p>Срок</p>
-                                           <span>Платеж</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>3,5%</p>
-                                           <span>20%</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>15 лет</p>
-                                           <span>45 567₽</span>
-                                       </div>
-                                   </div>
-                                   <div class="bank-card-btn G-align-center">
-                                       <button class="submit-request">Оставить заявку</button>
                                    </div>
                                </div>
-                               <div class="subsidized">
-                                   <p>*- субсидированная ставка</p>
+                               <div class="open-bank-mobile">
+                                   <div class="open-bank-card">
+                                       <span class="three-more-offers">еще 3 предложения</span>
+                                       <span class="more-offers-hide">Скрыть </span>
+                                   </div>
                                </div>
                            </div>
                            <div class="bank-card-box">
-                               <div class="bank-card-info G-align-center">
-                                   <div class="bank-card-name G-align-center">
-                                       <img src="./assets/img/alfa-bank.png" alt="alfa">
-                                       <strong>Альфа-Банк</strong>
-                                       <span class="bank-card-sort">Военная</span>
+                               <div class="bank-card-fon">
+                                   <div class="bank-card-info G-align-center">
+                                       <div class="bank-card-name G-align-center">
+                                           <img src="./assets/img/alfa-bank.png" alt="alfa">
+                                           <strong>Альфа-Банк</strong>
+                                           <span class="bank-card-sort">Семейная</span>
+                                       </div>
+                                       <div class="bank-card-prcnet G-align-center">
+                                           <div class="bank-card-count">
+                                               <p>Ставка</p>
+                                               <span>Взнос</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>Срок</p>
+                                               <span>Платеж</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>3,5% *</p>
+                                               <span>20%</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>15 лет</p>
+                                               <span>45 567₽</span>
+                                           </div>
+                                       </div>
+                                       <div class="subsidized-mobile">
+                                           <p>*- субсидированная ставка</p>
+                                       </div>
+                                       <div class="bank-card-btn G-align-center">
+                                           <button class="submit-request">Оставить заявку</button>
+                                       </div>
                                    </div>
-                                   <div class="bank-card-prcnet G-align-center">
-                                       <div class="bank-card-count">
-                                           <p>Ставка</p>
-                                           <span>Взнос</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>Срок</p>
-                                           <span>Платеж</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>3,5%</p>
-                                           <span>20%</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>15 лет</p>
-                                           <span>45 567₽</span>
-                                       </div>
+                                   <div class="subsidized">
+                                       <p>*- субсидированная ставка</p>
                                    </div>
-                                   <div class="bank-card-btn G-align-center">
-                                       <button class="submit-request">Оставить заявку</button>
-                                       <span class="open-bank-card"></span>
-                                   </div>
-                               </div>
-                               <div class="subsidized">
-                                   <p>*- субсидированная ставка</p>
                                </div>
                            </div>
                            <div class="bank-card-box">
-                               <div class="bank-card-info G-align-center">
-                                   <div class="bank-card-name G-align-center">
-                                       <img src="./assets/img/alfa-bank.png" alt="alfa">
-                                       <strong>Альфа-Банк</strong>
-                                       <span class="bank-card-sort">Военная</span>
+                               <div class="bank-card-fon">
+                                   <div class="bank-card-info G-align-center">
+                                       <div class="bank-card-name G-align-center">
+                                           <img src="./assets/img/alfa-bank.png" alt="alfa">
+                                           <strong>Альфа-Банк</strong>
+                                           <span class="bank-card-sort">Военная</span>
+                                       </div>
+                                       <div class="bank-card-prcnet G-align-center">
+                                           <div class="bank-card-count">
+                                               <p>Ставка</p>
+                                               <span>Взнос</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>Срок</p>
+                                               <span>Платеж</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>3,5% *</p>
+                                               <span>20%</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>15 лет</p>
+                                               <span>45 567₽</span>
+                                           </div>
+                                       </div>
+                                       <div class="bank-card-btn G-align-center">
+                                           <button class="submit-request">Оставить заявку</button>
+                                           <span class="open-bank-card"></span>
+                                       </div>
                                    </div>
-                                   <div class="bank-card-prcnet G-align-center">
-                                       <div class="bank-card-count">
-                                           <p>Ставка</p>
-                                           <span>Взнос</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>Срок</p>
-                                           <span>Платеж</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>3,5%</p>
-                                           <span>20%</span>
-                                       </div>
-                                       <div class="bank-card-count">
-                                           <p>15 лет</p>
-                                           <span>45 567₽</span>
-                                       </div>
-                                   </div>
-                                   <div class="bank-card-btn G-align-center">
-                                       <button class="submit-request">Оставить заявку</button>
-                                       <span class="open-bank-card"></span>
-                                   </div>
-                               </div>
-                               <div class="subsidized">
-                                   <p>*- субсидированная ставка</p>
                                </div>
                            </div>
                            <div class="bank-card-box">
-                               <div class="bank-card-info G-align-center">
-                                   <div class="bank-card-name G-align-center">
-                                       <img src="./assets/img/alfa-bank.png" alt="alfa">
-                                       <strong>Альфа-Банк</strong>
-                                       <span class="bank-card-sort">Военная</span>
-                                   </div>
-                                   <div class="bank-card-prcnet G-align-center">
-                                       <div class="bank-card-count">
-                                           <p>Ставка</p>
-                                           <span>Взнос</span>
+                               <div class="bank-card-fon">
+                                   <div class="bank-card-info G-align-center">
+                                       <div class="bank-card-name G-align-center">
+                                           <img src="./assets/img/alfa-bank.png" alt="alfa">
+                                           <strong>Альфа-Банк</strong>
+                                           <span class="bank-card-sort">Военная</span>
                                        </div>
-                                       <div class="bank-card-count">
-                                           <p>Срок</p>
-                                           <span>Платеж</span>
+                                       <div class="bank-card-prcnet G-align-center">
+                                           <div class="bank-card-count">
+                                               <p>Ставка</p>
+                                               <span>Взнос</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>Срок</p>
+                                               <span>Платеж</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>3,5% *</p>
+                                               <span>20%</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>15 лет</p>
+                                               <span>45 567₽</span>
+                                           </div>
                                        </div>
-                                       <div class="bank-card-count">
-                                           <p>3,5%</p>
-                                           <span>20%</span>
+                                       <div class="bank-card-btn G-align-center">
+                                           <button class="submit-request">Оставить заявку</button>
+                                           <span class="open-bank-card"></span>
                                        </div>
-                                       <div class="bank-card-count">
-                                           <p>15 лет</p>
-                                           <span>45 567₽</span>
-                                       </div>
-                                   </div>
-                                   <div class="bank-card-btn G-align-center">
-                                       <button class="submit-request">Оставить заявку</button>
-                                       <span class="open-bank-card"></span>
                                    </div>
                                </div>
-                               <div class="subsidized">
-                                   <p>*- субсидированная ставка</p>
+                           </div>
+                           <div class="bank-card-box">
+                               <div class="bank-card-fon">
+                                   <div class="bank-card-info G-align-center">
+                                       <div class="bank-card-name G-align-center">
+                                           <img src="./assets/img/alfa-bank.png" alt="alfa">
+                                           <strong>Альфа-Банк</strong>
+                                           <span class="bank-card-sort">Военная</span>
+                                       </div>
+                                       <div class="bank-card-prcnet G-align-center">
+                                           <div class="bank-card-count">
+                                               <p>Ставка</p>
+                                               <span>Взнос</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>Срок</p>
+                                               <span>Платеж</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>3,5% *</p>
+                                               <span>20%</span>
+                                           </div>
+                                           <div class="bank-card-count">
+                                               <p>15 лет</p>
+                                               <span>45 567₽</span>
+                                           </div>
+                                       </div>
+                                       <div class="bank-card-btn G-align-center">
+                                           <button class="submit-request">Оставить заявку</button>
+                                           <span class="open-bank-card"></span>
+                                       </div>
+                                   </div>
                                </div>
                            </div>
                        </div>
@@ -3642,16 +4248,16 @@
             <div class="swiper finish-options-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div data-val="options-modal" class="open_modal finish-options-box" >
+                        <div class="finish-options-box" >
                             <div class="swiper options-gallery-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finishing" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-1.jpg" alt="options">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finishing" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-1.jpg" alt="options">
                                         </div>
                                     </div>
@@ -3659,7 +4265,7 @@
                                 <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
                                 <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
                             </div>
-                            <div class="finish-options-text">
+                            <div data-modal="finishing" data-modal-target="#modal-overlay" class="card finish-options-text">
                                 <h3>Черновая</h3>
                                 <p>
                                     Квартира со свободной планировкой — идеальный выбор для тех, кто хочет с нуля создать своё уникальное пространство.
@@ -3669,16 +4275,16 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div data-val="options-modal" class="open_modal finish-options-box" >
+                        <div class="finish-options-box" >
                             <div class="swiper options-gallery-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="whute-box" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-2.jpg" alt="options">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="whute-box" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-2.jpg" alt="options">
                                         </div>
                                     </div>
@@ -3687,7 +4293,7 @@
                                 <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
 
                             </div>
-                            <div class="finish-options-text">
+                            <div data-modal="whute-box" data-modal-target="#modal-overlay" class="card finish-options-text">
                                 <h3>White box</h3>
                                 <p>
                                     Сэкономьте своё время и силы на ремонте. Все грязные и сложные работы выполнит застройщик, а вы сможете сразу перейти к выбору дизайна и чистовых материалов.
@@ -3698,11 +4304,11 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div data-val="options-modal" class="open_modal finish-options-box" >
+                        <div class="finish-options-box" >
                             <div class="swiper options-gallery-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finish-last" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-3.jpg" alt="options">
                                             <div class="editor-choice">
                                                 <span class="editor-choice-name">выбор редакции</span>
@@ -3711,7 +4317,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finish-last" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-3.jpg" alt="options">
                                             <div class="editor-choice">
                                                 <span class="editor-choice-name">выбор редакции</span>
@@ -3723,7 +4329,7 @@
                                 <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
                                 <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
                             </div>
-                            <div class="finish-options-text">
+                            <div data-modal="finish-last" data-modal-target="#modal-overlay" class="card finish-options-text">
                                 <h3>Чистовая</h3>
                                 <p>
                                     Квартира с готовой отделкой, в которую можно сразу заселиться без лишних забот и затрат времени на ремонт. Отличное решение для комфортной жизни или выгодной аренды.
@@ -3737,6 +4343,157 @@
             <div class="finish-pagination swiper-pagination"></div>
         </div>
     </div>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-window">
+            <div class="modal-close"></div>
+            <div class="touchstart modal-options">
+                <span class="close-filt-map"></span>
+
+                <div class="modal-options-href">
+                    <ul>
+                        <li class="modal-options-click" data-modal="finishing">Черновая</li>
+                        <li class="modal-options-click" data-modal="whute-box">White box</li>
+                        <li class="modal-options-click" data-modal="finish-last">Чистовая</li>
+                    </ul>
+                </div>
+                <div class="modal-options-min">
+                    <div class="modal-options-js" data-modal="finishing">
+                        <div class="modal-options-flex G-flex">
+                            <div class="modal-options-slide">
+                                <div class="swiper options-gallery-slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                                    <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="modal-options-info">
+                               <div class="modal-options-scr">
+                                   <h2>Черновая</h2>
+                                   <p>
+                                       Вы сможете сами выбрать стиль и материалы, реализовать самые смелые дизайнерские решения. Создайте интерьер, который полностью отражает вашу индивидуальность.
+                                   </p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="whute-box">
+                        <div class="modal-options-flex G-flex">
+                            <div class="modal-options-slide">
+                                <div class="swiper options-gallery-slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-2.jpg" alt="options">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-2.jpg" alt="options">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                                    <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+
+                                </div>
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h2>White box</h2>
+                                    <div class="modal-options-text">
+                                        <span>СТЕНЫ</span>
+                                        <ul>
+                                            <li>Возведение межкомнатных перегородок , в том числе ограничивающих санузлы</li>
+                                            <li>Штукатурка и шпатлёвка стен (кроме шпатлёвки стен в СУ)</li>
+                                            <li>Подготовка откосов окон, входной двери</li>
+                                            <li>Устройство подоконной доски ПВХ</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-options-text">
+                                        <span>ДВЕРИ</span>
+                                        <ul>
+                                            <li>Установка металлической входной двери в квартиру
+                                                в комплекте с фурнитурой
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-options-text">
+                                        <span>полы</span>
+                                        <ul>
+                                            <li>Устройство выравнивающей бетонной стяжки</li>
+                                            <li>Устройство гидроизоляции санузлов</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="modal-options-text">
+                                        <span>полы</span>
+                                        <ul>
+                                            <li>Устройство выравнивающей бетонной стяжки</li>
+                                            <li>Устройство гидроизоляции санузлов</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="modal-options-text">
+                                        <span>полы</span>
+                                        <ul>
+                                            <li>Устройство выравнивающей бетонной стяжки</li>
+                                            <li>Устройство гидроизоляции санузлов</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="finish-last">
+                        <div class="modal-options-flex G-flex">
+                            <div class="modal-options-slide">
+                                <div class="swiper options-gallery-slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                                    <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h2>Черновая</h2>
+                                    <p>
+                                        Вы сможете сами выбрать стиль и материалы, реализовать самые смелые дизайнерские решения. Создайте интерьер, который полностью отражает вашу индивидуальность.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 <section class="section-margin">
     <div class="container">
@@ -3745,7 +4502,7 @@
             <div class="swiper gallery-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="gallery-box">
+                        <div class="open_modal gallery-box" data-val="gallery-video">
                             <span class="play-video G-center">
                                 <i class="icon-play"></i>
                             </span>
@@ -3808,7 +4565,7 @@
                 <ul id="category-list" class="G-flex-column">
 
                 </ul>
-                <button class="btn-see-more">Применить</button>
+                <button class="close-catalog btn-see-more">Применить</button>
             </div>
             <div class="infrast-map-box">
                 <div class="zoom-map G-center open_modal" data-val="all-map">
@@ -3833,8 +4590,6 @@
         </div>
     </div>
 </section>
-
-
 <section class="section-margin">
     <div class="container">
         <div class="reliable-developer G-flex">
@@ -3875,7 +4630,6 @@
         </div>
     </div>
 </section>
-
 <section class="section-margin">
     <div class="container">
         <div class="construction-title G-align-center G-justify-between">
@@ -3885,7 +4639,216 @@
                 <div class="construction-next swiper-button-next"><i class="icon-arrow-right"></i></div>
             </div>
         </div>
-        <div class="construct-min">
+        <div class="construct-2024 construct-min">
+            <div class="construct-js" data-catalog="september">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="august">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="july">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="june">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="may">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="april">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="march">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="february">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="construct-js" data-catalog="january">
+                <div class="construction-cnt">
+                    <div class="swiper construction-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/wafid.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="construction-photo G-flex">
+                                    <img src="./assets/img/park.jpg" alt="park">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="construct-2025 construct-min construct-opened">
             <div class="construct-js" data-catalog="september">
                 <div class="construction-cnt">
                     <div class="swiper construction-slider">
@@ -4098,8 +5061,8 @@
         <div class="construct-flex G-align-center G-justify-between">
             <div class="construct-years">
                 <ul>
-                    <li>2024</li>
-                    <li class="active-year">2025</li>
+                    <li class="open-2024">2024</li>
+                    <li class="open-2025 active-year">2025</li>
                 </ul>
             </div>
             <div class="weather-href">
@@ -4123,7 +5086,6 @@
         </div>
     </div>
 </section>
-
 <section class="section-margin">
     <div class="container">
         <h2>новости</h2>
@@ -4256,10 +5218,6 @@
                     </div>
                 </div>
             </div>
-
-
-
-
             <div class="footer-text">
                 <p>
                     Сайт носит информационный характер. Информация, размещенная на сайте, не является офертой, не является приглашением делать оферты и не содержит существенных условий сделок, заключаемых застройщиком. Описание объекта строительства и инфраструктуры, представленное на сайте, является концепцией и носит информационный характер. Технические характеристики объекта строительства и инфраструктуры указаны в проектной документации ©2010-2025 ЖК Одинбург
@@ -4273,126 +5231,47 @@
 
 
 
-<div id="options-modal" class="modal">
-    <div class="modal-content">
-        <div class="close"></div>
-        <div class="modal-options">
-            <div class="modal-options-href">
-                <ul>
-                    <li class="modal-options-click" data-catalog="finishing">Черновая</li>
-                    <li class="modal-options-click" data-catalog="whute-box">White box</li>
-                    <li class="modal-options-click" data-catalog="finish-last">Чистовая</li>
-                </ul>
-            </div>
-            <div class="modal-options-min">
-                <div class="modal-options-js" data-catalog="finishing">
-                    <div class="modal-options-flex G-flex">
-                        <div class="modal-options-slide">
-                            <div class="swiper options-gallery-slide">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
-                                            <img src="./assets/img/options-1.jpg" alt="options">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
-                                            <img src="./assets/img/options-1.jpg" alt="options">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
-                                <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
-                            </div>
-                        </div>
-                        <div class="modal-options-info">
-                            <h2>Черновая</h2>
-                            <p>
-                                Вы сможете сами выбрать стиль и материалы, реализовать самые смелые дизайнерские решения. Создайте интерьер, который полностью отражает вашу индивидуальность.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-options-js" data-catalog="whute-box">
-                    <div class="modal-options-flex G-flex">
-                        <div class="modal-options-slide">
-                            <div class="swiper options-gallery-slide">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
-                                            <img src="./assets/img/options-2.jpg" alt="options">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
-                                            <img src="./assets/img/options-2.jpg" alt="options">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
-                                <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
 
-                            </div>
-                        </div>
-                        <div class="modal-options-info">
-                           <div class="modal-options-scr">
-                               <h2>White box</h2>
-                               <span>СТЕНЫ</span>
-                               <ul>
-                                   <li>Возведение межкомнатных перегородок , в том числе ограничивающих санузлы</li>
-                                   <li>Штукатурка и шпатлёвка стен (кроме шпатлёвки стен в СУ)</li>
-                                   <li>Подготовка откосов окон, входной двери</li>
-                                   <li>Устройство подоконной доски ПВХ</li>
-                               </ul>
 
-                               <span>ДВЕРИ</span>
 
-                             <ul>
-                                 <li>Установка металлической входной двери в квартиру в комплекте с фурнитурой</li>
-                             </ul>
 
-                               <span>полы</span>
-                               <ul>
-                                   <li>Устройство выравнивающей бетонной стяжки</li>
-                                   <li>Устройство гидроизоляции санузлов</li>
-                               </ul>
+<div class="floating-widget collapsed">
+    <ul class="widget-buttons">
+        <li>
+            <a href="#" class="widget-btn">
+                <img src="./assets/img/icons/taxi.svg" alt="taxi">
+                <span class="tooltip">Бесплатное такси</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="widget-btn">
+                <img src="./assets/img/icons/whatsapp.svg" alt="whatsapp">
+                <span class="tooltip">WhatsApp</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="widget-btn">
+                <img src="./assets/img/icons/teleg.svg" alt="teleg">
+                <span class="tooltip">Telegram</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="widget-btn">
+                <img src="./assets/img/icons/phone.svg" alt="phone">
+                <span class="tooltip">Заказать звонок</span>
+            </a>
+        </li>
+    </ul>
 
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-options-js" data-catalog="finish-last">
-                    <div class="modal-options-flex G-flex">
-                        <div class="modal-options-slide">
-                            <div class="swiper options-gallery-slide">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
-                                            <img src="./assets/img/options-1.jpg" alt="options">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
-                                            <img src="./assets/img/options-1.jpg" alt="options">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
-                                <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
-                            </div>
-                        </div>
-                        <div class="modal-options-info">
-                            <h2>Черновая</h2>
-                            <p>
-                                Вы сможете сами выбрать стиль и материалы, реализовать самые смелые дизайнерские решения. Создайте интерьер, который полностью отражает вашу индивидуальность.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <button class="toggle-widget" id="toggleWidget">
+        <span class="toggle-icon"></span>
+    </button>
 </div>
+
+
+
+
+
 
 
 
@@ -4415,8 +5294,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <div id="modal-gallery" class="modal">
@@ -4469,14 +5346,17 @@
 
 
 
-
-
-
-
-
-
-
-
+<div id="gallery-video" class="modal">
+    <div class="modal-content">
+        <div class="close"></div>
+        <div class="modal-video">
+            <video autoplay="autoplay" playsinline="" loop="loop" preload="" muted="muted" poster="assets/img/video.webp">
+                <source src="" type="video/webm">
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
 
 
 <div class="cookie" >
@@ -4490,20 +5370,89 @@
 </div>
 
 
+
+
+
+
+
+
+
+
+
+<div id="modal-form" class="modal">
+    <div class="modal-content">
+        <div class="close"></div>
+        <div class="modal-form-main">
+            <h3>Заказать звонок</h3>
+            <form action="" method="post" id="f_contact1">
+                <div class="clicking-submit-inp G-flex-column G-align-center">
+                    <div class="modal-inp">
+                        <label>
+
+                        </label>
+                    </div>
+                    <div class="modal-inp">
+                        <span>Номер телефона</span>
+                        <label>
+                            <input type="text" id="tel" name="tel"
+                                   class="mask-phone">
+                        </label>
+                    </div>
+
+                    <div class="check-form">
+                        <label>
+                            <small>
+                                Я ознакомлен(-а) с <a href="#">Политикой обработки в отношении персональных данных</a> и даю свое
+                                <a href="#">согласие на обработку персональных данных</a>
+                            </small>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="check-form">
+                        <label>
+                            <small>
+                                Даю свое
+                                <a href="#">согласие на получение рекламных материалов</a>
+                            </small>
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <button type="submit" data-val="modal-thanks" class="btn ">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <script src="assets/js/jquery-3.6.4.js"></script>
 <script src="assets/js/jquery.fancybox.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/jquery.formstyler.min.js"></script>
+<script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
 <script src="assets/js/sliders.js"></script>
 <script src="assets/js/nouislider.min.js"></script>
 <script src="assets/js/data-catalog.js"></script>
+<script src="assets/js/modal.js"></script>
 <script src="assets/js/time.js"></script>
+<script src="assets/js/data-search.js"></script>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/map.js"></script>
 
 
-<script>
 
+<script>
+    $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+    $(".mask-phone").mask("+7 (h99) 999-99-99");
+</script>
+
+<script>
     const productsList = [
         {
             title: "Все объекты",
@@ -4685,7 +5634,6 @@
         })
     }
 </script>
-
 
 </body>
 </html>

@@ -15,20 +15,6 @@ $(document).ready(function () {
         changeCaseBlock(this, 'menu-data-menu', 'menu-modal-min', 'menu-data-active', 'menu-data-click');
     })
 
-    addActiveClass('real-estate-menu', 'real-estate-active');
-    changeCaseBlock(this, 'real-estate-menu', 'real-estate-min', 'real-estate-active', 'real-estate-click');
-    $('.real-estate-click').on('click', function () {
-        changeActiveClassWithClick(this, 'real-estate-menu', 'real-estate-active')
-        changeCaseBlock(this, 'real-estate-menu', 'real-estate-min', 'real-estate-active', 'real-estate-click');
-    })
-
-
-    addActiveClass('real-estate-filter', 'params-active');
-    changeCaseBlock(this, 'real-estate-filter', 'estate-filter-min', 'params-active', 'select-params');
-    $('.select-params').on('click', function () {
-        changeActiveClassWithClick(this, 'real-estate-filter', 'params-active')
-        changeCaseBlock(this, 'real-estate-filter', 'estate-filter-min', 'params-active', 'select-params');
-    })
 
 
 

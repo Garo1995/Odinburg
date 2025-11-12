@@ -1,3 +1,35 @@
+@charset "UTF-8";
+
+.icon {
+    display               : inline-block;
+    height                : 1em;
+    width                 : 1em;
+    mask-size             : contain;
+    -webkit-mask-size     : contain;
+    mask-repeat           : no-repeat;
+    -webkit-mask-repeat   : no-repeat;
+    mask-position         : center;
+    -webkit-mask-position : center;
+    font-size             : 24px;
+    background-color      : rgba(0, 0, 0, 1);
+    transition: 0.3s;
+
+}
+
+
+.icon.icon-call {
+    mask-image: url(../img/icons/call.svg);
+    -webkit-mask-image: url(../img/icons/call.svg);
+}
+
+
+.icon.icon-sort {
+    mask-image: url(../img/icons/sort.svg);
+    -webkit-mask-image: url(../img/icons/sort.svg);
+}
+
+
+
 .icon-office{
     content: url("../img/icons/office.svg");
 }
@@ -27,9 +59,6 @@
     content: url("../img/icons/lock.svg");
 }
 
-.icon-sort{
-    content: url("../img/icons/sort.svg");
-}
 
 .arrow-down{
     content: url("../img/icons/arrow-down.svg");
@@ -72,11 +101,80 @@
     content: url("../img/icons/filter.svg");
 }
 
-.icon-call{
-    content: url("../img/icons/call.svg");
-}
+
 
 .men-icon{
     content: url("../img/icons/men-icon.svg");
 }
+
+
+.icon-kay{
+    content: url("../img/icons/key.svg");
+}
+
+
+.icon-concierge-1{
+    content: url("../img/icons/concierge-1.svg");
+}
+.icon-concierge-2{
+    content: url("../img/icons/concierge-2.svg");
+}
+.icon-concierge-3{
+    content: url("../img/icons/concierge-3.svg");
+}
+.icon-concierge-4{
+    content: url("../img/icons/concierge-4.svg");
+}
+.icon-concierge-1{
+    content: url("../img/icons/concierge-1.svg");
+}
+.icon-concierge-5{
+    content: url("../img/icons/concierge-5.svg");
+}
+.icon-concierge-6{
+    content: url("../img/icons/concierge-6.svg");
+}
+.icon-concierge-7{
+    content: url("../img/icons/concierge-7.svg");
+}
+.icon-concierge-8{
+    content: url("../img/icons/concierge-8.svg");
+}
+.icon-concierge-9{
+    content: url("../img/icons/concierge-9.svg");
+}
+.icon-concierge-10{
+    content: url("../img/icons/concierge-10.svg");
+}
+
+.icon-concierge-11{
+    content: url("../img/icons/concierge-11.svg");
+}
+
+.icon-concierge-12{
+    content: url("../img/icons/concierge-12.svg");
+}
+
+.icon-concierge-13{
+    content: url("../img/icons/concierge-13.svg");
+}
+
+.icon-concierge-14{
+    content: url("../img/icons/concierge-14.svg");
+}
+
+.icon-concierge-15{
+    content: url("../img/icons/concierge-15.svg");
+}
+
+.icon-concierge-16{
+    content: url("../img/icons/concierge-16.svg");
+}
+.icon-concierge-17{
+    content: url("../img/icons/concierge-17.svg");
+}
+.icon-concierge-18{
+    content: url("../img/icons/concierge-18.svg");
+}
+
 

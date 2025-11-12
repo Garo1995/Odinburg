@@ -26,11 +26,11 @@
 .architecture-min{
     margin-top: 32px;
     gap: 16px;
+    width: 100%;
 }
 .architecture-rel{
     position: relative;
-    max-width: 672px;
-    width: 100%;
+    width: 49%;
 }
 
 .architecture-swiper{
@@ -87,4 +87,23 @@
 .architecture-rel .swiper{
     border-radius: 32px;
 
+}
+
+
+
+
+@media (max-width: 1020px){
+    .architecture-min {
+        flex-direction: column;
+        margin-top: 24px;
+
+    }
+    .architecture-rel {
+        position: relative;
+        width: 100%;
+    }
+    .architecture-page {
+        margin-top: 24px;
+        padding-bottom: 50px;
+    }
 }
