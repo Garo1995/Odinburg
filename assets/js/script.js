@@ -65,19 +65,31 @@ $('.open-bank-card').on('click', function (e) {
 
 
 
-$('.layout').on('click', function () {
-    $('.floor-plan').removeClass('layout-floor-act');
-    $(this).addClass('layout-floor-act');
-    $('.layout-pic').addClass('floor-pic-active');
-    $('.floor-plan-pic').removeClass('floor-pic-active');
+
+
+
+
+
+$('.menu-scroll a').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+        let $target = $(this.hash);
+        $target = $target.length && $target
+            || $('[name=' + this.hash.slice(1) +']');
+        if ($target.length) {
+            let targetOffset = $target.offset().top-130;
+            $('html,body')
+                .animate({scrollTop: targetOffset}, 1000);
+            return false;
+        }
+    }
 });
 
-$('.floor-plan').on('click', function () {
-    $(this).addClass('layout-floor-act');
-    $('.layout').removeClass('layout-floor-act');
-    $('.layout-pic').removeClass('floor-pic-active');
-    $('.floor-plan-pic').addClass('floor-pic-active');
-});
+
+
+
+
+
 
 
 $('.open-2025').on('click', function () {
@@ -112,8 +124,10 @@ $('.filter-finishing-box ul li').on('click', function () {
 
 
 
-
-
+$('.nav-menu ul li').on('click', function () {
+    $('.nav-menu ul li').removeClass('nav-menu-active');
+    $(this).addClass('nav-menu-active');
+})
 
 
 

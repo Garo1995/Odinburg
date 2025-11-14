@@ -558,6 +558,11 @@ header{
     border: 1px solid #0000001A;
     color: #000000;
 }
+.nav-menu .nav-menu-active a:hover{
+    background: #BEDC1C;
+    border: 1px solid #0000001A;
+    color: #000000;
+}
 
 
 .menu-data-mobile{

@@ -294,10 +294,6 @@ let galleryModSwiper = new Swiper(".gallery-modal-slider", {
         nextEl: ".gallery-button-next",
         prevEl: ".gallery-button-prev",
     },
-    pagination: {
-        el: ".gallery-pagination",
-        type: "fraction",
-    },
 });
 
 

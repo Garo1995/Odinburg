@@ -26,6 +26,8 @@
 .icon.icon-sort {
     mask-image: url(../img/icons/sort.svg);
     -webkit-mask-image: url(../img/icons/sort.svg);
+    width: 20px;
+    height: 20px;
 }
 
 

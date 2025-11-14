@@ -26,6 +26,14 @@ $(document).ready(function () {
     })
 
 
+    addActiveClass('layout-floor', 'layout-floor-act');
+    changeCaseBlock(this, 'layout-floor', 'layout-pic-min', 'layout-floor-act', 'floor-plan');
+    $('.floor-plan').on('click', function () {
+        changeActiveClassWithClick(this, 'layout-floor', 'layout-floor-act')
+        changeCaseBlock(this, 'layout-floor', 'layout-pic-min', 'layout-floor-act', 'floor-plan');
+    })
+
+
 
 
 
