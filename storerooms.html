@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d130909a-f4b5-453d-85f2-98a45f38ba0c&lang=ru_RU"></script>
+
+    <title>Odinburg</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-main G-align-center G-justify-between">
+            <div class="header-logo G-align-center">
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="#" class="logo G-flex">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="header-cont-flex G-align-center">
+                <div class="header-contact G-flex-column G-align-end">
+                    <a href="tel:+ 7 (495) 489 01 39" class="phone-number">+ 7 (495) 489 01 39</a>
+                    <a href="#" class="request-call">Заказать звонок</a>
+                </div>
+                <div class="select-block G-align-center">
+                    <a href="#" class="favorite-box G-center">
+                        <img src="./assets/img/heart.svg" alt="heart">
+                    </a>
+                    <div class="select-property">
+                        <div class="select-name">Выбор недвижимости</div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>Квартиры <i class="icon-house"></i></li>
+                                <li>Машино-места <i class="icon-car"></i></li>
+                                <li>Кладовые <i class="icon-storerooms"></i></li>
+                                <li>Мото-места <i class="icon-moto"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-modal">
+        <div class="container">
+            <div class="menu-modal-fon G-justify-between">
+                <div class="menu-modal-min">
+                    <div class="menu-modal-js" data-catalog="benefits">
+                        <div class="menu-modal-block">
+                            <h2>Преимущества проекта</h2>
+                            <div class="project-wrap">
+                                <div class="project-box">
+                                    <img src="./assets/img/project-1.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Дома уровня бизнес</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-2.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Инфраструктура</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-box">
+                                    <img src="./assets/img/project-3.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Экологически чистый район</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-4.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Для детей</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-5.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Продуманные планировки</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-6.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Кладовые и паркинг</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="property">
+                        <div class="menu-modal-block">
+                            <h2>Выбор недвижимости</h2>
+                            <div class="select-menu-property">
+                                <div class="project-box">
+                                    <img src="./assets/img/property-1.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Квартиры</span>
+                                    </div>
+                                </div>
+                                <div class="menu-property-col G-flex-column">
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project">
+                                        <div class="project-name">
+                                            <span>Машино-места</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project">
+                                        <div class="project-name">
+                                            <span>Мото-места</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/property-3.jpg" alt="project">
+                                    <div class="project-name">
+                                        <span>Кладовые</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="purchase">
+                        <div class="menu-modal-block">
+                            <h2>ипотека</h2>
+                            <div class="mortgage-flex">
+                                <div class="mortgage-selec G-flex-wrap">
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>Стандартная</h3>
+                                        <p>
+                                            Нужен доступный первый взнос или большая сумма кредита?
+                                        </p>
+                                        <strong>от 23,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>IT-ипотека</h3>
+                                        <p>
+                                            Доступное жилье без первоначального взноса
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>Военная</h3>
+                                        <p>
+                                            Вы военнослужащий с сертификатом НИС?
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa">
+                                        <h3>Семейная</h3>
+                                        <p>
+                                            Мечтаете выгодно купить квартиру с уютной детской?
+                                        </p>
+                                        <strong>от 6,5%</strong>
+                                    </div>
+                                </div>
+
+                                <div class="mortgage-calculator">
+                                    <div class="mortgage-calc-title">
+                                        <h3>Ипотечный калькулятор</h3>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 29 456 руб.</span>
+                                            <p>ежемесячный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 1,4 млн руб.</span>
+                                            <p>первоначальный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 3,9%</span>
+                                            <p>ставка</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn-line">Рассчитать ипотеку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="stock">
+                        <div class="menu-modal-block">
+                            <h2>Акции</h2>
+                            <div class="stock-crash-flex">
+                                <div class="stock-crash-pic">
+                                    <a href="#" class="more-info">Подробнее</a>
+                                </div>
+                                <div class="stock-crash-col">
+                                    <div class="stock-crash-box">
+                                        <strong>ОБВАЛ ЦЕН</strong>
+                                        <span>Успей до 30 октября!</span>
+                                        <button class="btn-line">Подробнее</button>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/stock-chip.png" alt="stock">
+                                        </div>
+                                    </div>
+                                    <div class="parking-space-box">
+                                        <div class="parking-space-price">
+                                            <strong>15 000 <small>₽/мес.</small></strong>
+                                            <span>Машино-место</span>
+                                        </div>
+                                        <div class="parking-discount G-align-start">
+                                            <div class="parking-discount-count">
+                                                <small>Скидка</small>
+                                                <strong>15%</strong>
+                                            </div>
+                                            <div class="parking-discount-count">
+                                                <small>Рассрочка</small>
+                                                <strong>на 3 года</strong>
+                                            </div>
+                                        </div>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/car-chat.png" alt="car-chat">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu-modal-cnt">
+                    <div class="menu-data-menu">
+                        <ul>
+                            <li class="menu-data-click menu-data-active" data-catalog="benefits">Преимущества проекта</li>
+                            <li class="menu-data-click" data-catalog="property">Выбор недвижимости</li>
+                            <li class="menu-data-click" data-catalog="purchase">Способы покупки</li>
+                            <li class="menu-data-click" data-catalog="stock">Акции</li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-link">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Ход строительства</a></li>
+                            <li><a href="#">Спец-пул</a></li>
+                            <li><a href="#">Генплан</a></li>
+                            <li><a href="#">Инфраструктура</a></li>
+                            <li><a href="#">Кабинет брокера</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn-line">
+                        <i class="icon-call"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="header-nav">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Спец-пул</a></li>
+                <li><a href="#">Преимущества </a></li>
+                <li><a href="#">Подбор</a></li>
+                <li><a href="#">Генплан</a></li>
+                <li><a href="#">Ипотека</a></li>
+                <li><a href="#">Инфраструктура</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<section class="parts-lot">
+    <div class="container">
+        <div class="bread-caps">
+            <ul>
+                <li><a href="./index.html">Главная</a></li>
+                <li>План паркинга</li>
+            </ul>
+        </div>
+        <div class="parking-plan-min G-align-center G-justify-between">
+            <div class="parts-title G-align-center">
+                <a href="./index.html" class="back-home G-center">
+                    <i class="icon-arrow-left"></i>
+                </a>
+                <h2>План кладовых</h2>
+            </div>
+            <div class="parking-plan-call G-align-center">
+                <div class="sort-calc">
+                    <i class="icon icon-pdf-file"></i>
+                    <span>Скачать буклет</span>
+                </div>
+                <button class="btn">
+                    <i class="icon icon-call"></i>
+                    <span>Заказать звонок</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="parking-href">
+            <ul>
+                <li class="parking-click parking-active" data-catalog="parking-frame">Корпус ЛУЧ4</li>
+                <li class="parking-click" data-catalog="parking-4a">Корпус 4А и 4Б</li>
+            </ul>
+        </div>
+
+
+        <div class="parking-href-min">
+            <div class="parking-js" data-catalog="parking-frame">
+                <div class="zoom-container">
+                    <div class="zoom-picture ">
+                        <span class="zoom-pic-minus G-center">-</span>
+                        <span class="zoom-pic-plus G-center">+</span>
+                    </div>
+                    <div class="parking-cards-pic">
+                        <div class="parking-photo plan-parking">
+                            <img src="./assets/img/plan-parking.png" alt="parking">
+                            <svg class="svg-map parking-svg" xmlns="http://www.w3.org/2000/svg" width="693" height="466" viewBox="0 0 693 466" fill="none">
+                                <path data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" d="M350 255.125V252.281L319.01 247H308V263.656H316.563V273H319.825C329.612 261.625 344.019 256.344 350 255.125Z" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="3" data-status="5" data-square="11" data-price="2 328 990 ₽" x="29" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="1" data-square="15" data-price="5 328 990 ₽" x="53" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="1" data-status="5" data-square="16.3" data-price="8 328 990 ₽" x="54" y="84" width="18" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="54" y="124" width="18" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="2" data-square="13.3" data-price="4 328 990 ₽" x="46" y="208" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="8 328 990 ₽" x="92" y="256" width="19" height="41" transform="rotate(90 92 256)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="9 328 990 ₽" x="90" y="281" width="18" height="37" transform="rotate(90 90 281)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="3" data-square="13.3" data-price="3 428 990 ₽" x="33" y="346" width="19" height="41" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="1" data-square="13.3" data-price="6 328 990 ₽" x="55" y="350" width="17" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="78" y="350" width="17" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="95" y="350" width="18" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="113" y="350" width="17" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="179" y="346" width="19" height="41" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="136" y="350" width="17" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="153" y="350" width="18" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="223" y="350" width="17" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="262" y="323" width="20" height="17" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="295" y="304" width="10" height="23" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="272" y="304" width="22" height="9" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="255" y="247" width="16" height="18" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="0 328 990 ₽" x="273" y="247" width="16" height="18" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="9 328 990 ₽" x="290" y="247" width="16" height="18" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="8 328 990 ₽" x="255" y="274" width="14" height="17" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="7 328 990 ₽" x="284.371" y="286.608" width="13.8082" height="15.4327" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="6 328 990 ₽" x="278.686" y="291.482" width="5.68572" height="10.5592" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="1 328 990 ₽" x="278.686" y="273.612" width="15.4327" height="12.1837" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="2 328 990 ₽" x="294.118" y="276.049" width="4.06123" height="9.74694" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="6" data-square="13.3" data-price="3 328 990 ₽" x="245" y="304" width="26" height="9" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="5 328 990 ₽" x="281.935" y="328.033" width="23.5551" height="12.1837" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="1" data-status="3" data-square="13.3" data-price="3 328 990 ₽" x="281.935" y="323.159" width="12.1837" height="4.87347" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="239" y="350" width="17" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="406" y="428" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="389" y="428" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="368" y="428" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="351" y="428" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="334" y="428" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="313" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="296" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="279" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="258" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="241" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="223" y="428" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="202" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="185" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="168" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="147" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="130" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="113" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="92" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="75" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="58" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="37" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="20" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="3" y="428" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="264" y="346" width="20" height="41" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="284" y="346" width="19" height="41" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="385" y="342" width="20" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="430" y="424" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="499" y="382" width="19" height="40" transform="rotate(90 499 382)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="531" y="435" width="17" height="13" transform="rotate(90 531 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="545" y="435" width="17" height="13" transform="rotate(90 545 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="560" y="435" width="17" height="14" transform="rotate(90 560 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="574" y="435" width="17" height="13" transform="rotate(90 574 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="9 328 990 ₽" x="589" y="435" width="17" height="14" transform="rotate(90 589 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="8 328 990 ₽" x="603" y="435" width="17" height="14" transform="rotate(90 603 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="7 328 990 ₽" x="617" y="435" width="17" height="13" transform="rotate(90 617 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="6 328 990 ₽" x="632" y="435" width="17" height="14" transform="rotate(90 632 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="2 328 990 ₽" x="646" y="435" width="17" height="14" transform="rotate(90 646 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="4 328 990 ₽" x="661" y="435" width="17" height="15" transform="rotate(90 661 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="5 328 990 ₽" x="669" y="382" width="13" height="24" transform="rotate(90 669 382)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="644" y="382" width="13" height="24" transform="rotate(90 644 382)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="669" y="368" width="14" height="24" transform="rotate(90 669 368)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="671.001" y="335.343" width="16.2449" height="16.2449" transform="rotate(90 671.001 335.343)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="666.128" y="351.588" width="6.49796" height="11.3714" transform="rotate(90 666.128 351.588)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="654.76" y="351.588" width="6.49796" height="9.74694" transform="rotate(90 654.76 351.588)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="654.76" y="335.343" width="16.2449" height="14.6204" transform="rotate(90 654.76 335.343)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="627" y="335" width="24" height="11" transform="rotate(90 627 335)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="608" y="326" width="25" height="11" transform="rotate(90 608 326)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="620" y="312" width="14" height="23" transform="rotate(90 620 312)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="639" y="312" width="14" height="19" transform="rotate(90 639 312)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="660" y="312" width="14" height="21" transform="rotate(90 660 312)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="680" y="312" width="14" height="20" transform="rotate(90 680 312)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="691" y="312" width="27" height="11" transform="rotate(90 691 312)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="634.442" y="335.343" width="23.5551" height="7.3102" transform="rotate(90 634.442 335.343)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" width="18.6816" height="4.87347" transform="matrix(-4.37114e-08 1 1 4.37114e-08 634.442 340.216)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="691" y="368" width="21" height="13" transform="rotate(90 691 368)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="691.306" y="341.029" width="25.9918" height="12.9959" transform="rotate(90 691.306 341.029)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="678.31" y="335.343" width="16.2449" height="6.49796" transform="rotate(90 678.31 335.343)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="679.935" y="335.343" width="5.68571" height="1.62449" transform="rotate(90 679.935 335.343)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="644.196" y="371.082" width="10.5592" height="24.3673" transform="rotate(90 644.196 371.082)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="639.322" y="367.833" width="3.24898" height="14.6204" transform="rotate(90 639.322 367.833)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="677" y="435" width="17" height="16" transform="rotate(90 677 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="691" y="435" width="17" height="14" transform="rotate(90 691 435)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="559.723" y="411.694" width="13.8082" height="16.2449" transform="rotate(90 559.723 411.694)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="554.037" y="408.445" width="3.24898" height="10.5592" transform="rotate(90 554.037 408.445)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="33.3" data-price="8 328 990 ₽" x="589" y="408" width="18" height="13" transform="rotate(90 589 408)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="603" y="408" width="18" height="13" transform="rotate(90 603 408)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="660" y="405" width="21" height="14" transform="rotate(90 660 405)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="691" y="405" width="21" height="14" transform="rotate(90 691 405)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="677" y="405" width="21" height="16" transform="rotate(90 677 405)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="629.575" y="408.445" width="17.8694" height="14.5349" transform="rotate(90 629.575 408.445)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="615.041" y="415.755" width="10.5592" height="1.70999" transform="rotate(90 615.041 415.755)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" width="17.8694" height="9.74694" transform="matrix(4.37114e-08 1 1 -4.37114e-08 630.388 408.445)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" width="14.6204" height="5.68571" transform="matrix(4.37114e-08 1 1 -4.37114e-08 640.135 411.694)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="575.16" y="408.445" width="12.9959" height="14.6204" transform="rotate(90 575.16 408.445)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="575.16" y="421.441" width="4.06122" height="9.74694" transform="rotate(90 575.16 421.441)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="542.666" y="416.567" width="8.9347" height="16.2449" transform="rotate(90 542.666 416.567)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="542.666" y="408.445" width="8.12245" height="11.3714" transform="rotate(90 542.666 408.445)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="344" y="305" width="18" height="73" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="418" y="304" width="17" height="72" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="362" y="305" width="17" height="73" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="435" y="304" width="17" height="72" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="126" y="304" width="18" height="73" transform="rotate(90 126 304)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="126" y="322" width="17" height="73" transform="rotate(90 126 322)" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="64" y="208" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="81" y="208" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="102" y="208" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="119" y="208" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="137" y="208" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="157" y="208" width="18" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="175" y="208" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="192" y="208" width="17" height="36" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="72" y="84" width="20" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="72" y="124" width="20" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="92" y="124" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="7" data-status="5" data-square="13.3" data-price="2 128 990 ₽" x="115" y="124" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="134" y="124" width="20" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="154" y="124" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="176" y="124" width="20" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="196" y="124" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="215" y="124" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="92" y="84" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="115" y="84" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="134" y="84" width="20" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="176" y="84" width="20" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="218" y="98" width="19" height="16" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="238" y="98" width="25" height="16" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <path data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" d="M245 114H263V122C263 128.075 258.075 133 252 133H245V114Z" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="154" y="84" width="19" height="40" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="32" y="84" width="18" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="32" y="128" width="18" height="37" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="72" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="91" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="114" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="133" y="2" width="20" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="152" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="176" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <rect data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" x="195" y="2" width="19" height="39" fill="#BEDC1C" fill-opacity="0.4"/>
+                                <path data-num="2" data-status="3" data-square="23.3" data-price="3 628 990 ₽" d="M307.333 302H299V276.435H307.333V274H314.417H319C319 274 310.806 287.797 310.25 290.232H307.333V302Z" fill="#BEDC1C" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parking-js" data-catalog="parking-4a">
+                <div class="zoom-container">
+
+                    <div class="parking-plan-left">
+                        <div class="parking-photo">
+                            <img src="./assets/img/plan-left.png" alt="plan">
+                            <svg class="svg-map parking-svg" xmlns="http://www.w3.org/2000/svg" width="563" height="368" viewBox="0 0 563 368" fill="none">
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="3 328 990 ₽" x="377" y="184" width="44" height="31" fill="#C6D202" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="2 328 990 ₽" x="377" y="152" width="44" height="31" fill="#C6D202" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                        <div class="parking-photo">
+                            <img src="./assets/img/plan-right.png" alt="plan">
+                            <svg class="svg-map parking-svg" xmlns="http://www.w3.org/2000/svg" width="554" height="374" viewBox="0 0 554 374" fill="none">
+                                <rect data-num="5" data-status="1" data-square="13.3" data-price="2 328 990 ₽" x="379" y="187" width="43" height="31" fill="#C6D202" fill-opacity="0.4"/>
+                                <rect data-num="5" data-status="1" data-square="77.3" data-price="6 328 990 ₽" x="379" y="155" width="43" height="31" fill="#C6D202" fill-opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="info-block" class="parking-results-info" >
+            <div class="parking-space-num G-align-center">
+                <p>Машиноместо № </p><span class="value-num">148</span>
+            </div>
+            <div class="parking-results-count G-align-center G-justify-between">
+                <div class="G-align-center">
+                    <p>Площадь</p>
+                    <span class="G-align-center"><span class="value-square">27</span><b>м²</b></span>
+                </div>
+                <div class="G-align-center">
+                    <span class="value-status">4</span>
+                    <p>корпус</p>
+                </div>
+            </div>
+            <div class="value-price-marg G-justify-between G-align-end">
+                <div class="value-price-result G-flex-column G-align-start">
+                    <del>9 000 000 ₽</del>
+                    <span class="value-price">3 328 990 ₽</span>
+                </div>
+                <span class="discount-count">−20%</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<script src="assets/js/jquery-3.6.4.js"></script>
+<script src="assets/js/time.js"></script>
+
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.formstyler.min.js"></script>
+<script src="assets/js/sliders.js"></script>
+<script src="assets/js/nouislider.min.js"></script>
+<script src="assets/js/data-catalog.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/parking.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/map.js"></script>
+
+
+
+<script>
+    const infoBlock = document.querySelector('#info-block');
+    let hoverTimeout = null;
+
+    document.querySelectorAll('.svg-map').forEach(svg => {
+
+        svg.addEventListener('mouseover', (e) => {
+            const path = e.target.closest('rect, path');
+
+            if (!path) return;
+
+            // Получаем данные
+            const num = path.getAttribute('data-num') || '-';
+            const square = path.getAttribute('data-square') || '-';
+            const price = path.getAttribute('data-price') || '-';
+            const status = path.getAttribute('data-status') || '-';
+
+            // Вставляем в единое окно
+            infoBlock.querySelector('.value-num').textContent = num;
+            infoBlock.querySelector('.value-square').textContent = square;
+            infoBlock.querySelector('.value-price').textContent = price;
+            infoBlock.querySelector('.value-status').textContent = status;
+
+            // Координаты
+            const rect = path.getBoundingClientRect();
+            const scrollTop = window.scrollY;
+            const scrollLeft = window.scrollX;
+
+            infoBlock.style.left = (rect.right + scrollLeft - 125) + 'px';
+            infoBlock.style.top = (rect.top + scrollTop - 250) + 'px';
+            infoBlock.style.display = 'block';
+        });
+
+        svg.addEventListener('mouseout', (e) => {
+            if (!e.relatedTarget ||
+                (!svg.contains(e.relatedTarget) && !infoBlock.contains(e.relatedTarget))) {
+
+                hoverTimeout = setTimeout(() => {
+                    infoBlock.style.display = 'none';
+                }, 200);
+            }
+        });
+
+    });
+
+    // Не скрывать, пока мышка в окне
+    infoBlock.addEventListener('mouseover', () => {
+        clearTimeout(hoverTimeout);
+    });
+
+    // Скрыть, когда ушли из окна
+    infoBlock.addEventListener('mouseout', (e) => {
+        if (!e.relatedTarget ||
+            (!infoBlock.contains(e.relatedTarget) && !document.querySelector('.svg-map').contains(e.relatedTarget))) {
+
+            hoverTimeout = setTimeout(() => {
+                infoBlock.style.display = 'none';
+            }, 200);
+        }
+    });
+</script>
+
+</body>
+</html>
+
+

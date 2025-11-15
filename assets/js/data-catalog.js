@@ -33,6 +33,13 @@ $(document).ready(function () {
         changeCaseBlock(this, 'layout-floor', 'layout-pic-min', 'layout-floor-act', 'floor-plan');
     })
 
+    addActiveClass('parking-href', 'parking-active');
+    changeCaseBlock(this, 'parking-href', 'parking-href-min', 'parking-active', 'parking-click');
+    $('.parking-click').on('click', function () {
+        changeActiveClassWithClick(this, 'parking-href', 'parking-active')
+        changeCaseBlock(this, 'parking-href', 'parking-href-min', 'parking-active', 'parking-click');
+    })
+
 
 
 

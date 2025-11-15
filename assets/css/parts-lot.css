@@ -49,12 +49,24 @@
     padding: 24px;
 
 }
-.parts-apart-count span{
+.parts-apart-alig span{
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
     vertical-align: middle;
     color: rgba(0, 0, 0, 1);
+}
+.parts-apart-alig small{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-top: 4px;
+}
+.parts-apart-alig{
+    gap: 32px;
 }
 .parts-apart-pdf{
     gap: 8px;
@@ -129,7 +141,7 @@
 .layout-pic-js{
     display: none;
 }
-.layout-pic-js.active-cat{
+body .active-cat{
     display: block;
 }
 .layout-pic{
@@ -299,7 +311,7 @@
     .parts-apart-count {
         padding: 16px;
     }
-    .parts-apart-count span {
+    .parts-apart-alig span {
         font-size: 20px;
     }
     .layout-floor {

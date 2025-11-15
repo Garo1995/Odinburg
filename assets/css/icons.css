@@ -31,6 +31,18 @@
 }
 
 
+.icon.icon-pdf {
+    mask-image: url(../img/icons/pdf.svg);
+    -webkit-mask-image: url(../img/icons/pdf.svg);
+}
+
+
+.icon.icon-pdf-file {
+    mask-image: url(../img/icons/pdf-file.svg);
+    -webkit-mask-image: url(../img/icons/pdf-file.svg);
+}
+
+
 
 .icon-office{
     content: url("../img/icons/office.svg");

@@ -299,13 +299,17 @@ $('.map-all-object').on('click', function () {
 
 
 
+
+$('.real-estate-menu ul li').on('click', function () {
+    $('.selection-parameters').removeClass('touchstart-open');
+    $('body').removeClass('body-fon');
+})
+
+
 $('.open-estate-filter').on('click', function () {
     $('.selection-parameters').addClass('touchstart-open');
     $('body').addClass('body-fon');
 })
-
-
-
 
 
 
