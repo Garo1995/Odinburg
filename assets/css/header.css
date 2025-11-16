@@ -35,18 +35,20 @@ header{
 .header-cont-flex{
     gap: 32px;
 }
-
-.header-contact a{
+.phone-number{
+    color: #000000;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     text-align: right;
 }
-.phone-number{
-    color: #000000;
-}
 .request-call{
     color: #B1CE19;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: right;
+    cursor: pointer;
 }
 
 .favorite-box{
@@ -870,7 +872,7 @@ header{
 }
 @media (max-width: 767px){
     .header-main {
-        z-index: 9999;
+        z-index: 991;
         position: relative;
     }
     .menu-modal {

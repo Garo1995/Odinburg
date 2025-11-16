@@ -100,14 +100,10 @@
     overflow: hidden;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 50px;
+    align-items: center;
 }
-.parking-plan-left .parking-photo{
-    max-width: 563px;
-    width: 100%;
-}
+
 .parking-cards-pic{
     display: flex;
     flex-direction: column;

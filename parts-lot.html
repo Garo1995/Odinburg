@@ -22,14 +22,14 @@
                     <span></span>
                     <span></span>
                 </div>
-                <a href="#" class="logo G-flex">
+                <a href="./index.html" class="logo G-flex">
                     <img src="./assets/img/logo.svg" alt="logo">
                 </a>
             </div>
             <div class="header-cont-flex G-align-center">
                 <div class="header-contact G-flex-column G-align-end">
                     <a href="tel:+ 7 (495) 489 01 39" class="phone-number">+ 7 (495) 489 01 39</a>
-                    <a href="#" class="request-call">Заказать звонок</a>
+                    <span data-modal-target="#modal-form" class="card request-call">Заказать звонок</span>
                 </div>
                 <div class="select-block G-align-center">
                     <a href="#" class="favorite-box G-center">
@@ -189,7 +189,10 @@
                                             <p>ставка</p>
                                         </div>
                                     </div>
-                                    <button class="btn-line">Рассчитать ипотеку</button>
+                                    <button class="btn-line">
+                                        Рассчитать ипотеку
+                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -246,37 +249,50 @@
                             <li class="menu-data-click" data-catalog="stock">Акции</li>
                         </ul>
                     </div>
-                    <div class="menu-data-link">
-                        <ul>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Новости</a></li>
-                            <li><a href="#">Ход строительства</a></li>
-                            <li><a href="#">Спец-пул</a></li>
-                            <li><a href="#">Генплан</a></li>
-                            <li><a href="#">Инфраструктура</a></li>
-                            <li><a href="#">Кабинет брокера</a></li>
+                    <div class="menu-data-mobile">
+                        <ul class="menu-scroll">
+                            <li><a href="./index.html#advantages-scr">Преимущества </a></li>
+                            <li><a href="./index.html#selection">Выбор недвижимости</a></li>
+                            <li><a href="#">Способы покупки</a></li>
+                            <li><a href="#">Акции</a></li>
                         </ul>
                     </div>
-                    <button class="btn-line">
-                        <i class="icon-call"></i>
+                    <div class="menu-data-link">
+                        <ul class="menu-scroll">
+                            <li><a href="#">О компании <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#news-sec">Новости</a></li>
+                            <li><a href="#">Ход строительства</a></li>
+                            <li><a href="./index.html#special-pool">Спец-пул</a></li>
+                            <li><a href="./index.html#general-plan">Генплан</a></li>
+                            <li><a href="./index.html#infrastructure">Инфраструктура</a></li>
+                            <li><a href="#">Кабинет брокера <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#footer-contact">Контакты</a></li>
+                        </ul>
+
+                    </div>
+                    <button data-modal-target="#modal-form" class="card btn-line">
+                        <i class="icon icon-call"></i>
                         <span>Заказать звонок</span>
                     </button>
+
+
+                    <button class="btn">Выбор недвижимости</button>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="header-nav">
-        <div class="nav-menu">
-            <ul>
-                <li><a href="#">Спец-пул</a></li>
-                <li><a href="#">Преимущества </a></li>
-                <li><a href="#">Подбор</a></li>
-                <li><a href="#">Генплан</a></li>
-                <li><a href="#">Ипотека</a></li>
-                <li><a href="#">Инфраструктура</a></li>
-            </ul>
+    <div class="select-property-mobile">
+        <div class="select-property">
+            <div class="select-name">Выбор недвижимости</div>
+            <div class="touchstart select-dropdown">
+                <span class="close-filt-map"></span>
+                <ul>
+                    <li>Квартиры <i class="icon-house"></i></li>
+                    <li>Машино-места <i class="icon-car"></i></li>
+                    <li>Кладовые <i class="icon-storerooms"></i></li>
+                    <li>Мото-места <i class="icon-moto"></i></li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
@@ -433,7 +449,7 @@
                         <span>73 385 ₽</span>
                         <i class="icon-arrow-right"></i>
                     </div>
-                    <button class="btn">Забронировать</button>
+                    <button data-modal-target="#modal-form" class="card btn">Забронировать</button>
                     <button class="btn-line">Записаться на просмотр</button>
                 </div>
             </div>
@@ -463,62 +479,64 @@
         <div class="mortgage-calc">
             <div class="touchstart calculator-program">
                 <span class="close-filt-map"></span>
-                <div class="frame-select">
-                    <small>Ипотечная программа</small>
-                    <label>
-                        <select name="frame-select" id="frame-select-two">
-                            <option value="">Все</option>
-                            <option value="">Корпус ЛУЧ-4</option>
-                            <option value="">Корпус 4А</option>
-                            <option value="">Корпус 4Б</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="filter-block" data-field="price">
-                    <small>Стоимость квартиры, ₽</small>
+                <div class="calculator-program-heig">
+                    <div class="frame-select">
+                        <small>Ипотечная программа</small>
+                        <label>
+                            <select name="frame-select" id="frame-select-two">
+                                <option value="">Все</option>
+                                <option value="">Корпус ЛУЧ-4</option>
+                                <option value="">Корпус 4А</option>
+                                <option value="">Корпус 4Б</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="filter-block" data-field="price">
+                        <small>Стоимость квартиры, ₽</small>
 
-                    <div class="range-row">
-                        <div class="range-value" id="price-display">1 200 000 ₽</div>
-                        <div class="range-wrap">
-                            <input type="range" id="price-range" min="1000000" max="100000000" step="10000" value="1200000" />
+                        <div class="range-row">
+                            <div class="range-value" id="price-display">1 200 000 ₽</div>
+                            <div class="range-wrap">
+                                <input type="range" id="price-range" min="1000000" max="100000000" step="10000" value="1200000" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="filter-block" data-field="term">
-                    <small>Срок ипотеки, лет</small>
-                    <div class="range-row">
-                        <div class="range-value" id="term-display">10 лет</div>
-                        <div class="range-wrap">
-                            <input type="range" id="term-range" min="1" max="30" step="1" value="10" />
+                    <div class="filter-block" data-field="term">
+                        <small>Срок ипотеки, лет</small>
+                        <div class="range-row">
+                            <div class="range-value" id="term-display">10 лет</div>
+                            <div class="range-wrap">
+                                <input type="range" id="term-range" min="1" max="30" step="1" value="10" />
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="filter-block" data-field="deposit">
-                    <small>Первоначальный взнос, ₽</small>
+                    <div class="filter-block" data-field="deposit">
+                        <small>Первоначальный взнос, ₽</small>
 
-                    <div class="range-row">
-                        <div class="range-value" id="deposit-display">1 200 000 ₽</div>
-                        <div class="range-wrap">
-                            <!-- Слайдер делаем в процентах (0-100). Отображаем и сумму и процент -->
-                            <input type="range" id="deposit-range" min="0" max="100" step="1" value="20" />
+                        <div class="range-row">
+                            <div class="range-value" id="deposit-display">1 200 000 ₽</div>
+                            <div class="range-wrap">
+                                <!-- Слайдер делаем в процентах (0-100). Отображаем и сумму и процент -->
+                                <input type="range" id="deposit-range" min="0" max="100" step="1" value="20" />
+                            </div>
+                            <div class="range-percent" id="deposit-percent">20%</div>
                         </div>
-                        <div class="range-percent" id="deposit-percent">20%</div>
                     </div>
-                </div>
-                <div class="calc-percent">
-                    <ul id="preset-percent">
-                        <li class="calc-percent-act" data-percent="20">20%</li>
-                        <li data-percent="30">30%</li>
-                        <li data-percent="40">40%</li>
-                        <li data-percent="50">50%</li>
-                    </ul>
-                </div>
-                <div class="calc-percent-btn">
-                    <button class="btn" id="apply-btn">Оставить заявку</button>
+                    <div class="calc-percent">
+                        <ul id="preset-percent">
+                            <li class="calc-percent-act" data-percent="20">20%</li>
+                            <li data-percent="30">30%</li>
+                            <li data-percent="40">40%</li>
+                            <li data-percent="50">50%</li>
+                        </ul>
+                    </div>
+                    <div class="calc-percent-btn">
+                        <button data-modal-target="#submit-request" class="card btn" id="apply-btn">Оставить заявку</button>
 
-                    <p>
-                        Расчетная сумма может иметь незначительную погрешность, вызванную особенностями расчетов в каждом конкретном банке или финансовой организации.
-                    </p>
+                        <p>
+                            Расчетная сумма может иметь незначительную погрешность, вызванную особенностями расчетов в каждом конкретном банке или финансовой организации.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -527,7 +545,7 @@
                 <div class="mortgage-calc-scr">
                     <div class="mortgage-scr-height">
                         <div class="mortgage-scr-max">
-                            <div class="bank-card-box">
+                            <div class="bank-card-box bank-act-drop">
                                 <div class="bank-card-fon">
                                     <div class="bank-card-info G-align-center">
                                         <div class="bank-card-name G-align-center">
@@ -554,32 +572,40 @@
                                             </div>
                                         </div>
                                         <div class="bank-card-btn G-align-center">
-                                            <button class="submit-request">Оставить заявку</button>
+                                            <button data-modal-target="#submit-request" class="card submit-request">Оставить заявку</button>
                                             <span class="open-bank-card"><i class="arrow-down"></i></span>
                                         </div>
                                     </div>
                                     <div class="bank-card-drop">
-                                        <div class="bank-card-prcnet G-align-center">
-                                            <div class="bank-card-count">
-                                                <p>Ставка</p>
-                                                <span>Взнос</span>
+                                        <div class="bank-card-skrit">
+                                            <div class="bank-card-prcnet G-align-center">
+                                                <div class="bank-card-count">
+                                                    <p>Ставка</p>
+                                                    <span>Взнос</span>
+                                                </div>
+                                                <div class="bank-card-count">
+                                                    <p>Срок</p>
+                                                    <span>Платеж</span>
+                                                </div>
+                                                <div class="bank-card-count">
+                                                    <p>3,5% *</p>
+                                                    <span>20%</span>
+                                                </div>
+                                                <div class="bank-card-count">
+                                                    <p>15 лет</p>
+                                                    <span>45 567₽</span>
+                                                </div>
                                             </div>
-                                            <div class="bank-card-count">
-                                                <p>Срок</p>
-                                                <span>Платеж</span>
-                                            </div>
-                                            <div class="bank-card-count">
-                                                <p>3,5% *</p>
-                                                <span>20%</span>
-                                            </div>
-                                            <div class="bank-card-count">
-                                                <p>15 лет</p>
-                                                <span>45 567₽</span>
+                                            <div class="bank-card-btn G-align-center">
+                                                <button data-modal-target="#submit-request" class="card submit-request">Оставить заявку</button>
                                             </div>
                                         </div>
-                                        <div class="bank-card-btn G-align-center">
-                                            <button class="submit-request">Оставить заявку</button>
-                                        </div>
+                                    </div>
+                                </div>
+                                <div class="open-bank-mobile">
+                                    <div class="open-bank-card">
+                                        <span class="three-more-offers">еще 3 предложения</span>
+                                        <span class="more-offers-hide">Скрыть </span>
                                     </div>
                                 </div>
                             </div>
@@ -609,8 +635,11 @@
                                                 <span>45 567₽</span>
                                             </div>
                                         </div>
+                                        <div class="subsidized-mobile">
+                                            <p>*- субсидированная ставка</p>
+                                        </div>
                                         <div class="bank-card-btn G-align-center">
-                                            <button class="submit-request">Оставить заявку</button>
+                                            <button data-modal-target="#submit-request" class="card submit-request">Оставить заявку</button>
                                         </div>
                                     </div>
                                     <div class="subsidized">
@@ -645,7 +674,7 @@
                                             </div>
                                         </div>
                                         <div class="bank-card-btn G-align-center">
-                                            <button class="submit-request">Оставить заявку</button>
+                                            <button data-modal-target="#submit-request" class="card submit-request">Оставить заявку</button>
                                             <span class="open-bank-card"></span>
                                         </div>
                                     </div>
@@ -678,7 +707,7 @@
                                             </div>
                                         </div>
                                         <div class="bank-card-btn G-align-center">
-                                            <button class="submit-request">Оставить заявку</button>
+                                            <button data-modal-target="#submit-request" class="card submit-request">Оставить заявку</button>
                                             <span class="open-bank-card"></span>
                                         </div>
                                     </div>
@@ -711,7 +740,7 @@
                                             </div>
                                         </div>
                                         <div class="bank-card-btn G-align-center">
-                                            <button class="submit-request">Оставить заявку</button>
+                                            <button data-modal-target="#submit-request" class="card submit-request">Оставить заявку</button>
                                             <span class="open-bank-card"></span>
                                         </div>
                                     </div>
@@ -832,8 +861,6 @@
         </div>
     </div>
 </section>
-
-
 
 
 
@@ -1225,7 +1252,71 @@
 
 
 
+<div id="modal-form" class="modal-overlay">
+    <div class="modal-close"></div>
 
+    <div class="touchstart modal-form-main">
+        <span class="close-filt-map"></span>
+        <h3>Заказать звонок</h3>
+        <div class="validate-form">
+            <form action="" method="post">
+                <div class="modal-inp">
+                    <span>Имя</span>
+                    <label>
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="modal-inp">
+                    <span>Номер телефона</span>
+                    <label>
+                        <input type="text" id="tel" name="tel"
+                               class="mask-phone required-phone">
+                    </label>
+                </div>
+                <div class="modal-inp">
+                    <span>Email</span>
+                    <label>
+                        <input type="text" class="required-email">
+                    </label>
+                </div>
+                <div class="frame-select">
+                    <span>Время для звонка</span>
+                    <label>
+                        <select name="data-call" id="data-call">
+                            <option value="">Ближайшее время</option>
+                            <option value="">В ближайшее время</option>
+                            <option value="9:00-12:00">9:00-12:00</option>
+                            <option value="12:00-15:00">12:00-15:00</option>
+                            <option value="15:00-18:00">15:00-18:00</option>
+                            <option value="18:00-21:00">18:00-21:00</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="check-form">
+                    <label>
+                        <small>
+                            Я ознакомлен(-а) с <a href="#">Политикой обработки в отношении персональных данных</a> и даю свое
+                            <a href="#">согласие на обработку персональных данных</a>
+                        </small>
+                        <input type="checkbox" class="required-check">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="check-form">
+                    <label>
+                        <small>
+                            Даю свое
+                            <a href="#">согласие на получение рекламных материалов</a>
+                        </small>
+                        <input type="checkbox" class="required-check">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button type="submit" class="btn ">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 

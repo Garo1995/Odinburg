@@ -1,25 +1,29 @@
 $(document).ready(function () {
     $('select').styler();
+
+
+    $('.open-menu').on('click', function (e) {
+        $(this).toggleClass('close-menu')
+        $('.menu-modal').toggleClass('menu-modal-opened')
+    })
+    $('.menu-data-link ul li a').on('click', function (e) {
+        $('.open-menu').removeClass('close-menu')
+        $('.menu-modal').removeClass('menu-modal-opened')
+    })
+
+    window.addEventListener('scroll', function() {
+        const headerNav = document.querySelector('.header-nav');
+        if (window.scrollY > 100) {
+            headerNav.classList.add('show');
+        } else {
+            headerNav.classList.remove('show');
+        }
+    });
 })
 
-$('.open-menu').on('click', function (e) {
-    $(this).toggleClass('close-menu')
-    $('.menu-modal').toggleClass('menu-modal-opened')
-})
-$('.menu-data-link ul li a').on('click', function (e) {
-    $('.open-menu').removeClass('close-menu')
-    $('.menu-modal').removeClass('menu-modal-opened')
-})
 
-window.addEventListener('scroll', function() {
-    const headerNav = document.querySelector('.header-nav');
-    if (window.scrollY > 100) {
-        headerNav.classList.add('show');
-    } else {
-        headerNav.classList.remove('show');
-    }
-});
 
+$(document).ready(function () {
 
 
 
@@ -42,7 +46,7 @@ $(window).on('click', function (e) {
 });
 
 
-
+})
 
 $('.open-bank-card').on('click', function (e) {
     e.preventDefault();
@@ -133,7 +137,7 @@ $('.nav-menu ul li').on('click', function () {
 
 
 
-
+$(document).ready(function () {
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -155,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+})
 
 
 
@@ -272,6 +276,7 @@ document.querySelectorAll('.modal-overlay').forEach(modal => {
 
 
 
+$(document).ready(function () {
 
 
 
@@ -353,16 +358,66 @@ $('.close-catalog').on('click', function () {
 })
 
 
+})
 
 
 
 
-
+$(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
     const widget = document.querySelector('.floating-widget');
     const toggleBtn = document.getElementById('toggleWidget');
 
     toggleBtn.addEventListener('click', function () {
         widget.classList.toggle('open');
+    });
+});
+
+});
+
+
+$(document).ready(function () {
+    document.querySelectorAll('.validate-form').forEach(form => {
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            let isValid = true;
+
+            // Убираем прошлые ошибки
+            form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+
+            // Проверка телефона
+            form.querySelectorAll('.required-phone').forEach(phone => {
+                if (phone.value.trim().length < 6) {
+                    phone.classList.add('error');
+                    isValid = false;
+                }
+            });
+
+            // Проверка email
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            form.querySelectorAll('.required-email').forEach(email => {
+                if (!emailPattern.test(email.value.trim())) {
+                    email.classList.add('error');
+                    isValid = false;
+                }
+            });
+
+            // Проверка чекбоксов
+            form.querySelectorAll('.required-check').forEach(ch => {
+                if (!ch.checked) {
+                    ch.classList.add('error');
+                    isValid = false;
+                }
+            });
+
+            // Если ошибки есть — не отправляем
+            if (!isValid) return;
+
+            // Если всё ок — отправка формы
+            form.submit();
+        });
+
     });
 });

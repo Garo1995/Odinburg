@@ -36,7 +36,10 @@
     margin-top: 24px;
     gap: 24px;
 }
-
+.floor-plan-pic{
+    display: flex;
+    justify-content: center;
+}
 .parts-apart-box{
     max-width: 783px;
     width: 100%;

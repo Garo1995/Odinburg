@@ -103,7 +103,7 @@
     position: relative;
 }
 .modal-news-scr{
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-right: 12px;
 }
 .modal-news-scr::-webkit-scrollbar {
@@ -231,18 +231,23 @@ body.modal-open {
 
 
 .modal-overlay {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    transition: 0.6s;
 }
 .modal-overlay.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+
 }
 .modal-window {
     position: relative;
@@ -540,7 +545,183 @@ body.modal-open {
 }
 
 
+.modal-form-main{
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.15);
+    background: rgba(254, 255, 250, 1);
+    max-width: 670px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 48px 32px;
+}
+.modal-form-main h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 24px;
+}
 
+.modal-inp{
+    margin-bottom: 32px;
+    width: 100%;
+}
+.modal-inp label{
+    display: flex;
+    width: 100%;
+}
+.modal-inp input{
+    width: 100%;
+    transition: 0.3s;
+    height: 59px;
+    padding: 16px 16px 16px 24px;
+    border-radius: 12px;
+    background: rgba(254, 255, 250, 1);
+    border: 1px solid rgba(220, 220, 220, 1);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 1);
+}
+.modal-inp span, .frame-select span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(111, 111, 111, 1);
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.modal-overlay .frame-select {
+    max-width: 100%;
+}
+
+
+
+.check-form{
+    margin-top: 24px;
+    width: 100%;
+
+}
+
+.check-form label {
+    display: block;
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    max-width: 700px;
+    width: 100%;
+}
+.check-form label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.check-form label small {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 1);
+}
+.check-form label small a{
+    color: rgba(190, 220, 28, 1);
+    display: inline;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(254, 255, 250, 1);
+    border-radius: 4px;
+}
+.check-form label input:checked ~ .checkmark {
+    background: rgba(190, 220, 28, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.check-form label .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid rgba(255, 255, 255, 1);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.check-form label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+
+
+
+.modal-form-main .btn{
+    width: 100%;
+    margin-top: 32px;
+    background: rgba(190, 220, 28, 0.2);
+    color: rgba(0, 0, 0, 0.15);
+}
+
+.modal-form-main .btn:hover{
+    background: rgba(190, 220, 28, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+
+
+
+
+
+
+.submit-request-flex{
+    display: flex;
+    gap: 32px;
+}
+.submit-request-tab{
+    background: rgba(239, 239, 239, 1);
+    max-width: 400px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 32px;
+}
+.submit-request-mod{
+    max-width: 606px;
+    width: 100%;
+}
+
+#submit-request .modal-form-main{
+    max-width: 1038px;
+}
+.submit-request-tab .parts-frame-count{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 8px;
+}
+.modal-overlay .close-filt-map {
+    display: none;
+}
+
+
+input.error {
+    border: 1px solid rgba(243, 10, 10, 1) !important;
+}
+
+.check-form input.error + .checkmark {
+    border: 1px solid rgba(243, 10, 10, 1) !important;
+}
 
 
 @media (max-width: 1399px){
@@ -653,14 +834,56 @@ body.modal-open {
     .modal-options-info ul {
         margin-top: 12px;
     }
-    .modal-options-scr {
-        gap: 11px;
-        height: 406px;
+    .submit-request-tab {
+        max-width: 340px;
+        padding: 20px;
+    }
+    .modal-form-main .btn {
+        margin-top: 16px;
+    }
+    .submit-request-flex {
+        gap: 24px;
+    }
+    #submit-request .modal-form-main {
+        max-width: 900px;
+    }
+    .modal-form-main {
+        padding: 32px 24px;
     }
 }
 
 
 @media (max-width: 1020px){
+    .modal-options-scr {
+        gap: 11px;
+        height: 406px;
+    }
+    .modal-form-main {
+        border-radius: 24px 24px 0 0;
+        padding: 14px 16px 24px;
+    }
+
+    .modal-form-main h3 {
+        font-size: 20px;
+        margin-bottom: 32px;
+        text-align: left;
+    }
+    .modal-inp {
+        margin-bottom: 16px;
+    }
+    .check-form label small {
+        font-size: 16px;
+    }
+    .modal-overlay .close-filt-map {
+        display: flex;
+    }
+
+    .modal-news-info {
+        height: 450px;
+    }
+    .check-form {
+        margin-top: 16px;
+    }
     .modal-options-slide{
         display: none;
     }
@@ -691,13 +914,67 @@ body.modal-open {
     .modal-overlay {
         display: flex;
         transform: translateY(130%);
-        transition: transform 0.3s
+        transition: transform 0.3s;
+        opacity: 1;
+        visibility: visible;
+        align-items: flex-end;
     }
     .modal-overlay.active {
         transform: translateY(0%);
     }
     .types-mortgage-pik{
         display: none;
+    }
+    .modal-news-info img{
+        display: none;
+    }
+    .modal-news-box {
+        max-width: 630px;
+        padding: 14px 14px 0 25px;
+        border-radius: 24px 24px 0 0;
+    }
+    .modal-news-info h3 {
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .modal-news-info p {
+        margin-top: 12px;
+        line-height: 138%;
+    }
+    .submit-request-flex {
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        height: 450px;
+        padding-right: 6px;
+        margin-right: -6px;
+    }
+    .submit-request-flex::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background: #0000000D;
+        border-radius: 8px;
+
+    }
+    .submit-request-flex::-webkit-scrollbar-thumb {
+        width: 4px;
+        height: 4px;
+        background: #BEDC1CCC;
+        border-radius: 8px;
+    }
+    #submit-request .modal-form-main {
+        max-width: 600px;
+    }
+    .modal-form-main {
+        max-width: 600px;
+    }
+    .submit-request-tab {
+        max-width: 100%;
+        padding: 24px 16px;
+    }
+    .modal-form-main h3 {
+        margin-bottom: 20px;
     }
 }
 

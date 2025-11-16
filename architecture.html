@@ -22,14 +22,14 @@
                     <span></span>
                     <span></span>
                 </div>
-                <a href="#" class="logo G-flex">
+                <a href="./index.html" class="logo G-flex">
                     <img src="./assets/img/logo.svg" alt="logo">
                 </a>
             </div>
             <div class="header-cont-flex G-align-center">
                 <div class="header-contact G-flex-column G-align-end">
                     <a href="tel:+ 7 (495) 489 01 39" class="phone-number">+ 7 (495) 489 01 39</a>
-                    <a href="#" class="request-call">Заказать звонок</a>
+                    <span data-modal-target="#modal-form" class="card request-call">Заказать звонок</span>
                 </div>
                 <div class="select-block G-align-center">
                     <a href="#" class="favorite-box G-center">
@@ -189,7 +189,10 @@
                                             <p>ставка</p>
                                         </div>
                                     </div>
-                                    <button class="btn-line">Рассчитать ипотеку</button>
+                                    <button class="btn-line">
+                                        Рассчитать ипотеку
+                                    </button>
+
                                 </div>
                             </div>
                         </div>
@@ -246,37 +249,50 @@
                             <li class="menu-data-click" data-catalog="stock">Акции</li>
                         </ul>
                     </div>
-                    <div class="menu-data-link">
-                        <ul>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Новости</a></li>
-                            <li><a href="#">Ход строительства</a></li>
-                            <li><a href="#">Спец-пул</a></li>
-                            <li><a href="#">Генплан</a></li>
-                            <li><a href="#">Инфраструктура</a></li>
-                            <li><a href="#">Кабинет брокера</a></li>
+                    <div class="menu-data-mobile">
+                        <ul class="menu-scroll">
+                            <li><a href="./index.html#advantages-scr">Преимущества </a></li>
+                            <li><a href="./index.html#selection">Выбор недвижимости</a></li>
+                            <li><a href="#">Способы покупки</a></li>
+                            <li><a href="#">Акции</a></li>
                         </ul>
                     </div>
-                    <button class="btn-line">
-                        <i class="icon-call"></i>
+                    <div class="menu-data-link">
+                        <ul class="menu-scroll">
+                            <li><a href="#">О компании <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#news-sec">Новости</a></li>
+                            <li><a href="#">Ход строительства</a></li>
+                            <li><a href="./index.html#special-pool">Спец-пул</a></li>
+                            <li><a href="./index.html#general-plan">Генплан</a></li>
+                            <li><a href="./index.html#infrastructure">Инфраструктура</a></li>
+                            <li><a href="#">Кабинет брокера <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#footer-contact">Контакты</a></li>
+                        </ul>
+
+                    </div>
+                    <button data-modal-target="#modal-form" class="card btn-line">
+                        <i class="icon icon-call"></i>
                         <span>Заказать звонок</span>
                     </button>
+
+
+                    <button class="btn">Выбор недвижимости</button>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <div class="header-nav">
-        <div class="nav-menu">
-            <ul>
-                <li><a href="#">Спец-пул</a></li>
-                <li><a href="#">Преимущества </a></li>
-                <li><a href="#">Подбор</a></li>
-                <li><a href="#">Генплан</a></li>
-                <li><a href="#">Ипотека</a></li>
-                <li><a href="#">Инфраструктура</a></li>
-            </ul>
+    <div class="select-property-mobile">
+        <div class="select-property">
+            <div class="select-name">Выбор недвижимости</div>
+            <div class="touchstart select-dropdown">
+                <span class="close-filt-map"></span>
+                <ul>
+                    <li>Квартиры <i class="icon-house"></i></li>
+                    <li>Машино-места <i class="icon-car"></i></li>
+                    <li>Кладовые <i class="icon-storerooms"></i></li>
+                    <li>Мото-места <i class="icon-moto"></i></li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
@@ -285,63 +301,129 @@
 <section class="architecture-page">
     <div class="container">
         <div class="architecture-title G-align-center">
-            <a href="./index.html" class="back-home G-center">
-                <i class="icon-arrow-left"></i>
-            </a>
             <h2>Архитектура</h2>
         </div>
 
-        <div class="architecture-min G-flex">
+        <div class="architecture-box G-align-center G-justify-between">
+            <div class="parking-href">
+                <ul>
+                    <li class="parking-click parking-active" data-catalog="archite-frame">Корпус ЛУЧ4</li>
+                    <li class="parking-click" data-catalog="archite-4a">Корпус 4А и 4Б</li>
+                </ul>
+            </div>
+            <a href="./index.html" class="back-gallery"><i class="arrow-left"></i><span>Назад к галерее</span></a>
+        </div>
 
-            <div class="architecture-rel">
-                <div class="swiper architecture-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div data-val="modal-gallery" class="open_modal architecture-photo ">
-                                <span class="archit-names">Корпус ЛУЧ-4</span>
-                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
+        <div class="parking-href-min">
+            <div class="parking-js" data-catalog="archite-frame">
+                <div class="architecture-min G-flex">
+
+                    <div class="architecture-rel">
+                        <div class="swiper architecture-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo ">
+                                        <span class="archit-names">Корпус ЛУЧ-4</span>
+                                        <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo ">
+                                        <span class="archit-names">Корпус ЛУЧ-4</span>
+                                        <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div data-val="modal-gallery" class="open_modal architecture-photo ">
-                                <span class="archit-names">Корпус ЛУЧ-4</span>
-                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
-                            </div>
+                        <div class="archit-button-prev swiper-button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="archit-button-next swiper-button-next">
+                            <i class="icon-arrow-right"></i>
                         </div>
                     </div>
-                </div>
-                <div class="archit-button-prev swiper-button-prev">
-                    <i class="icon-arrow-left"></i>
-                </div>
-                <div class="archit-button-next swiper-button-next">
-                    <i class="icon-arrow-right"></i>
+                    <div class="architecture-rel">
+                        <div class="swiper architecture-two-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo">
+                                        <span class="archit-names">Корпус 4А и 4Б</span>
+                                        <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo">
+                                        <span class="archit-names">Корпус 4А и 4Б</span>
+                                        <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="archit-two-button-prev swiper-button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="archit-two-button-next swiper-button-next">
+                            <i class="icon-arrow-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="architecture-rel">
-                <div class="swiper architecture-two-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div data-val="modal-gallery" class="open_modal architecture-photo">
-                                <span class="archit-names">Корпус 4А и 4Б</span>
-                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
+            <div class="parking-js" data-catalog="archite-4a">
+                <div class="architecture-min G-flex">
+
+                    <div class="architecture-rel">
+                        <div class="swiper architecture-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo ">
+                                        <span class="archit-names">Корпус ЛУЧ-4</span>
+                                        <img src="./assets/img/benefits-1.jpg" alt="odinburg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo ">
+                                        <span class="archit-names">Корпус ЛУЧ-4</span>
+                                        <img src="./assets/img/benefits-1.jpg" alt="odinburg">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div data-val="modal-gallery" class="open_modal architecture-photo">
-                                <span class="archit-names">Корпус 4А и 4Б</span>
-                                <img src="./assets/img/odinburg.jpg" alt="odinburg">
-                            </div>
+                        <div class="archit-button-prev swiper-button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="archit-button-next swiper-button-next">
+                            <i class="icon-arrow-right"></i>
                         </div>
                     </div>
-                </div>
-                <div class="archit-two-button-prev swiper-button-prev">
-                    <i class="icon-arrow-left"></i>
-                </div>
-                <div class="archit-two-button-next swiper-button-next">
-                    <i class="icon-arrow-right"></i>
+                    <div class="architecture-rel">
+                        <div class="swiper architecture-two-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo">
+                                        <span class="archit-names">Корпус 4А и 4Б</span>
+                                        <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div data-val="modal-gallery" class="open_modal architecture-photo">
+                                        <span class="archit-names">Корпус 4А и 4Б</span>
+                                        <img src="./assets/img/odinburg.jpg" alt="odinburg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="archit-two-button-prev swiper-button-prev">
+                            <i class="icon-arrow-left"></i>
+                        </div>
+                        <div class="archit-two-button-next swiper-button-next">
+                            <i class="icon-arrow-right"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
 </section>
 
