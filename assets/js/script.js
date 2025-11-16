@@ -363,7 +363,6 @@ $('.close-catalog').on('click', function () {
 
 
 
-$(document).ready(function () {
 document.addEventListener('DOMContentLoaded', function () {
     const widget = document.querySelector('.floating-widget');
     const toggleBtn = document.getElementById('toggleWidget');
@@ -373,7 +372,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-});
 
 
 $(document).ready(function () {
