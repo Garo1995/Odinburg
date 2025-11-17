@@ -19,11 +19,32 @@ $(document).ready(function () {
             headerNav.classList.remove('show');
         }
     });
+
+    $(document).ready(function () {
+        setTimeout(function () {
+            $(".banner-anime").addClass("start-anime");
+            $("header").addClass("header-anime");
+        }, 900);
+    });
 })
 
 
+const revealOnScroll = () => {
+    const elementsToReveal = document.querySelectorAll('.animate-on-scroll');
+    const triggerPoint = window.innerHeight * 0.85;
 
-$(document).ready(function () {
+    elementsToReveal.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < triggerPoint) {
+            element.classList.add('visible');
+        }
+    });
+};
+
+// 🔄 Attach listeners
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
 
 
 
@@ -46,7 +67,6 @@ $(window).on('click', function (e) {
 });
 
 
-})
 
 $('.open-bank-card').on('click', function (e) {
     e.preventDefault();
@@ -137,7 +157,6 @@ $('.nav-menu ul li').on('click', function () {
 
 
 
-$(document).ready(function () {
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -159,7 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-})
 
 
 
@@ -276,7 +294,6 @@ document.querySelectorAll('.modal-overlay').forEach(modal => {
 
 
 
-$(document).ready(function () {
 
 
 
@@ -358,7 +375,6 @@ $('.close-catalog').on('click', function () {
 })
 
 
-})
 
 
 
@@ -374,8 +390,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-$(document).ready(function () {
-    document.querySelectorAll('.validate-form').forEach(form => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelectorAll('.validate-form').forEach(form => {
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -418,4 +452,3 @@ $(document).ready(function () {
         });
 
     });
-});

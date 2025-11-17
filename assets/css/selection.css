@@ -809,8 +809,21 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         width: 0;
         height: 0;
     }
+    .select-parameter::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .select-parameterparameters::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+    }
     .touchstart-open{
         transform: translateY(0%) translateX(-50%);
+    }
+    .select-parameter{
+        overflow-y: auto;
+        height: 450px;
+        padding-right: 5px;
     }
 
     .real-estate-head {
@@ -915,7 +928,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     .select-parameter {
         gap: 22px;
         margin-top: 16px;
-        flex-direction: column;
     }
 
     .filter-block, .frame-select, .filter-search, .number-rooms {

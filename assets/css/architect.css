@@ -43,6 +43,8 @@
 .architecture-photo img{
     border-radius: 32px;
     width: 100%;
+    height: 580px;
+    object-fit: cover;
 }
 
 .archit-names{
@@ -133,6 +135,10 @@
     .architecture-page {
         margin-top: 24px;
         padding-bottom: 50px;
+    }
+    .architecture-photo img {
+        height: 412px;
+        object-fit: cover;
     }
 }
 
