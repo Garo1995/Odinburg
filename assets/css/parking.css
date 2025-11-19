@@ -61,15 +61,6 @@
 }
 
 
-.plan-parking{
-    display: flex;
-    max-width: 693px;
-    width: 100%;
-    position: relative;
-}
-.plan-parking img{
-    width: 100%;
-}
 .svg-map{
     position: absolute;
     top: 0;
@@ -178,7 +169,19 @@
     transition: transform 0.3s ease;
     transform-origin: center;
     display: flex;
+    max-width: 1127px;
+    width: 100%;
 }
+
+
+.plan-parking{
+    max-width: 693px;
+}
+.plan-parking img{
+    width: 100%;
+}
+
+
 .parking-photo.dragging {
     cursor: grabbing;
 }
@@ -256,11 +259,11 @@
 
 
 .independent{
-    margin-top: 40px;
-    gap: 8px;
+    margin-top: 55px;
+    gap: 16px;
 }
 .independent-name{
-    gap: 8px;
+    gap: 10px;
 }
 .independent-name span{
     width: 14px;

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d130909a-f4b5-453d-85f2-98a45f38ba0c&lang=ru_RU"></script>
+
+    <title>Odinburg</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-main G-align-center G-justify-between">
+            <div class="header-logo G-align-center">
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="./index.html" class="logo G-flex">
+                    <img src="./assets/img/logo.svg" alt="logo" loading="lazy">
+                </a>
+            </div>
+            <div class="header-cont-flex G-align-center">
+                <div class="header-contact G-flex-column G-align-end">
+                    <a href="tel:+ 7 (495) 489 01 39" class="phone-number">+ 7 (495) 489 01 39</a>
+                    <span data-modal-target="#modal-form" class="card request-call">Заказать звонок</span>
+                </div>
+                <div class="select-block G-align-center">
+                    <a href="#" class="favorite-box G-center">
+                        <img src="./assets/img/heart.svg" alt="heart" loading="lazy">
+                    </a>
+                    <div class="select-property">
+                        <div class="select-name">Выбор недвижимости</div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>Квартиры <i class="icon-house"></i></li>
+                                <li>Машино-места <i class="icon-car"></i></li>
+                                <li>Кладовые <i class="icon-storerooms"></i></li>
+                                <li>Мото-места <i class="icon-moto"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-modal">
+        <div class="container">
+            <div class="menu-modal-fon G-justify-between">
+                <div class="menu-modal-min">
+                    <div class="menu-modal-js" data-catalog="benefits">
+                        <div class="menu-modal-block">
+                            <h2>Преимущества проекта</h2>
+                            <div class="project-wrap">
+                                <div class="project-box">
+                                    <img src="./assets/img/project-1.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Дома уровня бизнес</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-2.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Инфраструктура</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-box">
+                                    <img src="./assets/img/project-3.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Экологически чистый район</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-4.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Для детей</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-5.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Продуманные планировки</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-6.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Кладовые и паркинг</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="property">
+                        <div class="menu-modal-block">
+                            <h2>Выбор недвижимости</h2>
+                            <div class="select-menu-property">
+                                <div class="project-box">
+                                    <img src="./assets/img/property-1.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Квартиры</span>
+                                    </div>
+                                </div>
+                                <div class="menu-property-col G-flex-column">
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project" loading="lazy">
+                                        <div class="project-name">
+                                            <span>Машино-места</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project" loading="lazy">
+                                        <div class="project-name">
+                                            <span>Мото-места</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/property-3.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Кладовые</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="purchase">
+                        <div class="menu-modal-block">
+                            <h2>ипотека</h2>
+                            <div class="mortgage-flex">
+                                <div class="mortgage-selec G-flex-wrap">
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Стандартная</h3>
+                                        <p>
+                                            Нужен доступный первый взнос или большая сумма кредита?
+                                        </p>
+                                        <strong>от 23,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>IT-ипотека</h3>
+                                        <p>
+                                            Доступное жилье без первоначального взноса
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Военная</h3>
+                                        <p>
+                                            Вы военнослужащий с сертификатом НИС?
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Семейная</h3>
+                                        <p>
+                                            Мечтаете выгодно купить квартиру с уютной детской?
+                                        </p>
+                                        <strong>от 6,5%</strong>
+                                    </div>
+                                </div>
+
+                                <div class="mortgage-calculator">
+                                    <div class="mortgage-calc-title">
+                                        <h3>Ипотечный калькулятор</h3>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 29 456 руб.</span>
+                                            <p>ежемесячный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 1,4 млн руб.</span>
+                                            <p>первоначальный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 3,9%</span>
+                                            <p>ставка</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn-line">
+                                        Рассчитать ипотеку
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="stock">
+                        <div class="menu-modal-block">
+                            <h2>Акции</h2>
+                            <div class="stock-crash-flex">
+                                <div class="stock-crash-pic">
+                                    <a href="#" class="more-info">Подробнее</a>
+                                </div>
+                                <div class="stock-crash-col">
+                                    <div class="stock-crash-box">
+                                        <strong>ОБВАЛ ЦЕН</strong>
+                                        <span>Успей до 30 октября!</span>
+                                        <button class="btn-line">Подробнее</button>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/stock-chip.png" alt="stock" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <div class="parking-space-box">
+                                        <div class="parking-space-price">
+                                            <strong>15 000 <small>₽/мес.</small></strong>
+                                            <span>Машино-место</span>
+                                        </div>
+                                        <div class="parking-discount G-align-start">
+                                            <div class="parking-discount-count">
+                                                <small>Скидка</small>
+                                                <strong>15%</strong>
+                                            </div>
+                                            <div class="parking-discount-count">
+                                                <small>Рассрочка</small>
+                                                <strong>на 3 года</strong>
+                                            </div>
+                                        </div>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/car-chat.png" alt="car-chat" loading="lazy">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu-modal-cnt">
+                    <div class="menu-data-menu">
+                        <ul>
+                            <li class="menu-data-click menu-data-active" data-catalog="benefits">Преимущества проекта</li>
+                            <li class="menu-data-click" data-catalog="property">Выбор недвижимости</li>
+                            <li class="menu-data-click" data-catalog="purchase">Способы покупки</li>
+                            <li class="menu-data-click" data-catalog="stock">Акции</li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-mobile">
+                        <ul class="menu-scroll">
+                            <li><a href="./index.html#advantages-scr">Преимущества </a></li>
+                            <li><a href="./index.html#selection">Выбор недвижимости</a></li>
+                            <li><a href="#">Способы покупки</a></li>
+                            <li><a href="#">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-link">
+                        <ul class="menu-scroll">
+                            <li><a href="#">О компании <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#news-sec">Новости</a></li>
+                            <li><a href="#">Ход строительства</a></li>
+                            <li><a href="./index.html#special-pool">Спец-пул</a></li>
+                            <li><a href="./index.html#general-plan">Генплан</a></li>
+                            <li><a href="./index.html#infrastructure">Инфраструктура</a></li>
+                            <li><a href="#">Кабинет брокера <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#footer-contact">Контакты</a></li>
+                        </ul>
+
+                    </div>
+                    <button data-modal-target="#modal-form" class="card btn-line">
+                        <i class="icon icon-call"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+
+
+                    <button class="btn">Выбор недвижимости</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="select-property-mobile">
+        <div class="select-property">
+            <div class="select-name">Выбор недвижимости</div>
+            <div class="touchstart select-dropdown">
+                <span class="close-filt-map"></span>
+                <ul>
+                    <li>Квартиры <i class="icon-house"></i></li>
+                    <li>Машино-места <i class="icon-car"></i></li>
+                    <li>Кладовые <i class="icon-storerooms"></i></li>
+                    <li>Мото-места <i class="icon-moto"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<section class="architecture-page real-estate animate-on-scroll delay-100">
+    <div class="container">
+        <h2>Избранные</h2>
+
+        <div class="similar-apartments">
+            <div class="family-filters-wrap G-flex-wrap">
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="./parts-lot.html" class="apartments-card">
+                    <div class="apartments-photo G-flex">
+                        <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
+
+                        <span class="favorite-key"><i class="icon-key"></i></span>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
+                        <span class="discount-count">−20%</span>
+                        <div class="white-box ">
+                            <i class="icon-white-box"></i>
+                            <span>white box</span>
+                        </div>
+                    </div>
+                    <div class="apartments-numb G-align-end G-justify-between">
+                        <div class="apartments-price">
+                            <del>13 498 450 ₽</del>
+                            <strong>13 498 450 ₽</strong>
+                        </div>
+                        <span>334 678 ₽/м2</span>
+                    </div>
+                    <div class="building-square G-flex-wrap">
+                        <div class="building-info">
+                            <span>№ 123</span>
+                            <p>КВ</p>
+                        </div>
+                        <div class="building-info">
+                            <span>4А</span>
+                            <p>Корпус</p>
+                        </div>
+                        <div class="building-info">
+                            <span>28,0 м2</span>
+                            <p>Площадь</p>
+                        </div>
+                        <div class="building-info">
+                            <span>I кв. 2026</span>
+                            <p>Сдача</p>
+                        </div>
+                        <div class="building-info">
+                            <span>19/22</span>
+                            <p>Этаж</p>
+                        </div>
+                        <div class="building-info">
+                            <span>Студия</span>
+                            <p>Комнат</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<footer id="footer-contact">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-flex G-align-start G-justify-between">
+                <div class="footer-map G-flex">
+                    <div id="map-contact"></div>
+
+                </div>
+                <div class="footer-cnt">
+                    <div class="footer-contact">
+                        <h4>Норильск</h4>
+                        <small>Emal</small>
+                        <a href="mailto:eponamoreva@afid.ru">eponamoreva@afid.ru</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Краснодар</h4>
+                        <small>Emal</small>
+                        <a href="mailto:rdzhamkharov@afid.ru">rdzhamkharov@afid.ru</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Офис продаж</h4>
+                        <small>Телефон</small>
+                        <a href="tel:+7 (495) 487 17 26">+7 (495) 487 17 26</a>
+                        <small>График работы</small>
+                        <span>Ежедневно с 9:00 до 21:00</span>
+                        <small>Адрес</small>
+                        <span> Одинцово, ул. Северная</span>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Офис заселения</h4>
+                        <small>График работы</small>
+                        <span>Ежедневно с 9:00 до 21:00</span>
+                        <small>Адрес</small>
+                        <span>Одинцово, ул. Северная, д.5, к.2</span>
+                    </div>
+                    <div class="after-sales G-justify-end">
+                        <div class="footer-contact">
+                            <h4>Постпродажный сервис</h4>
+                            <small>Телефон</small>
+                            <a href="tel:+7 (495) 281 27 77">+7 (495) 281 27 77</a>
+                            <small>Адрес</small>
+                            <span>Будни с 9:00 до 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-policy G-align-center G-justify-between">
+                    <div class="footer-policy-marg G-align-end">
+                        <a href="#" class="footer-logo G-flex">
+                            <img src="./assets/img/wafidevelopment.svg" alt="logo" loading="lazy">
+                        </a>
+                        <div class="footer-protected G-align-center">
+                            <p>© Все права защищены</p>
+                            <a href="#">Политика в отношении обработки ПД</a>
+                            <a href="#">Документы</a>
+                        </div>
+                    </div>
+                    <div class="footer-social G-align-center">
+                        <a href="#" class="G-flex">
+                            <i class="icon-vk"></i>
+                        </a>
+                        <a href="#" class="G-flex">
+                            <i class="icon-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-text">
+                <p>
+                    Сайт носит информационный характер. Информация, размещенная на сайте, не является офертой, не является приглашением делать оферты и не содержит существенных условий сделок, заключаемых застройщиком. Описание объекта строительства и инфраструктуры, представленное на сайте, является концепцией и носит информационный характер. Технические характеристики объекта строительства и инфраструктуры указаны в проектной документации ©2010-2025 ЖК Одинбург
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/js/jquery-3.6.4.js"></script>
+<script src="assets/js/time.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.formstyler.min.js"></script>
+<script src="assets/js/sliders.js"></script>
+<script src="assets/js/nouislider.min.js"></script>
+<script src="assets/js/data-catalog.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/map.js"></script>
+
+
+
+
+<script>
+    const defaultMarker = [
+        {
+            title: 'Офис продаж',
+            icon: './assets/img/icons/office-two.svg',
+            defaultCenter: [55.819439, 37.752036],
+            className: 'in-park',
+        },
+        {
+            title: 'Офис заселения',
+            icon: './assets/img/icons/office-two.svg',
+
+            defaultCenter: [55.816188, 37.752920],
+            className: 'in-park',
+        },
+    ]
+    const homePageMaC = new YandexMapConstructor({
+        mapContainerId: 'map-contact',
+        defaultMarker: defaultMarker,
+    })
+
+</script>
+
+
+</body>
+</html>
+
+

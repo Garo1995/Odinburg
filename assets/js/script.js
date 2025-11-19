@@ -134,8 +134,7 @@ $('.open-2024').on('click', function () {
 
 
 $('.number-rooms ul li').on('click', function () {
-    $('.number-rooms ul li').removeClass('number-rooms-act');
-    $(this).addClass('number-rooms-act');
+    $(this).toggleClass('number-rooms-act');
 })
 
 
@@ -151,6 +150,11 @@ $('.filter-finishing-box ul li').on('click', function () {
 $('.nav-menu ul li').on('click', function () {
     $('.nav-menu ul li').removeClass('nav-menu-active');
     $(this).addClass('nav-menu-active');
+})
+
+
+$('.select-filter-name').on('click', function () {
+    $(this).addClass('filter-name-remove');
 })
 
 
@@ -230,42 +234,7 @@ for (let i = 0; i < sliders.length; i++) {
 
 
 
-function initPillStrips() {
-    document.querySelectorAll('.pill-strip').forEach(strip => {
-        const ul = strip.querySelector('ul');
-        const left = strip.querySelector('.pill-arrow.left');
-        const right = strip.querySelector('.pill-arrow.right');
-        const step = parseInt(strip.getAttribute('data-step') || 220, 10);
 
-        const updateArrows = () => {
-            const maxScroll = ul.scrollWidth - ul.clientWidth - 1;
-            const hasOverflow = maxScroll > 0;
-            left.disabled  = !hasOverflow || ul.scrollLeft <= 0;
-            right.disabled = !hasOverflow || ul.scrollLeft >= maxScroll;
-        };
-
-        left.addEventListener('click', () => ul.scrollBy({ left: -step, behavior: 'smooth' }));
-        right.addEventListener('click', () => ul.scrollBy({ left: step, behavior: 'smooth' }));
-
-        ul.addEventListener('scroll', updateArrows, { passive: true });
-        window.addEventListener('resize', updateArrows);
-        updateArrows();
-
-        // колесо мыши
-        ul.addEventListener('wheel', (e) => {
-            if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-                ul.scrollBy({ left: e.deltaY, behavior: 'auto' });
-                e.preventDefault();
-            }
-        }, { passive: false });
-
-        // функция для ручного обновления снаружи
-        strip.updatePills = updateArrows;
-    });
-}
-
-// инициализируем сразу
-initPillStrips();
 
 // пересчитываем, когда открывается модалка
 document.querySelectorAll('.modal-overlay').forEach(modal => {
@@ -347,10 +316,25 @@ $('.close-filt-map').on('click', function () {
 })
 
 
+$('.master-plan-sel ul li').on('click', function () {
+    $('.master-plan-sel ul li').removeClass('plan-active')
+    $(this).addClass('plan-active');
+
+
+})
+
+
+
+
+
+
+
+
 
 
 $('.touchstart').on('touchstart', function (e) {
     startY = e.originalEvent.touches[0].clientY;
+
 });
 
 $('.touchstart').on('touchmove', function (e) {
@@ -378,13 +362,15 @@ $('.close-catalog').on('click', function () {
 
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const widget = document.querySelector('.floating-widget');
-    const toggleBtn = document.getElementById('toggleWidget');
 
-    toggleBtn.addEventListener('click', function () {
-        widget.classList.toggle('open');
+    widget.addEventListener('mouseenter', function () {
+        widget.classList.add('open');
+    });
+
+    widget.addEventListener('mouseleave', function () {
+        widget.classList.remove('open');
     });
 });
 
@@ -404,51 +390,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
-
 document.querySelectorAll('.validate-form').forEach(form => {
 
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
+    const submitBtn = form.querySelector('.btn-submit');
 
-            let isValid = true;
+    function checkValidity() {
+        let isValid = true;
 
-            // Убираем прошлые ошибки
-            form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
-
-            // Проверка телефона
-            form.querySelectorAll('.required-phone').forEach(phone => {
-                if (phone.value.trim().length < 6) {
-                    phone.classList.add('error');
-                    isValid = false;
-                }
-            });
-
-            // Проверка email
-            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            form.querySelectorAll('.required-email').forEach(email => {
-                if (!emailPattern.test(email.value.trim())) {
-                    email.classList.add('error');
-                    isValid = false;
-                }
-            });
-
-            // Проверка чекбоксов
-            form.querySelectorAll('.required-check').forEach(ch => {
-                if (!ch.checked) {
-                    ch.classList.add('error');
-                    isValid = false;
-                }
-            });
-
-            // Если ошибки есть — не отправляем
-            if (!isValid) return;
-
-            // Если всё ок — отправка формы
-            form.submit();
+        // Телефон
+        form.querySelectorAll('.required-phone').forEach(phone => {
+            if (phone.value.trim().length < 6) isValid = false;
         });
 
-    });
+        // Email
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        form.querySelectorAll('.required-email').forEach(email => {
+            if (!emailPattern.test(email.value.trim())) isValid = false;
+        });
+
+        // Чекбоксы
+        form.querySelectorAll('.required-check').forEach(ch => {
+            if (!ch.checked) isValid = false;
+        });
+
+        // Активируем / блокируем кнопку
+        if (isValid) {
+            submitBtn.classList.remove('disabled');
+            submitBtn.removeAttribute('disabled');
+        } else {
+            submitBtn.classList.add('disabled');
+            submitBtn.setAttribute('disabled', true);
+        }
+    }
+
+    // Слушаем изменения
+    form.addEventListener('input', checkValidity);
+    form.addEventListener('change', checkValidity);
+
+});

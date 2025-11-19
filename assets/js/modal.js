@@ -22,6 +22,8 @@ $('.close').on('click', function () {
 });
 
 $(window).on('click', function (event) {
+
+
     $('.modal').each(function () {
         let gtattr = $(this).attr('id');
         let new_mod = $('#' + gtattr);
@@ -88,43 +90,67 @@ document.querySelectorAll('.news-box').forEach(box => {
 
 
 
-
-
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', function() {
-        const modalSelector = this.dataset.modalTarget; // data-modal-target="#modal1"
-        const tabName = this.dataset.modal; // вкладка, например "standard"
+
+        const modalSelector = this.dataset.modalTarget;
+        const tabName = this.dataset.modal;
         const modal = document.querySelector(modalSelector);
         if (!modal) return;
 
-        // открыть модалку
         document.body.classList.add('modal-open');
         modal.classList.add('active');
 
-        // активировать нужную вкладку
         modal.querySelectorAll('.modal-options-click').forEach(el => el.classList.remove('active'));
         modal.querySelectorAll('.modal-options-js').forEach(el => el.classList.remove('active'));
+
         modal.querySelector(`.modal-options-click[data-modal="${tabName}"]`)?.classList.add('active');
         modal.querySelector(`.modal-options-js[data-modal="${tabName}"]`)?.classList.add('active');
     });
 });
 
-// навешиваем обработчики вкладок и закрытия один раз для каждой модалки
+
 document.querySelectorAll('.modal-overlay').forEach(modal => {
+
     const closeBtn = modal.querySelector('.modal-close');
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
-            modal.classList.remove('active');
-            document.body.classList.remove('modal-open');
+            closeModal(modal);
         });
     }
 
+    // 🔥 Правильное закрытие по клику как в твоём jQuery коде
+    modal.addEventListener('click', (e) => {
+        const modalWindow = modal.querySelector('.modal-window');
+
+        // 1 — клик строго по overlay → закрыть
+        if (e.target === modal) {
+            closeModal(modal);
+            return;
+        }
+
+        // 2 — клик строго по modal-window (НЕ по детям!) → закрыть
+        if (e.target === modalWindow) {
+            closeModal(modal);
+        }
+    });
+
+    // Вкладки
     modal.querySelectorAll('.modal-options-click').forEach(tab => {
         tab.addEventListener('click', function() {
             modal.querySelectorAll('.modal-options-click').forEach(el => el.classList.remove('active'));
             modal.querySelectorAll('.modal-options-js').forEach(el => el.classList.remove('active'));
+
             this.classList.add('active');
             modal.querySelector(`.modal-options-js[data-modal="${this.dataset.modal}"]`)?.classList.add('active');
         });
     });
 });
+
+
+// 🔥 Общая функция закрытия модалки — как fadeOut в jQuery
+function closeModal(modal) {
+    modal.classList.remove('active');
+    document.body.classList.remove('modal-open');
+}
+

@@ -41,24 +41,56 @@
     mask-image: url(../img/icons/pdf-file.svg);
     -webkit-mask-image: url(../img/icons/pdf-file.svg);
 }
+.icon.icon-camera{
+    mask-image: url(../img/icons/camera.svg);
+    -webkit-mask-image: url(../img/icons/camera.svg);
+}
+
+.icon.icon-camera{
+    mask-image: url(../img/icons/camera.svg);
+    -webkit-mask-image: url(../img/icons/camera.svg);
+}
+.icon.heard-card{
+    mask-image: url(../img/heard-card.svg);
+    -webkit-mask-image: url(../img/heard-card.svg);
+    width: 24px;
+    height: 24px;
+}
 
 
 
-.icon-office{
-    content: url("../img/icons/office.svg");
+
+
+.icon.icon-office{
+    mask-image: url("../img/icons/office.svg");
+    -webkit-mask-image: url("../img/icons/office.svg");
 }
-.icon-korpus{
-    content: url("../img/icons/korpus.svg");
+.icon.icon-korpus{
+    mask-image: url("../img/icons/korpus.svg");
+    -webkit-mask-image: url("../img/icons/korpus.svg");
 }
-.icon-parking{
-    content: url("../img/icons/parking.svg");
+.icon.icon-parking{
+    mask-image: url("../img/icons/parking.svg");
+    -webkit-mask-image: url("../img/icons/parking.svg");
 }
-.icon-scool{
-    content: url("../img/icons/scool.svg");
+.icon.icon-scool{
+    mask-image: url("../img/icons/scool.svg");
+    -webkit-mask-image: url("../img/icons/scool.svg");
 }
-.icon-garden{
-    content: url("../img/icons/garden.svg");
+.icon.icon-garden{
+    mask-image: url("../img/icons/garden.svg");
+    -webkit-mask-image: url("../img/icons/garden.svg");
 }
+
+.icon.icon-apart{
+    mask-image: url("../img/icons/apart.svg");
+    -webkit-mask-image: url("../img/icons/apart.svg");
+}
+
+
+
+
+
 .icon-cars{
     content: url("../img/icons/cars.svg");
 }
@@ -84,13 +116,9 @@
     content: url("../img/icons/arrow-top-right.svg");
 }
 
-.icon-camera{
-    content: url("../img/icons/camera.svg");
-}
 
-.icon-apart{
-    content: url("../img/icons/apart.svg");
-}
+
+
 
 
 .icon-house{
@@ -194,6 +222,20 @@
 
 .arrow-left{
     content: url("../img/icons/arrow-left.svg");
+}
+
+
+
+.icon-key{
+    content: url("../img/icons/key.svg");
+    width: 18px;
+    height: 18px;
+}
+
+.icon-key-lot{
+    content: url("../img/icons/key-lot.svg");
+    width: 24px;
+    height: 24px;
 }
 
 

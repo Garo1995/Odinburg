@@ -1,5 +1,6 @@
 .parts-lot{
     padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 
@@ -35,13 +36,14 @@
     display: flex;
     margin-top: 24px;
     gap: 24px;
+    justify-content: space-between;
 }
 .floor-plan-pic{
     display: flex;
     justify-content: center;
 }
 .parts-apart-box{
-    max-width: 783px;
+    max-width: 840px;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 24px;
@@ -154,7 +156,7 @@ body .active-cat{
 
 .parts-apart-cnt{
     background: rgba(239, 239, 239, 1);
-    max-width: 553px;
+    max-width: 660px;
     width: 100%;
     border-radius: 24px;
     padding: 48px 32px 32px;

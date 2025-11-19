@@ -3,6 +3,7 @@ class YandexMapConstructor {
                     mapContainerId,
                     defaultCenter = [55.817864, 37.750991],
                     zoom = 15,
+                    defaultMarker,
                     isMultiSelect = false
                 }) {
         this.mapContainerId = mapContainerId;
@@ -13,7 +14,8 @@ class YandexMapConstructor {
         this.mainPlacemark = null;
         this.pointCollection = null;
         this.initialized = false;
-        this.isMultiSelect = isMultiSelect
+        this.isMultiSelect = isMultiSelect;
+        this.defaultMarker = defaultMarker;
 
         this.init();
     }
@@ -32,6 +34,26 @@ class YandexMapConstructor {
             suppressMapOpenBlock: true, // запрет на переход в Яндекс.Карты
             yandexMapDisablePoiInteractivity: true // отключить клики по POI
         });
+        if (this.defaultMarker.length) {
+            this.defaultMarker.forEach(marker => {
+                const iconContent = ymaps.templateLayoutFactory.createClass(`
+        <div class="bs-point-custom main ${marker.className}" data-id="${marker.defaultCenter[0]}">
+            <img class="cover" src="${marker.icon}" alt="icons">
+            <p class="title">${marker.title}</p>
+        </div>`)
+
+                this.mainPlacemark = new ymaps.Placemark(marker.defaultCenter, {}, {
+                    iconLayout: "default#imageWithContent",
+                    iconImageHref: '',
+                    iconImageSize: [20, 20],
+                    zIndex: 2,
+                    iconContentLayout: iconContent
+                });
+
+                this.myMap.geoObjects.add(this.mainPlacemark);
+            })
+        }
+
 
     }
 

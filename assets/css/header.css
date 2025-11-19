@@ -1,7 +1,7 @@
 header{
     position: relative;
     margin-top: 24px;
-
+    z-index: 91;
 }
 
 
@@ -59,8 +59,11 @@ header{
     line-height: 24px;
     text-align: right;
     cursor: pointer;
+    transition: 0.3s;
 }
-
+.request-call:hover{
+    color: rgba(177, 206, 25, 1);
+}
 .favorite-box{
     width: 48px;
     height: 48px;
@@ -173,10 +176,17 @@ header{
     z-index: 211;
     top: 104px;
     left: 0;
-    display: none;
+    opacity: 0;
+    transition: 0.4s;
+    visibility: hidden;
+    transform: translateY(-10px);
 }
 .menu-modal-opened{
-    display: block;
+    opacity: 1;
+    transition: 0.4s;
+    visibility: visible;
+    transform: translateY(0);
+
 }
 .menu-modal-fon{
     border: 1px solid #00000026;
@@ -188,16 +198,16 @@ header{
     display: flex;
     justify-content: space-between;
     gap: 40px;
-    height: 704px;
+    height: 725px;
 }
 
-.menu-modal-min{
-    max-width: 956px;
+.menu-modal-min {
+    max-width: 1056px;
     width: 100%;
 }
 
 .menu-modal-cnt{
-    max-width: 284px;
+    max-width: 384px;
     width: 100%;
 }
 
@@ -276,9 +286,13 @@ header{
     border-radius: 24px;
     position: relative;
 }
-.project-box img{
+.project-box img {
     width: 100%;
     border-radius: 24px;
+    height: 100%;
+}
+.project-wrap .project-box img{
+    height: 270px;
 }
 .project-name{
     position: absolute;
@@ -320,7 +334,7 @@ header{
 
 .mortgage-selec{
     gap: 16px 24px;
-    max-width: 570px;
+    max-width: 620px;
     width: 100%;
 }
 .mortgage-box{
@@ -387,7 +401,7 @@ header{
 .stock-crash-pic{
     display: flex;
     align-items: flex-end;
-    max-width: 470px;
+    max-width: 500px;
     width: 100%;
     padding: 24px;
     background: rgba(239, 239, 239, 1);
@@ -416,8 +430,8 @@ header{
 .more-info:hover{
     background: rgba(177, 206, 25, 1);
 }
-.stock-crash-col{
-    max-width: 470px;
+.stock-crash-col {
+    max-width: 500px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -534,10 +548,10 @@ header{
 }
 
 .nav-menu{
-    background: #FFFFFF1A;
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(20px);
     border: 1px solid #FFFFFF1A;
-    max-width: 870px;
+    max-width: 880px;
     width: 100%;
     border-radius: 48px;
     padding: 4px;

@@ -301,6 +301,37 @@ let galleryModSwiper = new Swiper(".gallery-modal-slider", {
 
 
 
+let modaloptionsSwiper = new Swiper(".modal-options-slider", {
+    slidesPerView: 5,
+
+    grabCursor: true,
+    simulateTouch: true,
+    touchStartPreventDefault: false,
+    resistanceRatio: 0,
+    navigation: {
+        nextEl: ".pill-arrow-next",
+        prevEl: ".pill-arrow-prev",
+    },
+});
+
+const scrollContainer = document.querySelector('.modal-options-slider .swiper-wrapper');
+const tabs = document.querySelectorAll('.swiper-slide');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tab.scrollIntoView({
+            behavior: 'smooth',
+            inline: 'center',
+            block: 'nearest'
+        });
+    });
+});
+
+
+
+
+
+
 
 
 

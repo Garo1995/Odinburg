@@ -1,7 +1,7 @@
 .real-estate{
     background: #EFEFEF;
     width: 100%;
-    border-radius: 24px 24px 0 0;
+    border-radius: 24px 24px;
     padding: 48px 40px 32px;
 }
 
@@ -33,6 +33,15 @@
     color: #000000;
 
 }
+.real-estate-menu ul li:hover{
+    background: #BEDC1C;
+    color: #000000;
+    border: 1px solid #BEDC1C;
+    -webkit-text-stroke: 0.2px currentColor;
+}
+.real-estate-menu ul li:hover span {
+    background: #FFFFFF;
+}
 .real-estate-menu ul li.real-estate-active{
     background: #BEDC1C;
     color: #000000;
@@ -63,6 +72,10 @@
 .icon-vandal-line{
     content: url("../img/vandal-line.svg");
 }
+.real-estate-filter ul li:hover{
+    background: #BEDC1C;
+}
+
 .real-estate-filter ul li.params-active{
     background: #BEDC1C;
 }
@@ -116,7 +129,7 @@
 }
 
 .filter-block {
-    max-width: 343px;
+    max-width: 393px;
     width: 100%;
 }
 
@@ -141,6 +154,10 @@
     position: relative;
     transition: 0.3s;
 }
+.frame-select .jq-selectbox:hover{
+    border: 1px solid rgba(190, 220, 28, 1);
+
+}
 .frame-select .jq-selectbox:after {
     content: "";
     position: absolute;
@@ -154,6 +171,10 @@
     transition: 0.3s;
 
 }
+.frame-select .opened:after{
+    transform: rotate(-180deg);
+}
+
 .frame-select .jq-selectbox__select-text{
     padding: 16px 24px;
     width: 100%;
@@ -167,7 +188,7 @@
     line-height: 100%;
 }
 .frame-select .jq-selectbox__dropdown {
-    width: 100%;
+    width: 100% !important;
     margin: 2px 0 0;
     padding: 8px;
     border-radius: 12px;
@@ -186,7 +207,9 @@
     line-height: 100%;
 
 }
-
+.frame-select .jq-selectbox li:first-child{
+    display: none;
+}
 .frame-select .jq-selectbox li.selected {
     background: #0000000F;
     color: #000000;
@@ -292,6 +315,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .filter-search input:focus{
     border: 1px solid #BEDC1C;
 }
+.filter-search input:hover{
+    border: 1px solid #BEDC1C;
+}
 .filter-search input:active{
     border: 1px solid #BEDC1C;
 }
@@ -364,12 +390,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .filter-finishing-box ul{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .filter-finishing-box ul li{
     width: max-content;
     height: 43px;
     border-radius: 44px;
-    padding: 8px 24px;
+    padding: 8px 23px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -380,6 +407,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 18px;
     line-height: 100%;
     border: 1px solid transparent;
+}
+.filter-finishing-box ul li:hover{
+    background: rgba(0, 0, 0, 0.1);
 }
 .filter-finishing-box ul li.finishing-act{
     background: #FEFFFA;
@@ -413,7 +443,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     align-items: center;
     justify-content: center;
 }
-
+.filter-name-remove{
+    display: none;
+}
 .reset-filters-flex{
     gap: 24px;
 }

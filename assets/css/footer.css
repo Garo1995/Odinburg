@@ -13,9 +13,45 @@ footer{
 .footer-map{
     width: 48%;
 }
-.footer-map img{
+#map-contact{
     width: 100%;
     border-radius: 24px;
+    height: 568px;
+    overflow: hidden;
+}
+#map-contact iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+
+}
+#map-contact .bs-point-custom {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: max-content;
+    height: 39px;
+    border-radius: 32px;
+    padding: 6px 16px;
+    background: rgba(190, 220, 28, 1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+
+}
+
+#map-contact .bs-point-custom img{
+    width: 20px;
+    height: 20px;
+}
+#map-contact .bs-point-custom p{
+    border: unset;
+    background: unset;
+    width: max-content;
+    height: auto;
+    padding: 0;
+    gap: 0;
+    border-radius: 0;
+    display: block;
 }
 
 .footer-cnt{
@@ -221,5 +257,7 @@ footer{
         height: 346px;
     }
 
-
+    #map-contact {
+        height: 368px;
+    }
 }

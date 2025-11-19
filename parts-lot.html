@@ -298,7 +298,7 @@
 </header>
 
 
-<section class="parts-lot">
+<section class="parts-lot animate-on-scroll delay-100" >
     <div class="container">
         <div class="bread-caps">
             <ul>
@@ -324,7 +324,7 @@
 
 
 
-<section class="parts-apart">
+<section class="parts-apart animate-on-scroll delay-100">
     <div class="container">
         <div class="parts-apart-flex">
             <div class="parts-apart-box">
@@ -347,7 +347,7 @@
 
                 <div class="layout-floor-pic">
                     <div class="with-keys">
-                        <i class="icon-kay"></i>
+                        <i class="icon-key-lot"></i>
                         <span>с ключами</span>
                     </div>
 
@@ -442,12 +442,12 @@
                     </div>
                 </div>
 
-                <div class="parts-frame-btn">
+                <div class="parts-frame-btn menu-scroll">
                     <div class="parts-mortgage G-align-center">
                         <img src="./assets/img/mortgage.png" alt="mortgage" loading="lazy">
                         <p>Ипотека от </p>
                         <span>73 385 ₽</span>
-                        <i class="icon-arrow-right"></i>
+                        <a href="#mortgage-calc" class="G-flex-column"> <i class="icon-arrow-right"></i></a>
                     </div>
                     <button data-modal-target="#submit-request" class="card btn">Забронировать</button>
                     <button data-modal-target="#modal-form" class="card btn-line">Записаться на просмотр</button>
@@ -460,7 +460,7 @@
 
 
 
-<section class="mortgage-calc-min section-margin">
+<section id="mortgage-calc" class="mortgage-calc-min section-margin animate-on-scroll delay-100">
     <div class="container">
         <div class="mortgage-calc-title G-align-center G-justify-between">
             <h2>ипотечный калькулятор</h2>
@@ -760,23 +760,23 @@
 
 
 
-<section class="section-margin">
-    <div class="container">
+<section class="section-margin animate-on-scroll delay-100">
+    <div class="container ">
         <h2>3 варианта отделки</h2>
         <div class="finish-options">
             <div class="swiper finish-options-slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div data-val="options-modal" class="open_modal finish-options-box" >
+                        <div class="finish-options-box" >
                             <div class="swiper options-gallery-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finishing" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-1.jpg" alt="options" loading="lazy">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finishing" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-1.jpg" alt="options" loading="lazy">
                                         </div>
                                     </div>
@@ -784,7 +784,7 @@
                                 <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
                                 <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
                             </div>
-                            <div class="finish-options-text">
+                            <div data-modal="finishing" data-modal-target="#modal-overlay" class="card finish-options-text">
                                 <h3>Черновая</h3>
                                 <p>
                                     Квартира со свободной планировкой — идеальный выбор для тех, кто хочет с нуля создать своё уникальное пространство.
@@ -794,16 +794,16 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div data-val="options-modal" class="open_modal finish-options-box" >
+                        <div class="finish-options-box" >
                             <div class="swiper options-gallery-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="whute-box" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-2.jpg" alt="options" loading="lazy">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="whute-box" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-2.jpg" alt="options" loading="lazy">
                                         </div>
                                     </div>
@@ -812,7 +812,7 @@
                                 <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
 
                             </div>
-                            <div class="finish-options-text">
+                            <div data-modal="whute-box" data-modal-target="#modal-overlay" class="card finish-options-text">
                                 <h3>White box</h3>
                                 <p>
                                     Сэкономьте своё время и силы на ремонте. Все грязные и сложные работы выполнит застройщик, а вы сможете сразу перейти к выбору дизайна и чистовых материалов.
@@ -823,23 +823,21 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div data-val="options-modal" class="open_modal finish-options-box" >
+                        <div class="finish-options-box" >
                             <div class="swiper options-gallery-slide">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finish-last" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-3.jpg" alt="options" loading="lazy">
                                             <div class="editor-choice">
-                                                <span class="editor-choice-name">выбор редакции</span>
                                                 <span class="additional-option">❋дополнительная опция</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="options-gallery-pic G-flex">
+                                        <div data-modal="finish-last" data-modal-target="#modal-overlay" class="card options-gallery-pic G-flex">
                                             <img src="./assets/img/options-3.jpg" alt="options" loading="lazy">
                                             <div class="editor-choice">
-                                                <span class="editor-choice-name">выбор редакции</span>
                                                 <span class="additional-option">❋дополнительная опция</span>
                                             </div>
                                         </div>
@@ -848,7 +846,7 @@
                                 <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
                                 <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
                             </div>
-                            <div class="finish-options-text">
+                            <div data-modal="finish-last" data-modal-target="#modal-overlay" class="card finish-options-text">
                                 <h3>Чистовая</h3>
                                 <p>
                                     Квартира с готовой отделкой, в которую можно сразу заселиться без лишних забот и затрат времени на ремонт. Отличное решение для комфортной жизни или выгодной аренды.
@@ -862,6 +860,155 @@
             <div class="finish-pagination swiper-pagination"></div>
         </div>
     </div>
+
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-window">
+            <div class="modal-close"></div>
+            <div class="touchstart modal-options">
+                <span class="close-filt-map"></span>
+
+                <div class="modal-options-href">
+                    <ul>
+                        <li class="modal-options-click" data-modal="finishing">Черновая</li>
+                        <li class="modal-options-click" data-modal="whute-box">White box</li>
+                        <li class="modal-options-click" data-modal="finish-last">Чистовая</li>
+                    </ul>
+                </div>
+                <div class="modal-options-min">
+                    <div class="modal-options-js" data-modal="finishing">
+                        <div class="modal-options-flex G-flex">
+                            <div class="modal-options-slide">
+                                <div class="swiper options-gallery-slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                                    <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h2>Черновая</h2>
+                                    <p>
+                                        Вы сможете сами выбрать стиль и материалы, реализовать самые смелые дизайнерские решения. Создайте интерьер, который полностью отражает вашу индивидуальность.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="whute-box">
+                        <div class="modal-options-flex G-flex">
+                            <div class="modal-options-slide">
+                                <div class="swiper options-gallery-slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-2.jpg" alt="options" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-2.jpg" alt="options" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                                    <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+
+                                </div>
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h2>White box</h2>
+                                    <div class="modal-options-text">
+                                        <span>СТЕНЫ</span>
+                                        <ul>
+                                            <li>Возведение межкомнатных перегородок , в том числе ограничивающих санузлы</li>
+                                            <li>Штукатурка и шпатлёвка стен (кроме шпатлёвки стен в СУ)</li>
+                                            <li>Подготовка откосов окон, входной двери</li>
+                                            <li>Устройство подоконной доски ПВХ</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-options-text">
+                                        <span>ДВЕРИ</span>
+                                        <ul>
+                                            <li>Установка металлической входной двери в квартиру
+                                                в комплекте с фурнитурой
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-options-text">
+                                        <span>полы</span>
+                                        <ul>
+                                            <li>Устройство выравнивающей бетонной стяжки</li>
+                                            <li>Устройство гидроизоляции санузлов</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="modal-options-text">
+                                        <span>полы</span>
+                                        <ul>
+                                            <li>Устройство выравнивающей бетонной стяжки</li>
+                                            <li>Устройство гидроизоляции санузлов</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="modal-options-text">
+                                        <span>полы</span>
+                                        <ul>
+                                            <li>Устройство выравнивающей бетонной стяжки</li>
+                                            <li>Устройство гидроизоляции санузлов</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-options-js" data-modal="finish-last">
+                        <div class="modal-options-flex G-flex">
+                            <div class="modal-options-slide">
+                                <div class="swiper options-gallery-slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="options-gallery-pic G-flex">
+                                                <img src="./assets/img/options-1.jpg" alt="options" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="options-button-prev swiper-button-prev"><i class="icon-arrow-left"></i></div>
+                                    <div class="options-button-next swiper-button-next"><i class="icon-arrow-right"></i></div>
+                                </div>
+                            </div>
+                            <div class="modal-options-info">
+                                <div class="modal-options-scr">
+                                    <h2>Черновая</h2>
+                                    <p>
+                                        Вы сможете сами выбрать стиль и материалы, реализовать самые смелые дизайнерские решения. Создайте интерьер, который полностью отражает вашу индивидуальность.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -870,7 +1017,7 @@
 
 
 
-<section class="section-margin real-estate">
+<section class="section-margin real-estate animate-on-scroll delay-100">
     <div class="container">
         <h2>Похожие квартиры</h2>
 
@@ -881,7 +1028,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -927,7 +1074,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -973,7 +1120,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -1019,7 +1166,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -1065,7 +1212,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -1111,7 +1258,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -1157,7 +1304,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -1203,7 +1350,7 @@
                         <img src="./assets/img/apartment.svg" alt="apartment" loading="lazy">
 
                         <span class="favorite-key"><i class="icon-key"></i></span>
-                        <div class="favorite-heart"><i class="heard-card"></i></div>
+                        <div class="favorite-heart"><i class="icon heard-card"></i></div>
                         <span class="discount-count">−20%</span>
                         <div class="white-box ">
                             <i class="icon-white-box"></i>
@@ -1251,7 +1398,84 @@
         </div>
     </div>
 </section>
-<section class="section-margin"></section>
+
+
+
+
+<footer id="footer-contact">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-flex G-align-start G-justify-between">
+                <div class="footer-map G-flex">
+                    <div id="map-contact"></div>
+                </div>
+                <div class="footer-cnt">
+                    <div class="footer-contact">
+                        <h4>Норильск</h4>
+                        <small>Emal</small>
+                        <a href="mailto:eponamoreva@afid.ru">eponamoreva@afid.ru</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Краснодар</h4>
+                        <small>Emal</small>
+                        <a href="mailto:rdzhamkharov@afid.ru">rdzhamkharov@afid.ru</a>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Офис продаж</h4>
+                        <small>Телефон</small>
+                        <a href="tel:+7 (495) 487 17 26">+7 (495) 487 17 26</a>
+                        <small>График работы</small>
+                        <span>Ежедневно с 9:00 до 21:00</span>
+                        <small>Адрес</small>
+                        <span> Одинцово, ул. Северная</span>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Офис заселения</h4>
+                        <small>График работы</small>
+                        <span>Ежедневно с 9:00 до 21:00</span>
+                        <small>Адрес</small>
+                        <span>Одинцово, ул. Северная, д.5, к.2</span>
+                    </div>
+                    <div class="after-sales G-justify-end">
+                        <div class="footer-contact">
+                            <h4>Постпродажный сервис</h4>
+                            <small>Телефон</small>
+                            <a href="tel:+7 (495) 281 27 77">+7 (495) 281 27 77</a>
+                            <small>Адрес</small>
+                            <span>Будни с 9:00 до 18:00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-policy G-align-center G-justify-between">
+                    <div class="footer-policy-marg G-align-end">
+                        <a href="#" class="footer-logo G-flex">
+                            <img src="./assets/img/wafidevelopment.svg" alt="logo" loading="lazy">
+                        </a>
+                        <div class="footer-protected G-align-center">
+                            <p>© Все права защищены</p>
+                            <a href="#">Политика в отношении обработки ПД</a>
+                            <a href="#">Документы</a>
+                        </div>
+                    </div>
+                    <div class="footer-social G-align-center">
+                        <a href="#" class="G-flex">
+                            <i class="icon-vk"></i>
+                        </a>
+                        <a href="#" class="G-flex">
+                            <i class="icon-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-text">
+                <p>
+                    Сайт носит информационный характер. Информация, размещенная на сайте, не является офертой, не является приглашением делать оферты и не содержит существенных условий сделок, заключаемых застройщиком. Описание объекта строительства и инфраструктуры, представленное на сайте, является концепцией и носит информационный характер. Технические характеристики объекта строительства и инфраструктуры указаны в проектной документации ©2010-2025 ЖК Одинбург
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 
 <div id="modal-form" class="modal-overlay">
@@ -1314,7 +1538,8 @@
                         <span class="checkmark"></span>
                     </label>
                 </div>
-                <button type="submit" class="btn ">Отправить заявку</button>
+                <button class="btn btn-submit disabled" disabled>Отправить заявку</button>
+
             </form>
         </div>
     </div>
@@ -1427,7 +1652,8 @@
                                 <span class="checkmark"></span>
                             </label>
                         </div>
-                        <button type="submit" class="btn ">Отправить заявку</button>
+                        <button class="btn btn-submit disabled" disabled>Отправить заявку</button>
+
                     </form>
                 </div>
             </div>
@@ -1444,6 +1670,8 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/jquery.formstyler.min.js"></script>
 <script src="assets/js/sliders.js"></script>
+<script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+
 <script src="assets/js/nouislider.min.js"></script>
 <script src="assets/js/data-catalog.js"></script>
 <script src="assets/js/modal.js"></script>
@@ -1451,7 +1679,35 @@
 <script src="assets/js/calculator.js"></script>
 <script src="assets/js/map.js"></script>
 
+<script>
+    $.mask.definitions['h'] = "[0|1|3|4|5|6|7|9]"
+    $(".mask-phone").mask("+7 (h99) 999-99-99");
+</script>
 
+
+
+<script>
+    const defaultMarker = [
+        {
+            title: 'Офис продаж',
+            icon: './assets/img/icons/office-two.svg',
+            defaultCenter: [55.819439, 37.752036],
+            className: 'in-park',
+        },
+        {
+            title: 'Офис заселения',
+            icon: './assets/img/icons/office-two.svg',
+
+            defaultCenter: [55.816188, 37.752920],
+            className: 'in-park',
+        },
+    ]
+    const homePageMaC = new YandexMapConstructor({
+        mapContainerId: 'map-contact',
+        defaultMarker: defaultMarker,
+    })
+
+</script>
 
 </body>
 </html>

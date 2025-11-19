@@ -150,7 +150,18 @@
     margin-top: 12px;
 }
 
+.modal-news-info ul{
+    margin-left: 25px;
+    margin-top: 10px;
+    list-style-type: disc;
+}
+.modal-news-info ul li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
 
+    color: rgba(0, 0, 0, 1);
+}
 
 
 
@@ -173,6 +184,7 @@
 }
 .gallery-modal-pic img{
     width: 100%;
+    border-radius: 24px;
 }
 
 .gallery-modal-btn{
@@ -367,7 +379,10 @@ body.modal-open {
     height: 561px;
     padding-right: 8px;
 }
-
+.modal-options-scr .btn-line{
+    width: max-content;
+    margin-top: 45px;
+}
 .modal-options-info span{
     font-weight: 700;
     font-size: 18px;
@@ -448,7 +463,7 @@ body.modal-open {
 
 
 
-.pill-arrow {
+.pill-arrow-prev, .pill-arrow-next {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -466,7 +481,11 @@ body.modal-open {
     cursor: default;
 }
 
-.pill-arrow i{
+.pill-arrow-prev i{
+    filter: brightness(1) invert(1);
+}
+
+.pill-arrow-next i{
     filter: brightness(1) invert(1);
 }
 
@@ -474,6 +493,19 @@ body.modal-open {
     gap: 8px;
 }
 
+.modal-options-slider{
+    max-width: 1069px;
+    width: 100%;
+    border-radius: 50px;
+}
+.modal-options-slider .swiper-slide{
+    width: max-content!important;
+    cursor: grab;
+    user-select: none;
+}
+.modal-options-slider .swiper-slide:active {
+    cursor: grabbing;
+}
 .decorative-text{
     width: 100%;
 }
@@ -583,6 +615,9 @@ body.modal-open {
     line-height: 100%;
     color: rgba(0, 0, 0, 1);
 }
+.modal-inp input:hover{
+    border: 1px solid rgba(190, 220, 28, 1);
+}
 .modal-inp span, .frame-select span{
     font-weight: 400;
     font-size: 14px;
@@ -627,10 +662,16 @@ body.modal-open {
     font-size: 18px;
     line-height: 120%;
     color: rgba(0, 0, 0, 1);
+    transition: 0.3s;
 }
 .check-form label small a{
     color: rgba(190, 220, 28, 1);
     display: inline;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.check-form label small:hover a{
+    text-decoration: unset;
 }
 .checkmark {
     position: absolute;
@@ -672,6 +713,11 @@ body.modal-open {
 .modal-form-main .btn{
     width: 100%;
     margin-top: 32px;
+    background: rgba(190, 220, 28, 1);
+    color: rgba(0, 0, 0, 1);
+}
+.btn-submit.disabled {
+    pointer-events: none;
     background: rgba(190, 220, 28, 0.2);
     color: rgba(0, 0, 0, 0.15);
 }
@@ -680,6 +726,7 @@ body.modal-open {
     background: rgba(190, 220, 28, 1);
     color: rgba(0, 0, 0, 1);
 }
+
 
 
 
@@ -704,6 +751,9 @@ body.modal-open {
 }
 
 #submit-request .modal-form-main{
+    max-width: 1038px;
+}
+#submit-application .modal-form-main{
     max-width: 1038px;
 }
 .submit-request-tab .parts-frame-count{
@@ -847,6 +897,9 @@ input.error {
     #submit-request .modal-form-main {
         max-width: 900px;
     }
+    #submit-application .modal-form-main{
+        max-width: 900px;
+    }
     .modal-form-main {
         padding: 32px 24px;
     }
@@ -967,6 +1020,9 @@ input.error {
         max-width: 600px;
     }
     .modal-form-main {
+        max-width: 600px;
+    }
+    #submit-application .modal-form-main{
         max-width: 600px;
     }
     .submit-request-tab {
