@@ -391,7 +391,7 @@ p{
 .favorite-heart .icon{
     transition: 0.3s;
 }
-.apartments-card:hover .favorite-heart .icon{
+.favorite-heart:hover  .icon{
     background-color: rgba(190, 220, 28, 1);
 }
 
@@ -603,12 +603,8 @@ p{
 
 
 
-.construct-2024{
-    display: none;
-}
 
-
-.construct-2025{
+.construct{
     display: none;
 }
 
@@ -1044,7 +1040,7 @@ input[type=range]::-moz-range-thumb {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    height: 604px;
+    max-height: 647px;
 }
 
 .bank-card-box{
@@ -1156,7 +1152,7 @@ input[type=range]::-moz-range-thumb {
     color: rgba(177, 206, 25, 1);
 }
 
-.open-bank-card-arrow{
+.open-bank-card{
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -1186,7 +1182,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .bank-card-skrit{
-    gap: 55px;
+    gap: 105px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1195,13 +1191,15 @@ input[type=range]::-moz-range-thumb {
 .bank-card-box.bank-card-opened .bank-card-drop{
     max-height: 500px;
 }
-.open-bank-card-arrow i{
+.open-bank-card i{
     transition: 0.3s;
 }
-.bank-card-opened .open-bank-card-arrow i{
+.bank-card-opened .open-bank-card i{
     transform: rotate(-180deg);
 }
-
+.bank-card-click{
+    cursor: pointer;
+}
 
 
 
@@ -1320,7 +1318,7 @@ input[type=range]::-moz-range-thumb {
 }
 .additional-option{
     position: absolute;
-    bottom: 16px;
+    bottom: 22px;
     left: 50%;
     transform: translateX(-50%);
     backdrop-filter: blur(45.833335876464844px);
@@ -1333,6 +1331,7 @@ input[type=range]::-moz-range-thumb {
     font-size: 14px;
     line-height: 110%;
     color: #FFFFFF;
+    z-index: 2;
 
 
 }
@@ -1658,6 +1657,8 @@ input[type=range]::-moz-range-thumb {
 }
 .news-box:hover .href-arrow{
     opacity: 1;
+    width: 45px;
+    height: 45px;
 }
 
 
@@ -1880,7 +1881,13 @@ input[type=range]::-moz-range-thumb {
 }
 
 
+@media (max-width: 1499px){
+    .construct-years ul li {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
 
+}
 @media (max-width: 1399px){
     .family-mortgage-box strong {
         font-size: 46px;
@@ -2073,7 +2080,7 @@ input[type=range]::-moz-range-thumb {
         overflow-y: unset;
     }
     .mortgage-scr-max {
-        height: auto;
+        max-height: unset;
     }
     .mortgage-calc-scr {
         padding: 0;
@@ -2409,7 +2416,7 @@ input[type=range]::-moz-range-thumb {
     .floating-widget{
         display: none;
     }
-    .bank-card-btn .open-bank-card-arrow{
+    .bank-card-btn .open-bank-card{
         display: none;
     }
     .bank-act-drop:after{
@@ -2690,6 +2697,13 @@ input[type=range]::-moz-range-thumb {
     }
     .sort-calc {
         padding: 10px 11px;
+    }
+    .construct-years ul {
+        gap: 8px;
+    }
+    .construct-years ul li {
+        padding: 10px 13px;
+        font-size: 18px;
     }
 
 }

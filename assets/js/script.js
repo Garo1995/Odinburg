@@ -3,9 +3,29 @@ $(document).ready(function () {
 
 
     $('.open-menu').on('click', function (e) {
+        e.stopPropagation()
+
         $(this).toggleClass('close-menu')
         $('.menu-modal').toggleClass('menu-modal-opened')
     })
+
+    $(window).on('click', function (e) {
+        let menuclick = $('.menu-modal');
+        if (e.target !== menuclick) {
+            menuclick.removeClass('menu-modal-opened');
+        }
+        let closelick = $('.open-menu');
+
+        if (e.target !== closelick) {
+            closelick.removeClass('close-menu');
+        }
+    });
+
+
+    $('.menu-modal-fon').on('click', function (e) {
+       e.stopPropagation()
+    })
+
     $('.menu-data-link ul li a').on('click', function (e) {
         $('.open-menu').removeClass('close-menu')
         $('.menu-modal').removeClass('menu-modal-opened')
@@ -84,7 +104,22 @@ $('.open-bank-card').on('click', function (e) {
         drop.stop().slideUp(300);
     }
 });
+$('.bank-card-click').on('click', function (e) {
+    e.preventDefault();
 
+    const parent = $(this).closest('.bank-card-box'); // родитель
+    const drop = parent.find('.bank-card-drop'); // скрытый блок
+
+    // переключаем класс родителя
+    parent.toggleClass('bank-card-opened');
+
+    // плавное открытие / закрытие через max-height
+    if (parent.hasClass('bank-card-opened')) {
+        drop.stop().slideDown(300);
+    } else {
+        drop.stop().slideUp(300);
+    }
+});
 
 
 
@@ -114,21 +149,18 @@ $('.menu-scroll a').click(function() {
 
 
 
+$('.open-year').on('click', function () {
+    const year = $(this).data('year');
 
-
-$('.open-2025').on('click', function () {
+    // активная кнопка
+    $('.open-year').removeClass('active-year');
     $(this).addClass('active-year');
-    $('.open-2024').removeClass('active-year');
-    $('.construct-2024').removeClass('construct-opened');
-    $('.construct-2025').addClass('construct-opened');
+
+    // показываем блок
+    $('.construct').removeClass('construct-opened');
+    $(`.construct[data-year="${year}"]`).addClass('construct-opened');
 });
 
-$('.open-2024').on('click', function () {
-    $(this).addClass('active-year');
-    $('.open-2025').removeClass('active-year');
-    $('.construct-2024').addClass('construct-opened');
-    $('.construct-2025').removeClass('construct-opened');
-});
 
 
 

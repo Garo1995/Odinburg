@@ -128,13 +128,19 @@ header{
     position: absolute;
     top: 53px;
     right: 0;
-    display: none;
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s;
     border-radius: 12px;
-    padding: 8px;
     z-index: 111;
+    visibility: hidden;
 }
 .select-property-open .select-dropdown{
-    display: block;
+    height: 210px;
+    visibility: visible;
+}
+.select-dropdown ul{
+    padding: 8px;
 }
 .select-dropdown ul li {
     font-weight: 400;
@@ -222,6 +228,10 @@ header{
     border-radius: 12px;
 }
 
+.menu-data-menu ul li:hover{
+    background: #BEDC1C1A;
+    color: #BEDC1C;
+}
 .menu-data-menu ul li.menu-data-active{
     background: #BEDC1C1A;
     color: #BEDC1C;
@@ -536,9 +546,9 @@ header{
     z-index: 991;
     justify-content: center;
     display: flex;
-
+    transition: all 0.3s ease;
     visibility: hidden;
-    transform: translateY(50px);
+    transform: translateY(100px);
 }
 .header-nav.show {
     visibility: visible;
@@ -880,8 +890,15 @@ header{
         z-index: 111;
         transform: translateY(130%) translateX(-50%);
         transition: transform 0.3s ease;
+        height: auto;
+        visibility: visible;
     }
 
+    .select-property-open .select-dropdown{
+        height: auto;
+
+        visibility: visible;
+    }
     .touchstart-open{
         transform: translateY(0%) translateX(-50%);
     }

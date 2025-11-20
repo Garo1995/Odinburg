@@ -58,6 +58,7 @@ footer{
     width: 48%;
     display: flex;
     flex-wrap: wrap;
+    gap: 57px 0;
 }
 .footer-contact {
     max-width: 50%;
@@ -90,6 +91,7 @@ footer{
 
 .after-sales{
     width: 100%;
+    margin-top: -56px;
 }
 
 .footer-policy{
@@ -220,6 +222,9 @@ footer{
     }
     .after-sales {
         justify-content: flex-start;
+    }
+    .after-sales {
+        margin-top: 0;
     }
 }
 @media (max-width: 767px){

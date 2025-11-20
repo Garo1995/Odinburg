@@ -567,7 +567,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 14px;
     text-align: left;
     margin-top: 8px;
-
+    display: block;
 }
 
 
