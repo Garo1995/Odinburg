@@ -1,10 +1,15 @@
+const SELECT_MODE = {
+    DEFAULT: "default", REMOVED: "removed",
+}
+
 class YandexMapConstructor {
     constructor({
                     mapContainerId,
                     defaultCenter = [55.817864, 37.750991],
                     zoom = 15,
-                    defaultMarker,
-                    isMultiSelect = false
+                    defaultMarker = [],
+                    isMultiSelect = false,
+                    selectAllMode = SELECT_MODE.DEFAULT,
                 }) {
         this.mapContainerId = mapContainerId;
         this.defaultCenter = defaultCenter;
@@ -16,6 +21,7 @@ class YandexMapConstructor {
         this.initialized = false;
         this.isMultiSelect = isMultiSelect;
         this.defaultMarker = defaultMarker;
+        this.selectAllMode = selectAllMode;
 
         this.init();
     }
@@ -58,12 +64,11 @@ class YandexMapConstructor {
     }
 
 
-
     #generateMarkersList() {
         this.pointCollection = new ymaps.GeoObjectCollection();
         this.selectedCategory.forEach((category) => {
             category.points.forEach(point => {
-                const icon  = point.icon ? point.icon : category.icon
+                const icon = point.icon ? point.icon : category.icon
 
                 const iconContent = ymaps.templateLayoutFactory.createClass(`
         <div class="bs-point-custom" data-id="${point.lat}">
@@ -102,33 +107,54 @@ class YandexMapConstructor {
             })
         });
         this.myMap.geoObjects.add(this.pointCollection);
-        if(this.mainPlacemark){
+        if (this.mainPlacemark) {
             this.myMap.geoObjects.add(this.mainPlacemark);
         }
 
     }
 
-    changeCategory(category, isClear) {
+    changeCategory({
+                       category, isClear, selectedList, isSameFromParent
+                   }) {
+
         if (!this.myMap || !window.ymaps) return;
 
         const isSame = this.selectedCategory.some(x => x.title === category.title);
         this.myMap.geoObjects.removeAll();
 
-        if (isSame) {
-            if (this.isMultiSelect) {
-                this.selectedCategory = this.selectedCategory.filter(x => x.title !== category.title);
+        if (this.selectAllMode === SELECT_MODE.REMOVED) {
+            if (selectedList.length) {
+                if (isSame && isSameFromParent) {
+                    if (category.isAll) {
+                        this.selectedCategory = []
+                    } else {
+                        this.selectedCategory = this.selectedCategory.filter(x => x.title !== category.title);
+                    }
+
+                } else {
+                    this.selectedCategory = [category, ...selectedList]
+                }
             } else {
                 this.selectedCategory = []
             }
+
         } else {
-            if (this.isMultiSelect) {
-                if(isClear|| category.isAll){
-                    this.selectedCategory = [category]
-                }else{
-                    this.selectedCategory.push(category)
+            if (isSame) {
+                if (this.isMultiSelect) {
+                    this.selectedCategory = this.selectedCategory.filter(x => x.title !== category.title);
+                } else {
+                    this.selectedCategory = []
                 }
             } else {
-                this.selectedCategory = [category]
+                if (this.isMultiSelect) {
+                    if (isClear || category.isAll) {
+                        this.selectedCategory = [category]
+                    } else {
+                        this.selectedCategory.push(category)
+                    }
+                } else {
+                    this.selectedCategory = [category]
+                }
             }
         }
 
@@ -155,7 +181,5 @@ class YandexMapConstructor {
             });
         }
     }
-
-
 }
 

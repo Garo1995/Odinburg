@@ -111,6 +111,9 @@
     line-height: 100%;
     color: #6F6F6F;
 }
+.selection-param-title h4{
+    padding: 15px 0;
+}
 
 .select-parameter{
     display: flex;
@@ -528,7 +531,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 
 .btn-see-more{
-    margin-top: 24px;
     width: max-content;
     font-weight: 700;
     font-size: 18px;
@@ -815,6 +817,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     }
     .btn-see-more {
         margin: 18px auto 0;
+    }
+    .selection-param-title h4 {
+        padding: 0;
     }
 }
 @media (max-width: 1020px){
