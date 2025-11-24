@@ -232,10 +232,10 @@ header{
     background: #BEDC1C1A;
     color: #BEDC1C;
 }
-.menu-data-menu ul li.menu-data-active{
+/*.menu-data-menu ul li.menu-data-active{
     background: #BEDC1C1A;
     color: #BEDC1C;
-}
+}*/
 .menu-data-link{
     margin-top: 16px;
 }
@@ -925,7 +925,7 @@ header{
         padding: 0;
         gap: 20px;
         height: auto;
-        margin-top: 107px;
+        margin-top: 96px;
         background: unset;
         box-shadow: unset;
         border: unset;
@@ -945,5 +945,9 @@ header{
     }
     .sign-viewing span {
         font-size: 16px;
+    }
+    .menu-data-mobile ul li a {
+        padding: 13px 16px;
+        line-height: 20px;
     }
 }

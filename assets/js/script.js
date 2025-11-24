@@ -104,6 +104,13 @@ $('.open-bank-card').on('click', function (e) {
         drop.stop().slideUp(300);
     }
 });
+
+$('.modal-options-href').on('click', function (e) {
+    e.preventDefault();
+
+});
+
+
 $('.bank-card-click').on('click', function (e) {
     e.preventDefault();
 

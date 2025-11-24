@@ -80,7 +80,21 @@ p{
     border-radius: 24px;
 }
 .business-rel .business-pagination{
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 16px;
+}
+.swiper-pagination-bullet {
+    width: 60px;
+    height: 6px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active {
+    background: rgba(190, 220, 28, 1);
 }
 .business-photo{
     background-size: cover;
@@ -258,7 +272,7 @@ p{
 .family-mortgage-box strong{
     font-weight: 800;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 56px;
     text-transform: uppercase;
     color: #000000;
 }
@@ -452,6 +466,7 @@ p{
     font-size: 24px;
     line-height: 100%;
     display: block;
+    margin-top: 8px;
 }
 .apartments-numb span{
     font-weight: 400;
@@ -1056,6 +1071,11 @@ input[type=range]::-moz-range-thumb {
     left: 8px;
     height: 100px;
     bottom: -8px;
+    transition: 0.3s;
+}
+.bank-card-opened:after{
+    bottom: 1px;
+
 }
 .bank-card-fon{
     box-shadow: 0px 4px 10px 0px #0000000D;
@@ -1128,7 +1148,8 @@ input[type=range]::-moz-range-thumb {
 
 .bank-card-btn{
     gap: 16px;
-    width: 191px;
+    max-width: 191px;
+    width: 100%;
 }
 .submit-request{
     display: flex;
@@ -1182,10 +1203,10 @@ input[type=range]::-moz-range-thumb {
 }
 
 .bank-card-skrit{
-    gap: 105px;
+    gap: 56px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .bank-card-box.bank-card-opened .bank-card-drop{
@@ -1199,9 +1220,12 @@ input[type=range]::-moz-range-thumb {
 }
 .bank-card-click{
     cursor: pointer;
+
 }
-
-
+.bank-card-name{
+    max-width: 340px;
+    width: 100%;
+}
 
 
 
@@ -1681,7 +1705,7 @@ input[type=range]::-moz-range-thumb {
     width: 100%;
     position: fixed;
     left: 0;
-    bottom: 50px;
+    bottom: 90px;
     z-index: 111;
     padding: 0 20px;
 
@@ -1881,12 +1905,33 @@ input[type=range]::-moz-range-thumb {
 }
 
 
+
 @media (max-width: 1499px){
     .construct-years ul li {
         padding: 8px 16px;
         font-size: 16px;
     }
+    .bank-card-prcnet {
+        gap: 19px;
+    }
 
+    .container {
+        padding: 0 20px;
+    }
+    .gallery-box img {
+        border-radius: 22px;
+        height: 420px;
+    }
+    .news-box p {
+        height: 60px;
+    }
+    .modal-news-info span {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .bank-card-name {
+        max-width: 293px;
+    }
 }
 @media (max-width: 1399px){
     .family-mortgage-box strong {
@@ -1947,7 +1992,16 @@ input[type=range]::-moz-range-thumb {
     .reliable-desc strong {
         font-size: 36px;
     }
-
+    .bank-card-skrit {
+        gap: 23px;
+    }
+    .calculator-program {
+        max-width: 440px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 120%;
+    }
 
 }
 @media (max-width: 1299px){
@@ -2065,10 +2119,9 @@ input[type=range]::-moz-range-thumb {
     }
 
     .bank-card-skrit{
-        gap: 127px;
+        gap: 27px;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
     }
     .mortgage-calc-min{
         background: #EFEFEF;
@@ -2312,7 +2365,6 @@ input[type=range]::-moz-range-thumb {
     }
     .bank-card-name {
         width: 100%;
-        justify-content: space-between;
     }
     .bank-card-name strong {
         margin-right: auto;
@@ -2326,13 +2378,15 @@ input[type=range]::-moz-range-thumb {
     .bank-card-prcnet {
         gap: 18px;
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
     }
     .mortgage-scr-max {
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    .bank-card-name {
+        max-width: 100%;
+    }
     .bank-card-btn {
         width: 100%;
         justify-content: space-between;
@@ -2433,6 +2487,7 @@ input[type=range]::-moz-range-thumb {
         border-bottom-left-radius: 24px;
         align-items: flex-end;
         margin-top: -10px;
+        padding-bottom: 4px;
     }
     .bank-card-fon {
         border-radius: 24px;
@@ -2482,9 +2537,8 @@ input[type=range]::-moz-range-thumb {
 }
 
 @media (max-width: 767px){
-    .business-rel .business-pagination{
-        display: block;
-        bottom: 0;
+    .bank-card-btn {
+        max-width: 100%;
     }
     .business-rel {
         position: relative;
@@ -2590,6 +2644,10 @@ input[type=range]::-moz-range-thumb {
     .family-mortgage-box span {
         max-width: 176px;
         width: 100%;
+    }
+    .calc-percent li {
+        padding: 9px 16px;
+        font-size: 16px;
     }
     .discount-count {
         font-size: 16px;

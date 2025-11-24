@@ -196,7 +196,12 @@
     width: 100%;
 }
 
-
+@media (max-width: 1399px){
+    .infrast-map-cnt {
+        max-width: 310px;
+        padding: 16px;
+    }
+}
 @media (max-width: 1299px){
     .infrast-map-cnt {
         max-width: 300px;

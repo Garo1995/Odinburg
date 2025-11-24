@@ -6,6 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/svg"  href="./assets/img/favicon.svg">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=d130909a-f4b5-453d-85f2-98a45f38ba0c&lang=ru_RU"></script>
 
@@ -14,6 +16,289 @@
 <body>
 
 
+<header class="header">
+    <div class="container">
+        <div class="header-main G-align-center G-justify-between">
+            <div class="header-logo G-align-center">
+                <div class="open-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="./index.html" class="logo G-flex">
+                    <img src="./assets/img/logo.svg" alt="logo" loading="lazy">
+                </a>
+            </div>
+            <div class="header-cont-flex G-align-center">
+                <div class="header-contact G-flex-column G-align-end">
+                    <a href="tel:+ 7 (495) 489 01 39" class="phone-number">+ 7 (495) 489 01 39</a>
+                    <span data-modal-target="#modal-form" class="card request-call">Заказать звонок</span>
+                </div>
+                <div class="select-block G-align-center">
+                    <a href="#" class="favorite-box G-center">
+                        <img src="./assets/img/heart.svg" alt="heart" loading="lazy">
+                    </a>
+                    <div class="select-property">
+                        <div class="select-name">Выбор недвижимости</div>
+                        <div class="select-dropdown">
+                            <ul>
+                                <li>Квартиры <i class="icon-house"></i></li>
+                                <li>Машино-места <i class="icon-car"></i></li>
+                                <li>Кладовые <i class="icon-storerooms"></i></li>
+                                <li>Мото-места <i class="icon-moto"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-modal">
+        <div class="container">
+            <div class="menu-modal-fon G-justify-between">
+                <div class="menu-modal-min">
+                    <div class="menu-modal-js" data-catalog="benefits">
+                        <div class="menu-modal-block">
+                            <h2>Преимущества проекта</h2>
+                            <div class="project-wrap">
+                                <div class="project-box">
+                                    <img src="./assets/img/project-1.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Дома уровня бизнес</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-2.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Инфраструктура</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-box">
+                                    <img src="./assets/img/project-3.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Экологически чистый район</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-4.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Для детей</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-5.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Продуманные планировки</span>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/project-6.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Кладовые и паркинг</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="property">
+                        <div class="menu-modal-block">
+                            <h2>Выбор недвижимости</h2>
+                            <div class="select-menu-property">
+                                <div class="project-box">
+                                    <img src="./assets/img/property-1.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Квартиры</span>
+                                    </div>
+                                </div>
+                                <div class="menu-property-col G-flex-column">
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project" loading="lazy">
+                                        <div class="project-name">
+                                            <span>Машино-места</span>
+                                        </div>
+                                    </div>
+                                    <div class="project-box">
+                                        <img src="./assets/img/property-2.jpg" alt="project" loading="lazy">
+                                        <div class="project-name">
+                                            <span>Мото-места</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-box">
+                                    <img src="./assets/img/property-3.jpg" alt="project" loading="lazy">
+                                    <div class="project-name">
+                                        <span>Кладовые</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="purchase">
+                        <div class="menu-modal-block">
+                            <h2>ипотека</h2>
+                            <div class="mortgage-flex">
+                                <div class="mortgage-selec G-flex-wrap">
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Стандартная</h3>
+                                        <p>
+                                            Нужен доступный первый взнос или большая сумма кредита?
+                                        </p>
+                                        <strong>от 23,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>IT-ипотека</h3>
+                                        <p>
+                                            Доступное жилье без первоначального взноса
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Военная</h3>
+                                        <p>
+                                            Вы военнослужащий с сертификатом НИС?
+                                        </p>
+                                        <strong>от 3,5%</strong>
+                                    </div>
+                                    <div class="mortgage-box">
+                                        <img src="./assets/img/alfa.png" alt="alfa" loading="lazy">
+                                        <h3>Семейная</h3>
+                                        <p>
+                                            Мечтаете выгодно купить квартиру с уютной детской?
+                                        </p>
+                                        <strong>от 6,5%</strong>
+                                    </div>
+                                </div>
+
+                                <div class="mortgage-calculator">
+                                    <div class="mortgage-calc-title">
+                                        <h3>Ипотечный калькулятор</h3>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 29 456 руб.</span>
+                                            <p>ежемесячный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 1,4 млн руб.</span>
+                                            <p>первоначальный платеж</p>
+                                        </div>
+                                        <div class="mortgage-calc-pirce">
+                                            <span>от 3,9%</span>
+                                            <p>ставка</p>
+                                        </div>
+                                    </div>
+                                    <button class="btn-line">
+                                        Рассчитать ипотеку
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-modal-js" data-catalog="stock">
+                        <div class="menu-modal-block">
+                            <h2>Акции</h2>
+                            <div class="stock-crash-flex">
+                                <div class="stock-crash-pic">
+                                    <a href="#" class="more-info">Подробнее</a>
+                                </div>
+                                <div class="stock-crash-col">
+                                    <div class="stock-crash-box">
+                                        <strong>ОБВАЛ ЦЕН</strong>
+                                        <span>Успей до 30 октября!</span>
+                                        <button class="btn-line">Подробнее</button>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/stock-chip.png" alt="stock" loading="lazy">
+                                        </div>
+                                    </div>
+                                    <div class="parking-space-box">
+                                        <div class="parking-space-price">
+                                            <strong>15 000 <small>₽/мес.</small></strong>
+                                            <span>Машино-место</span>
+                                        </div>
+                                        <div class="parking-discount G-align-start">
+                                            <div class="parking-discount-count">
+                                                <small>Скидка</small>
+                                                <strong>15%</strong>
+                                            </div>
+                                            <div class="parking-discount-count">
+                                                <small>Рассрочка</small>
+                                                <strong>на 3 года</strong>
+                                            </div>
+                                        </div>
+                                        <div class="stock-crash-zing G-flex">
+                                            <img src="./assets/img/car-chat.png" alt="car-chat" loading="lazy">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="menu-modal-cnt">
+                    <div class="menu-data-menu">
+                        <ul>
+                            <li class="menu-data-click menu-data-active" data-catalog="benefits">Преимущества проекта</li>
+                            <li class="menu-data-click" data-catalog="property">Выбор недвижимости</li>
+                            <li class="menu-data-click" data-catalog="purchase">Способы покупки</li>
+                            <li class="menu-data-click" data-catalog="stock">Акции</li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-mobile">
+                        <ul class="menu-scroll">
+                            <li><a href="./index.html#advantages-scr">Преимущества </a></li>
+                            <li><a href="./index.html#selection">Выбор недвижимости</a></li>
+                            <li><a href="#">Способы покупки</a></li>
+                            <li><a href="#">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-data-link">
+                        <ul class="menu-scroll">
+                            <li><a href="#">О компании <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#news-sec">Новости</a></li>
+                            <li><a href="#">Ход строительства</a></li>
+                            <li><a href="./index.html#special-pool">Спец-пул</a></li>
+                            <li><a href="./index.html#general-plan">Генплан</a></li>
+                            <li><a href="./index.html#infrastructure">Инфраструктура</a></li>
+                            <li><a href="#">Кабинет брокера <i class="men-icon"></i> </a></li>
+                            <li><a href="./index.html#footer-contact">Контакты</a></li>
+                        </ul>
+
+                    </div>
+                    <button data-modal-target="#modal-form" class="card btn-line">
+                        <i class="icon icon-call"></i>
+                        <span>Заказать звонок</span>
+                    </button>
+
+
+                    <button class="btn">Выбор недвижимости</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="select-property-mobile">
+        <div class="select-property">
+            <div class="select-name">Выбор недвижимости</div>
+            <div class="touchstart select-dropdown">
+                <span class="close-filt-map"></span>
+                <ul>
+                    <li>Квартиры <i class="icon-house"></i></li>
+                    <li>Машино-места <i class="icon-car"></i></li>
+                    <li>Кладовые <i class="icon-storerooms"></i></li>
+                    <li>Мото-места <i class="icon-moto"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
 
 

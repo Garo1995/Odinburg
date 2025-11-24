@@ -73,7 +73,6 @@ $(document).ready(function () {
             $(case_block_child).each(function () {
                 if ($(this).attr('data-catalog') == this_attr) {
                     $(this).addClass('active-cat');
-
                 }
             })
         } else {

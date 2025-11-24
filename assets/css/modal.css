@@ -421,7 +421,6 @@ body.modal-open {
     max-width: 530px;
     width: 100%;
     border-radius: 12px;
-    height: 561px;
 }
 .types-mortgage-pik img{
     width: 100%;
@@ -772,7 +771,145 @@ input.error {
 .check-form input.error + .checkmark {
     border: 1px solid rgba(243, 10, 10, 1) !important;
 }
+@media (max-width: 1499px){
+    .types-mortgage-pik {
+        max-width: 430px;
+    }
+    .decorative-text p {
+        margin-top: 6px;
+        font-size: 16px;
+    }
+    .golden-trophy {
+        padding: 22px;
+        height: 285px;
+    }
+    .golden-trophy img {
+        max-width: 275px;
+    }
+    .modal-options {
+        padding: 30px 22px;
+        min-height: auto;
+    }
+    .project-benefits-info {
+        gap: 18px;
+    }
+    .modal-options-click {
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .decorative-name i {
+        width: 19px;
+        height: 19px;
+    }
+    .pill-arrow-prev, .pill-arrow-next {
+        width: 38px;
+        height: 38px;
+    }
+    .golden-trophy h3 {
+        font-size: 20px;
+        line-height: 134%;
+    }
+    .modal-options-scr {
+        height: 420px;
+        gap: 8px;
+    }
+    .can-apply-flex {
+        margin-top: 12px;
+        gap: 12px;
+    }
+    .modal-options-scr .btn-line {
+        margin-top: 16px;
+    }
+    .can-apply-prcent strong {
+        font-size: 26px;
+        line-height: 110%;
+    }
+    .modal-options-min {
+        margin-top: 18px;
+    }
+    .modal-inp input {
+        height: 50px;
+        padding: 11px 16px 11px 24px;
+        font-size: 16px;
+    }
+    .modal-inp {
+        margin-bottom: 14px;
+    }
+    .check-form label small {
+        font-size: 14px;
+        line-height: 120%;
+    }
+    .check-form {
+        margin-top: 12px;
+    }
+    .modal-form-main {
 
+        padding: 28px 25px;
+    }
+    .modal-form-main .btn {
+        margin-top: 20px;
+    }
+    .modal-form-main  .frame-select .jq-selectbox__select-text {
+        padding: 12px 20px;
+        height: 50px;
+        font-size: 16px;
+    }
+    .modal-form-main  .frame-select .jq-selectbox:after {
+        top: 14px;
+    }
+    .modal-form-main h3 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .parts-frame-count span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .modal-options-flex .options-gallery-pic {
+        height: auto;
+    }
+    .modal-options-slide {
+        max-width: 430px;
+    }
+    .gallery-modal-pic {
+        width: 100%;
+        height: 92vh;
+    }
+    .modal-news-info {
+        height: 88vh;
+        padding-bottom: 14px;
+    }
+    .modal-news-box {
+        max-width: 540px;
+        padding: 24px 12px 20px 24px;
+    }
+    .modal-news-info h3 {
+        font-size: 20px;
+        margin-top: 16px;
+    }
+    .gallery-box-name {
+        border-radius: 0 0 24px 24px;
+    }
+    .modal-options {
+        max-width: 1000px;
+    }
+    .modal-options-slide {
+        max-width: 400px;
+    }
+    .modal-inp input {
+        height: 47px;
+        padding: 11px 16px 11px 19px;
+        font-size: 16px;
+    }
+    .gallery-modal {
+        max-width: 1100px;
+    }
+    .modal-options-flex .options-gallery-pic {
+        height: 380px;
+    }
+
+}
 
 @media (max-width: 1399px){
     .close, .modal-close{
@@ -795,12 +932,15 @@ input.error {
     .gallery-modal .swiper-button-next{
         right: 16px;
     }
+    .modal-overlay {
+        overflow-y: auto;
+        padding: 20px 0;
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 1299px){
-    .types-mortgage-pik {
-        height: 450px;
-    }
+
     .modal-options {
         min-height: 600px;
     }
@@ -856,7 +996,6 @@ input.error {
 
 @media (max-width: 1199px){
     .types-mortgage-pik {
-        height: 420px;
         max-width: 410px;
     }
     .decorative-name span {
@@ -930,7 +1069,11 @@ input.error {
     .modal-overlay .close-filt-map {
         display: flex;
     }
-
+    .modal-overlay {
+        overflow-y: unset;
+        padding: 0;
+        align-items: flex-start;
+    }
     .modal-news-info {
         height: 450px;
     }
@@ -999,7 +1142,7 @@ input.error {
         flex-direction: column;
         align-items: center;
         overflow-y: scroll;
-        height: 450px;
+        height: 400px;
         padding-right: 6px;
         margin-right: -6px;
     }

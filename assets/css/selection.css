@@ -525,7 +525,29 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 
 
-
+.parking-spaces-machine strong{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+.spaces-machine-gap{
+    margin-top: 4px;
+    gap: 8px;
+}
+.spaces-machine-gap del{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: right;
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+}
+.spaces-machine-gap .discount-apart{
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 11px;
+}
 
 
 
@@ -607,11 +629,42 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     display: flex;
     width: 80px;
     height: 80px;
+    position: relative;
+    transition: 0.3s;
+
 }
 .apart-filter-pic img{
     width: 100%;
 }
+.apart-filter-hover{
+    position: absolute;
+    top: 85px;
+    left: -20px;
+    background: rgba(254, 255, 250, 1);
+    border: 1px solid rgba(239, 239, 239, 1);
+    width: 228px;
+    height: 271px;
+    gap: 16px;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.3s;
+    z-index: 22;
 
+}
+.apart-filter-hover span{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 1);
+}
+.apart-filter-pic:hover .apart-filter-hover{
+    transform: scale(1);
+
+}
 .apart-filter-prcnet{
     gap: 48px;
 }
@@ -629,9 +682,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 24px;
     line-height: 135%;
 }
-.apart-filter-price{
+.apart-filter-price {
     gap: 16px;
     position: relative;
+    max-width: 210px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .discount-apart{
@@ -647,7 +703,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 18px;
     line-height: 24px;
 }
-
+.more-filter-sel{
+    margin-top: 24px;
+}
 .parking-spaces-wrap{
     margin-top: 24px;
     display: flex;
@@ -679,7 +737,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 .parking-spaces-count small{
     display: block;
-    margin-top: 2px;
+    margin-top: 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
