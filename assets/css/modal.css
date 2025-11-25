@@ -425,8 +425,8 @@ body.modal-open {
 .types-mortgage-pik img{
     width: 100%;
     border-radius: 12px;
-    height: 100%;
     object-fit: cover;
+    height: 561px;
 }
 
 .can-apply-flex{
@@ -772,6 +772,9 @@ input.error {
     border: 1px solid rgba(243, 10, 10, 1) !important;
 }
 @media (max-width: 1499px){
+    .types-mortgage-pik img {
+        height: 495px;
+    }
     .types-mortgage-pik {
         max-width: 430px;
     }
@@ -936,6 +939,9 @@ input.error {
         overflow-y: auto;
         padding: 20px 0;
         align-items: flex-start;
+    }
+    .types-mortgage-pik img {
+        height: 450px;
     }
 }
 

@@ -655,6 +655,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     z-index: 22;
 
 }
+.apart-filter-hover img{
+    width: 177px;
+}
 .apart-filter-hover span{
     font-weight: 400;
     font-size: 18px;

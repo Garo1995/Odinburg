@@ -1,18 +1,59 @@
-
 let businessSwiper = new Swiper(".business-slider", {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
     speed: 800,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
     pagination: {
         el: ".business-pagination",
         clickable: true,
+        renderBullet: function (index, className) {
+            return `<span class="${className}">
+                        <span class="progress"></span>
+                    </span>`;
+        },
     },
     navigation: {
         nextEl: ".business-button-next",
         prevEl: ".business-button-prev",
     },
 });
+
+// Функция запуска анимации только на активном слайде
+function startActiveProgress() {
+    document.querySelectorAll(".progress").forEach(el => {
+        el.classList.remove("animate");
+    });
+
+    const active = document.querySelector(".swiper-pagination-bullet-active .progress");
+    if (active) {
+        void active.offsetWidth; // перезапуск
+        active.classList.add("animate");
+    }
+}
+
+// Запускаем после инициализации
+businessSwiper.on("init", () => {
+    startActiveProgress();
+});
+
+// Каждый раз при смене слайда
+businessSwiper.on("slideChangeTransitionStart", () => {
+    startActiveProgress();
+});
+
+// Вручную триггерим init (Swiper 8+)
+businessSwiper.init();
+
+
+
+
+
+
+
 
 
 

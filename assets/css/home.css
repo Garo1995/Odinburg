@@ -85,6 +85,46 @@ p{
     justify-content: center;
     bottom: 16px;
 }
+
+
+.business-rel .business-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 16px;
+}
+
+.business-rel .swiper-pagination-bullet {
+    width: 60px;
+    height: 6px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    position: relative;
+    margin: 0 4px !important;
+}
+
+.progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(190, 220, 28, 1); /* твой цвет */
+    border-radius: 6px;
+    transform-origin: left;
+}
+
+.progress.animate {
+    animation: fillBar 5s linear forwards;
+}
+
+@keyframes fillBar {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+
 .swiper-pagination-bullet {
     width: 60px;
     height: 6px;
@@ -748,6 +788,17 @@ p{
 .sort-calc:hover i{
     background-color: rgba(190, 220, 28, 1);
 }
+
+
+
+.mortgage-calc-title .sort-calc{
+    display: none;
+}
+
+
+
+
+
 .open-filter-calc, .open-estate-filter{
     display: none;
 
@@ -1125,6 +1176,8 @@ input[type=range]::-moz-range-thumb {
 }
 .bank-card-prcnet{
     gap: 32px;
+    max-width: 320px;
+    width: 100%;
 }
 .bank-card-count{
     display: flex;
@@ -1454,10 +1507,10 @@ input[type=range]::-moz-range-thumb {
     padding: 32px;
 }
 .reliable-info img{
-    width: 98px;
+    width: 145px;
 }
 .reliable-title{
-    margin-top: 20px;
+    margin-top: 12px;
 }
 .reliable-title h3{
     font-weight: 700;
@@ -2226,6 +2279,9 @@ input[type=range]::-moz-range-thumb {
         width: 100%;
         height: 100%;
         z-index: 9991;
+    }
+    .bank-card-prcnet {
+        gap: 28px;
     }
     .calculator-program {
         position: fixed;
