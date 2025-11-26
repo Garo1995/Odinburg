@@ -8,13 +8,6 @@
 
 $(document).ready(function () {
 
-    addActiveClass('menu-data-menu', 'menu-data-active');
-    changeCaseBlock(this, 'menu-data-menu', 'menu-modal-min', 'menu-data-active', 'menu-data-click');
-    $('.menu-data-click').on('click', function () {
-        changeActiveClassWithClick(this, 'menu-data-menu', 'menu-data-active')
-        changeCaseBlock(this, 'menu-data-menu', 'menu-modal-min', 'menu-data-active', 'menu-data-click');
-    })
-
 
 
 
@@ -89,5 +82,42 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuItems = document.querySelectorAll('.menu-data-click');
+    const contentBlocks = document.querySelectorAll('.menu-modal-js');
+
+    function showCatalog(catalog) {
+        // подсветка пункта меню
+        menuItems.forEach(item => {
+            item.classList.toggle('active', item.dataset.catalog === catalog);
+        });
+
+        // показ нужного блока
+        contentBlocks.forEach(block => {
+            block.classList.toggle('active', block.dataset.catalog === catalog);
+        });
+    }
+
+    // вместо click — наведение
+    menuItems.forEach(item => {
+        item.addEventListener('mouseenter', () => {
+            const catalog = item.dataset.catalog;
+            showCatalog(catalog);
+        });
+    });
+
+    // по умолчанию можно открыть первый пункт
+    if (menuItems[0]) {
+        showCatalog(menuItems[0].dataset.catalog);
+    }
+});
 
 

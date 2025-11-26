@@ -472,10 +472,27 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 
 
-
-.family-filters-wrap{
+.family-filters-scroll{
     margin-top: 24px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-right: -10px;
+    padding-right: 10px;
+}
+
+.family-filters-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: #DCDCDC;
+}
+.family-filters-scroll::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 5px;
+    background: #BEDC1C;
+}
+.family-filters-wrap{
     gap: 24px;
+    max-height: 1880px;
 }
 
 .family-filters-box{
@@ -669,7 +686,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 }
 .apart-filter-prcnet{
-    gap: 48px;
+    gap: 24px;
 }
 .apart-filter-count {
     display: flex;
@@ -684,13 +701,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-weight: 700;
     font-size: 24px;
     line-height: 135%;
+    width: 95px;
 }
 .apart-filter-price {
-    gap: 16px;
     position: relative;
     max-width: 210px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .discount-apart{
@@ -710,10 +727,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     margin-top: 24px;
 }
 .parking-spaces-wrap{
-    margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    max-height: 994px;
 }
 .parking-spaces-box{
     width: calc(25% - 18px);
@@ -759,7 +776,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     gap: 8px;
 }
 
-
+.apartments-price{
+    margin-left: auto;
+}
 
 
 .clear-parameters{
@@ -791,6 +810,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     .family-filters-box {
         width: calc(25% - 12px);
     }
+
     .family-filters-wrap{
         gap: 16px;
     }
@@ -834,7 +854,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         line-height: 125%;
     }
     .apart-filter-prcnet {
-        gap: 40px;
+        gap: 15px;
     }
     .apartments-price strong {
         font-size: 20px;

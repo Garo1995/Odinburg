@@ -56,9 +56,6 @@ businessSwiper.init();
 
 
 
-
-
-
 let mortgageSwiper = new Swiper(".mortgage-slider", {
     slidesPerView: 3,
     spaceBetween: 16,

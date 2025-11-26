@@ -161,7 +161,13 @@ body .active-cat{
     border-radius: 24px;
     padding: 48px 32px 32px;
 }
-
+.similar-apartments{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
 .parts-apart-price{
     gap: 12px;
     flex-direction: column;

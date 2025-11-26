@@ -1,19 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const priceRange     = document.getElementById("price-range");
-    const priceDisplay   = document.getElementById("price-display");
+    const priceRange      = document.getElementById("price-range");
+    const termRange       = document.getElementById("term-range");
+    const depositRange    = document.getElementById("deposit-range");
 
-    const termRange      = document.getElementById("term-range");
-    const termDisplay    = document.getElementById("term-display");
+    const priceInput      = document.getElementById("price-input");
+    const termInput       = document.getElementById("term-input");
+    const depositInput    = document.getElementById("deposit-input");
+    const depositPercent  = document.getElementById("deposit-percent");
 
-    const depositRange   = document.getElementById("deposit-range");
-    const depositDisplay = document.getElementById("deposit-display");
-    const depositPercent = document.getElementById("deposit-percent");
-
-    const percentBtns    = document.querySelectorAll("#preset-percent li");
+    const percentBtns     = document.querySelectorAll("#preset-percent li");
 
     // формат суммы
     const fm = (n) => Number(n).toLocaleString("ru-RU") + " ₽";
+
+    // убираем всё, кроме цифр
+    const onlyNum = (str) => {
+        const v = parseInt(String(str).replace(/\D/g, ""), 10);
+        return isNaN(v) ? 0 : v;
+    };
 
     // универсальная окраска range
     function paintRange(range) {
@@ -36,22 +41,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // обновление стоимости
     function updatePrice() {
-        priceDisplay.textContent = fm(priceRange.value);
+        priceInput.value = fm(priceRange.value);
         updateDeposit(); // обновляем взнос, если меняем цену
     }
 
     // обновление срока
     function updateTerm() {
-        termDisplay.textContent = termRange.value + " лет";
+        termInput.value = termRange.value; // только число, "лет" можно дорисовать через CSS
     }
 
-    // обновление взноса
+    // обновление взноса из процента
     function updateDeposit() {
         const price   = +priceRange.value;
         const percent = +depositRange.value;
         const sum     = Math.round(price * percent / 100);
 
-        depositDisplay.textContent = fm(sum);
+        depositInput.value    = fm(sum);
         depositPercent.textContent = percent + "%";
 
         // подсветка активной кнопки
@@ -60,7 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
         );
     }
 
-    // обработчики
+    // ------ ОБРАБОТЧИКИ RANGE ------
+
     priceRange.addEventListener("input", () => {
         updatePrice();
         paintRange(priceRange);
@@ -76,13 +82,61 @@ document.addEventListener("DOMContentLoaded", () => {
         paintRange(depositRange);
     });
 
-    // кнопки процентов
+    // ------ КНОПКИ ПРОЦЕНТОВ ------
+
     percentBtns.forEach(btn => {
         btn.addEventListener("click", () => {
             depositRange.value = btn.dataset.percent;
             updateDeposit();
             paintRange(depositRange);
         });
+    });
+
+    // ------ РУЧНОЙ ВВОД В ИНПУТЫ ------
+
+    // Цена квартиры
+    priceInput.addEventListener("change", () => {
+        let v = onlyNum(priceInput.value);
+
+        const min = +priceRange.min;
+        const max = +priceRange.max;
+
+        if (v < min) v = min;
+        if (v > max) v = max;
+
+        priceRange.value = v;
+        updatePrice();
+        paintRange(priceRange);
+    });
+
+    // Срок ипотеки
+    termInput.addEventListener("change", () => {
+        let v = onlyNum(termInput.value);
+
+        const min = +termRange.min;
+        const max = +termRange.max;
+
+        if (v < min) v = min;
+        if (v > max) v = max;
+
+        termRange.value = v;
+        updateTerm();
+        paintRange(termRange);
+    });
+
+    // Первоначальный взнос (сумма)
+    depositInput.addEventListener("change", () => {
+        const sum   = onlyNum(depositInput.value);
+        const price = +priceRange.value || 1;
+
+        let percent = Math.round(sum / price * 100);
+
+        if (percent < 0) percent = 0;
+        if (percent > 100) percent = 100;
+
+        depositRange.value = percent;
+        updateDeposit();
+        paintRange(depositRange);
     });
 
     // первичный запуск

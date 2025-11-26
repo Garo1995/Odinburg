@@ -609,7 +609,9 @@ header{
 .menu-modal-js{
     display: none;
 }
-
+.menu-modal-js.active{
+    display: block;
+}
 
 
 .close-menu span {
