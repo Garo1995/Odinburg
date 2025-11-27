@@ -1023,35 +1023,25 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         overflow-y: hidden;
         overflow-x: scroll;
         margin-right: -16px;
-        padding-bottom: 12px;
+        padding-bottom: 10px;
         position: relative;
     }
-
     .real-estate-menu::-webkit-scrollbar {
-        width: 0;
-        height: 0;
+        width: 2px;
+        height: 2px;
         background: #EFEFEF;
     }
     .real-estate-menu::-webkit-scrollbar-thumb {
-        width: 0;
-        height: 0;
+        width: 2px;
+        height: 2px;
         background: #EFEFEF;
 
     }
     .real-estate-menu ul {
         width: max-content;
-        position: relative;
+
     }
-    .real-estate-menu ul:after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 12px;
-        background: #EFEFEF;
-        z-index: 9;
-    }
+
     .parking-spaces-wrap {
         max-height: 852px;
     }
