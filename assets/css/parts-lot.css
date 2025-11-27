@@ -338,12 +338,12 @@ body .active-cat{
     .layout-floor::-webkit-scrollbar {
         width: 0;
         height: 0;
-        background: unset!important;
+        background: rgba(239, 239, 239, 1);
     }
     .layout-floor::-webkit-scrollbar-thumb {
         width: 0;
         height: 0;
-        background: unset!important;
+        background: rgba(239, 239, 239, 1);
 
     }
 
