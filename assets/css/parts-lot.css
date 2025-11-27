@@ -340,14 +340,12 @@ body .active-cat{
         position: relative;
     }
     .layout-floor::-webkit-scrollbar {
-        width: 2px;
-        height: 2px;
-        background: rgba(239, 239, 239, 1);
+        display: none!important;
+
     }
     .layout-floor::-webkit-scrollbar-thumb {
-        width: 2px;
-        height: 2px;
-        background: rgba(239, 239, 239, 1);
+        display: none!important;
+
 
     }
 

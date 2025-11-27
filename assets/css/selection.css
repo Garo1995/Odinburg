@@ -1023,20 +1023,15 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         overflow-y: hidden;
         overflow-x: scroll;
         margin-right: -16px;
-        padding-bottom: 10px;
         position: relative;
     }
     .real-estate-menu::-webkit-scrollbar {
-        width: 2px;
-        height: 2px;
-        background: #EFEFEF;
+        display: none!important;
     }
     .real-estate-menu::-webkit-scrollbar-thumb {
-        width: 2px;
-        height: 2px;
-        background: #EFEFEF;
-
+        display: none!important;
     }
+
     .real-estate-menu ul {
         width: max-content;
 
