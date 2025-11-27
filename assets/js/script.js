@@ -6,6 +6,7 @@ $(document).ready(function () {
         e.stopPropagation()
 
         $(this).toggleClass('close-menu')
+        $('body').toggleClass('body-fixed')
         $('.menu-modal').toggleClass('menu-modal-opened')
     })
 
@@ -109,6 +110,17 @@ $('.modal-options-href').on('click', function (e) {
     e.preventDefault();
 
 });
+
+$('.select-parameter').on('click', function (e) {
+    e.preventDefault();
+
+});
+
+$('.submit-request-flex').on('click', function (e) {
+    e.preventDefault();
+
+});
+
 
 
 $('.bank-card-click').on('click', function (e) {
@@ -308,12 +320,6 @@ document.querySelectorAll('.modal-overlay').forEach(modal => {
 
 
 
-// Свайп вниз — закрыть
-let startY = 0;
-let endY = 0;
-let threshold = 50;
-
-
 $('.open-filter-calc').on('click', function () {
     $('.calculator-program').addClass('touchstart-open');
     $('body').addClass('body-fon');
@@ -344,15 +350,6 @@ $('.open-estate-filter').on('click', function () {
 
 
 
-$('.close-filt-map').on('click', function () {
-    $('.calculator-program').removeClass('touchstart-open');
-    $('body').removeClass('body-fon');
-    $('.infrast-map-cnt').removeClass('touchstart-open');
-
-    $('.selection-parameters').removeClass('touchstart-open');
-    $('.modal-overlay').removeClass('active');
-
-})
 
 
 $('.master-plan-sel ul li').on('click', function () {
@@ -368,12 +365,16 @@ $('.master-plan-sel ul li').on('click', function () {
 
 
 
-
-
+let startY = 0;
+let endY = 0;
+let threshold = 50;
+let canClose = false;
 
 $('.touchstart').on('touchstart', function (e) {
-    startY = e.originalEvent.touches[0].clientY;
+    const isDragZone = $(e.target).closest('.modal-drag-zone').length > 0;
 
+    canClose = isDragZone;
+    startY = e.originalEvent.touches[0].clientY;
 });
 
 $('.touchstart').on('touchmove', function (e) {
@@ -381,6 +382,9 @@ $('.touchstart').on('touchmove', function (e) {
 });
 
 $('.touchstart').on('touchend', function () {
+
+    if (!canClose) return;
+
     if (endY - startY > threshold) {
         $(this).removeClass('touchstart-open');
         $('body').removeClass('body-fon modal-open');

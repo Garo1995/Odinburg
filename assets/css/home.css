@@ -393,6 +393,7 @@ p{
 }
 .apartments-slider {
     width: 1512px;
+    border-radius: 24px;
 }
 .apartments-card{
     background: #FEFFFA;
@@ -488,6 +489,9 @@ p{
 .apartments-numb{
     margin-top: 16px;
     gap: 16px;
+}
+.apartments-numb .apartments-price{
+    margin-left: 0;
 }
 .apartments-price del{
     font-weight: 400;
@@ -1815,7 +1819,7 @@ input[type=range]::-moz-range-thumb {
 
 
 
-.close-filt-map{
+.modal-drag-zone{
     display: none;
 }
 
@@ -2266,9 +2270,16 @@ input[type=range]::-moz-range-thumb {
         justify-content: center;
         margin-right: 16px;
     }
+    .modal-drag-zone{
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        width: 100%;
+        touch-action: none;
+        padding-top: 6px;
+    }
     .close-filt-map{
         display: block;
-        margin: 6px auto 20px;
         background: #00000026;
         width: 28px;
         height: 3px;
@@ -2652,7 +2663,9 @@ input[type=range]::-moz-range-thumb {
     .bank-card-box {
         max-width: 100%;
     }
-
+    .project-picture .href-arrow {
+        opacity: 1;
+    }
     .finish-options-text span{
         font-size: 16px;
         margin-top: 8px;
@@ -2681,6 +2694,12 @@ input[type=range]::-moz-range-thumb {
     }
     .family-mortgage-box {
         padding: 26px 22px;
+    }
+    .business-rel .swiper-pagination-bullet {
+        background: #EFEFEF;
+    }
+    .business-rel .business-pagination {
+        bottom: 9px;
     }
 }
 @media (max-width: 570px){
@@ -2832,5 +2851,10 @@ input[type=range]::-moz-range-thumb {
     .apartments-photo img{
         height: 200px;
     }
+    .project-picture {
+        height: 445px;
+    }
+
+
 
 }

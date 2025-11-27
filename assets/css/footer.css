@@ -219,6 +219,8 @@ footer{
     footer {
         margin-top: 40px;
         padding-bottom: 40px;
+        margin-bottom: 80px;
+
     }
     .after-sales {
         justify-content: flex-start;
@@ -251,7 +253,7 @@ footer{
         background: #000000;
         border-radius: 24px;
         padding: 16px 0;
-        margin-bottom: 40px;
+        margin-bottom: 90px;
     }
     .footer-main {
         padding: 0;

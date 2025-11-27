@@ -208,7 +208,12 @@ body .active-cat{
     flex-direction: column;
     gap: 6px;
 }
-
+.parts-apart-del del{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+}
 .parts-apart-del span{
     font-weight: 700;
     font-size: 18px;
@@ -333,10 +338,13 @@ body .active-cat{
     .layout-floor::-webkit-scrollbar {
         width: 0;
         height: 0;
+        background: unset!important;
     }
     .layout-floor::-webkit-scrollbar-thumb {
         width: 0;
         height: 0;
+        background: unset!important;
+
     }
 
 }

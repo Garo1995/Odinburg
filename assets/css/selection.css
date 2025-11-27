@@ -1027,13 +1027,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     .real-estate-menu::-webkit-scrollbar {
         width: 0;
         height: 0;
+        background: unset!important;
     }
     .real-estate-menu::-webkit-scrollbar-thumb {
         width: 0;
         height: 0;
+        background: unset!important;
+
     }
     .real-estate-menu ul {
         width: max-content;
+    }
+    .parking-spaces-wrap {
+        max-height: 852px;
     }
     .open-estate-filter {
         max-width: 600px;

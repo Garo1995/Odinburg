@@ -914,6 +914,9 @@ header{
     }
 }
 @media (max-width: 767px){
+    .body-fixed{
+        overflow: hidden;
+    }
     .header-main {
         z-index: 991;
         position: relative;
@@ -921,7 +924,20 @@ header{
     .menu-modal {
         top: -16px;
         background: #EFEFEF;
-        height: 100vh;
+        padding-bottom: 54px;
+        overflow-y: scroll;
+        height: calc(100vh);
+
+    }
+    .menu-modal::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background: unset;
+    }
+    .menu-modal::-webkit-scrollbar-thumb {
+        width: 0;
+        height: 0;
+        background: unset;
     }
     .menu-modal-fon {
         padding: 0;

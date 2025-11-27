@@ -314,4 +314,7 @@
     .parking-plan-left {
         flex-direction: column;
     }
+    .parking-href-min {
+        margin-top: 24px;
+    }
 }
