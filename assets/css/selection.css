@@ -1026,17 +1026,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         position: relative;
     }
     .real-estate-menu::-webkit-scrollbar {
-        display: none!important;
+        display: none;
     }
     .real-estate-menu::-webkit-scrollbar-thumb {
-        display: none!important;
+        display: none;
     }
-
     .real-estate-menu ul {
         width: max-content;
-
     }
-
     .parking-spaces-wrap {
         max-height: 852px;
     }
