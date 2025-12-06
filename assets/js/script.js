@@ -277,16 +277,6 @@ for (let i = 0; i < sliders.length; i++) {
 
 
 
-
-
-
-
-
-
-
-
-
-
 // пересчитываем, когда открывается модалка
 document.querySelectorAll('.modal-overlay').forEach(modal => {
     const observer = new MutationObserver(() => {
@@ -355,7 +345,6 @@ $('.open-estate-filter').on('click', function () {
 $('.master-plan-sel ul li').on('click', function () {
     $('.master-plan-sel ul li').removeClass('plan-active')
     $(this).addClass('plan-active');
-
 
 })
 

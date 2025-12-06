@@ -132,7 +132,7 @@ class YandexMapConstructor {
                     }
 
                 } else {
-                    this.selectedCategory = [category, ...selectedList]
+                    this.selectedCategory = selectedList
                 }
             } else {
                 this.selectedCategory = []
